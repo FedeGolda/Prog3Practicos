@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Practico2Ej2
 {
@@ -32,6 +33,12 @@ namespace Practico2Ej2
 
             // imprimir cantidad de empleados de la empresa 1 que tienen el cargo de CEO
 
+            string cargo = "CEO";
+            int count = ce.listaEmpleados.Count(empleado => empleado.Cargo == cargo && empleado.EmpresaId == _Empresa);
+            Console.WriteLine($"Cantidad de empleados con el cargo de {cargo} en la empresa {_Empresa}: {count}");
+
+            // mostrar los datos del empleado que gana mas
+
             int maxSalario = ce.listaEmpleados.Max(e => e.Salario);
 
             var empleadosConMaxSalario = ce.listaEmpleados.Where(e => e.Salario == maxSalario);
@@ -39,12 +46,13 @@ namespace Practico2Ej2
             Console.WriteLine("\nEmpleados que ganan más:");
             foreach (var empleado in empleadosConMaxSalario)
             {
-                Console.WriteLine($"ID: {empleado.Id}, Nombre: {empleado.Nombre}, Salario: {empleado.Salario}");
+                Console.WriteLine($"ID: {empleado.Id}, Nombre: {empleado.Nombre}, Cargo: {empleado.Cargo}, Salario: {empleado.Salario}");
             }
+
 
             // imprimir los empleados que ganan mas de 2200
 
-            var empleadosMasDe2200 = ce.listaEmpleados.Where(s => s.Salario >= 2200 );
+            var empleadosMasDe2200 = ce.listaEmpleados.Where(s => s.Salario > 2200 );
 
             Console.WriteLine("\nEmpleados que ganan más de 2200:");
             foreach (var empleado in empleadosMasDe2200)
@@ -53,6 +61,46 @@ namespace Practico2Ej2
             }
 
             // mostrar el empleado que gana mas por cada cargo
+
+            var empleadosMaxSalarioPorCargo = ce.listaEmpleados
+                .GroupBy(e => e.Cargo)
+                .Select(g => new {
+                    Cargo = g.Key,
+                    EmpleadosConMaxSalario = g.Where(e => e.Salario == g.Max(em => em.Salario))
+                });
+
+            Console.WriteLine("\nEmpleados que ganan más por cargo:");
+            foreach (var grupo in empleadosMaxSalarioPorCargo)
+            {
+                Console.WriteLine($"\nCargo: {grupo.Cargo}");
+                foreach (var empleado in grupo.EmpleadosConMaxSalario)
+                {
+                    Console.WriteLine($"ID: {empleado.Id}, Nombre: {empleado.Nombre}, Salario: {empleado.Salario}");
+                }
+            }
+
+
+
+            // mostrar el empleado que gana mas por cada empresa
+
+            var empleadosMaxSalarioPorEmpresa = ce.listaEmpleados
+                .GroupBy(e => e.EmpresaId)
+                .Select(g => new {
+                    EmpresaId = g.Key,
+                    EmpleadosConMaxSalario = g.Where(e => e.Salario == g.Max(em => em.Salario))
+                });
+
+            Console.WriteLine("\nEmpleados que ganan más por empresa:");
+            foreach (var grupo in empleadosMaxSalarioPorEmpresa)
+            {
+                Console.WriteLine($"\nEmpresa ID: {grupo.EmpresaId}");
+                foreach (var empleado in grupo.EmpleadosConMaxSalario)
+                {
+                    Console.WriteLine($"ID: {empleado.Id}, Nombre: {empleado.Nombre}, Salario: {empleado.Salario}");
+                }
+            }
+
+
 
 
         }
