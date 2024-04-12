@@ -1,0 +1,12 @@
+﻿Crear la clase sucursal con ID, nombre, ciudad y población, en el Main charlar a la lista 5 sucursales de diferentes ciudad 
+(2 que sean de la misma ciudad) y con diferentes cantidades de población.
+
+Hacer un método que tome la lista de sucursales y retorne una lista nueva de sucursales ordenada de mayor a menor por población
+Hay que hacerlo sin usar linq, tienen que hacerlo con foreach
+
+
+Y otro ejercicio es un método que tome la lista de sucursales y para cada sucursal muestre: si es de la ciudad Melo,
+imprima el ID de sucursal y el texto sucursal melense,
+si es una sucursal de Maldonado imprima el ID y un texto que diga sucursal Fernando a, 
+si la ciudad es rocha muestre el ID y el texto sucursal Rochense ,
+si no es de ninguna de esas ciudades que muestren sucursal uruguaya

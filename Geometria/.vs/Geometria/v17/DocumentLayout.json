@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\geometria\\circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|solutionrelative:circulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\geometria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\geometria\\cuadrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|solutionrelative:cuadrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\geometria\\dibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|solutionrelative:dibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\geometria\\figura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|solutionrelative:figura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\geometria\\girable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A75B0-94BA-4D43-A0DA-899B51C489D2}|Geometria.csproj|solutionrelative:girable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dibujable.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Dibujable.cs",
+              "RelativeDocumentMoniker": "Dibujable.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Dibujable.cs",
+              "RelativeToolTip": "Dibujable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T23:24:58.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Girable.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Girable.cs",
+              "RelativeDocumentMoniker": "Girable.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Girable.cs",
+              "RelativeToolTip": "Girable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T23:24:42.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cuadrado.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Cuadrado.cs",
+              "RelativeDocumentMoniker": "Cuadrado.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Cuadrado.cs",
+              "RelativeToolTip": "Cuadrado.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T22:50:43.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Circulo.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Circulo.cs",
+              "RelativeDocumentMoniker": "Circulo.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Circulo.cs",
+              "RelativeToolTip": "Circulo.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T22:50:31.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Figura.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Figura.cs",
+              "RelativeDocumentMoniker": "Figura.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Figura.cs",
+              "RelativeToolTip": "Figura.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T22:50:10.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T22:48:42.76Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

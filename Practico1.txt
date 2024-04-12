@@ -1,0 +1,15 @@
+Criterios básicos y metodología
+Una puntuación de Complejidad Cognitiva se evalúa de acuerdo a estas tres reglas básicas:
+
+Ignora las estructuras que permiten que varios enunciados sean legibles abreviados en uno.
+
+Incrementa (añade uno) por cada ruptura en el flujo lineal del código.
+
+Incrementa cuando las estructuras que rompen el flujo están anidadas.
+
+
+
+Ej 3
+
+Una condición (if) (Regla 1)
+
