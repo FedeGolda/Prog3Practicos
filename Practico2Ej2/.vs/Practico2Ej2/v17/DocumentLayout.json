@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\",
+  "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\practico2ej2\\controlempresasempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practico2ej2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practico2ej2\\controlempresasempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|solutionrelative:controlempresasempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\practico2ej2\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practico2ej2\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|solutionrelative:empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\practico2ej2\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practico2ej2\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|solutionrelative:empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\practico2ej2\\textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practico2ej2\\textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|solutionrelative:textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\practico2ej2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B25D7A-C519-46E8-9D26-FBDB3314C00D}|Practico2Ej2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Empresa.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\Empresa.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\Empresa.cs",
               "RelativeDocumentMoniker": "Empresa.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\Empresa.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\Empresa.cs",
               "RelativeToolTip": "Empresa.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -47,52 +47,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ControlEmpresasEmpleados.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\ControlEmpresasEmpleados.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\ControlEmpresasEmpleados.cs",
               "RelativeDocumentMoniker": "ControlEmpresasEmpleados.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\ControlEmpresasEmpleados.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\ControlEmpresasEmpleados.cs",
               "RelativeToolTip": "ControlEmpresasEmpleados.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAiwBUAAAAMAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAcwF8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T01:23:17.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\Empleado.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\Empleado.cs",
               "RelativeDocumentMoniker": "Empleado.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\Empleado.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\Empleado.cs",
               "RelativeToolTip": "Empleado.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAAA8AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T01:20:36.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TextFile1.txt",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\TextFile1.txt",
-              "RelativeDocumentMoniker": "TextFile1.txt",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\TextFile1.txt",
-              "RelativeToolTip": "TextFile1.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-11T01:24:11.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T01:20:36.375Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "TextFile1.txt",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\TextFile1.txt",
+              "RelativeDocumentMoniker": "TextFile1.txt",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\TextFile1.txt",
+              "RelativeToolTip": "TextFile1.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-11T01:24:11.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\Program.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico2Ej2\\Program.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico2Ej2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T01:18:48.104Z",
               "EditorCaption": ""
