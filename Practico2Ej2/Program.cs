@@ -29,14 +29,30 @@ namespace Practico2Ej2
                 return;
             }
 
-            ce.getEmpleadosEmpresa(_Empresa);
 
             // imprimir cantidad de empleados de la empresa 1 que tienen el cargo de CEO
 
-            int count = ce.listaEmpleados.Count(empleado => empleado.Cargo == "CEO" && empleado.EmpresaId == _Empresa);
-            Console.WriteLine($"\nCantidad de empleados con el cargo de CEO en la empresa {_Empresa}: {count}");
+            int maxSalario = ce.listaEmpleados.Max(e => e.Salario);
 
-            // mostrar los datos del empleado que gana mas
+            var empleadosConMaxSalario = ce.listaEmpleados.Where(e => e.Salario == maxSalario);
+
+            Console.WriteLine("\nEmpleados que ganan más:");
+            foreach (var empleado in empleadosConMaxSalario)
+            {
+                Console.WriteLine($"ID: {empleado.Id}, Nombre: {empleado.Nombre}, Salario: {empleado.Salario}");
+            }
+
+            // imprimir los empleados que ganan mas de 2200
+
+            var empleadosMasDe2200 = ce.listaEmpleados.Where(s => s.Salario >= 2200 );
+
+            Console.WriteLine("\nEmpleados que ganan más de 2200:");
+            foreach (var empleado in empleadosMasDe2200)
+            {
+                Console.WriteLine($"ID: {empleado.Id}, Nombre: {empleado.Nombre}, Salario: {empleado.Salario}");
+            }
+
+            // mostrar el empleado que gana mas por cada cargo
 
 
         }
