@@ -1,0 +1,15 @@
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\bin\Debug\net7.0\Practico2Ej3.exe
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\bin\Debug\net7.0\Practico2Ej3.deps.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\bin\Debug\net7.0\Practico2Ej3.runtimeconfig.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\bin\Debug\net7.0\Practico2Ej3.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\bin\Debug\net7.0\Practico2Ej3.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\Practico2Ej3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\Practico2Ej3.AssemblyInfoInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\Practico2Ej3.AssemblyInfo.cs
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\Practico2Ej3.csproj.CoreCompileInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\Practico2Ej3.sourcelink.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\Practico2Ej3.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\refint\Practico2Ej3.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\Practico2Ej3.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\Practico2Ej3.genruntimeconfig.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\Practico2Ej3\obj\Debug\net7.0\ref\Practico2Ej3.dll
