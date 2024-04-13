@@ -48,9 +48,16 @@
             Console.WriteLine($"La suma total de los valores pares menores o iguales a ocho es: {sumaTotalValoresParesMenoresAOcho}");
 
 
+
+
             // ii. Crear una función que utilice LinQ y muestre en pantalla el mismo resultado.
 
+            int sumaTotalValoresParesMayoresAOcho2 = valores.Where(v => v % 2 == 0 && v > 8).Sum();
 
+            int sumaTotalValoresParesMenoresAOcho2 = valores.Where(v => v % 2 == 0 && v <= 8).Sum();
+
+            Console.WriteLine($"La suma total de los valores pares mayores a ocho es: {sumaTotalValoresParesMayoresAOcho2}");
+            Console.WriteLine($"La suma total de los valores pares menores o iguales a ocho es: {sumaTotalValoresParesMenoresAOcho2}");
 
         }
     }
