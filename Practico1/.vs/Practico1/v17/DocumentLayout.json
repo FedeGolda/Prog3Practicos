@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico1\\",
+  "WorkspaceRootPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5AC4E29-622E-4E4E-82A1-158C20AE7B59}|Practico1.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practico1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C5AC4E29-622E-4E4E-82A1-158C20AE7B59}|Practico1.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\practico1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5AC4E29-622E-4E4E-82A1-158C20AE7B59}|Practico1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practico1\\Program.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Practico1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAPABAAAAAAAAAAAowAgCAABQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T23:20:24.758Z",
               "EditorCaption": ""

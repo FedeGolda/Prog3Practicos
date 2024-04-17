@@ -23,15 +23,15 @@ namespace Practico1
             {
                 bool es = true;
 
-                for (int i = 2; i < n; i++)
+                for (int i = 2; i < n; i++) // +1
                 {
-                    if (n % i == 0)
+                    if (n % i == 0) // +1
                     {
                         es = false;
                     }
                 }
                 return es;
-            }
+            } // total: +2
 
             /* Ejercicio 2 
              Escribir una función que calcule la suma de los dígitos de un número entero. 
@@ -43,15 +43,15 @@ namespace Practico1
             int SumaDigitos(int num)
             {
                 int suma = 0;
-                num = Math.Abs(num); // Asegura que el número sea positivo
+                num = Math.Abs(num); // Asegura que el número sea positivo // +1
 
-                while (num > 0)
+                while (num > 0) // +1
                 {
-                    suma += num % 10; // Obtiene el último dígito y lo suma
-                    num /= 10; // Remueve el último dígito
+                    suma += num % 10;
+                    num /= 10; 
                 }
                 return suma;
-            }
+            } // total +2
 
             /* Ejercicio 3 
              Escribir una función que calcule el factorial de un número entero dado. 
@@ -62,18 +62,18 @@ namespace Practico1
 
             static long Factorial(int n)
             {
-                if (n < 0)
+                if (n < 0) // +1
                 {
                     throw new ArgumentException("\nEl factorial no está definido para números negativos");
                 }
 
                 long factorial = 1;
-                for (int i = 1; i <= n; i++)
+                for (int i = 1; i <= n; i++) // +1
                 {
                     factorial *= i;
                 }
                 return factorial;
-            }
+            } // total +2
 
             /* Ejercicio 4
                 Escribir una función que devuelva el número de palabras en una cadena dada. La función debe tomar una cadena como entrada y devolver un entero que indique el número de palabras.
@@ -87,12 +87,12 @@ namespace Practico1
 
             int ContarPalabras(string cadena)
             {
-                if (string.IsNullOrEmpty(cadena))
+                if (string.IsNullOrEmpty(cadena)) // +1
                     return 0;
 
                 string[] palabras = cadena.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries);
                 return palabras.Length;
-            }
+            } // total +1
 
 
             /* Ejercicio 5
@@ -112,24 +112,24 @@ namespace Practico1
 
             void OrdenarSeleccion(int[] numeros)
             {
-                for (int i = 0; i < numeros.Length - 1; i++)
+                for (int i = 0; i < numeros.Length - 1; i++) // +1
                 {
                     int minimoIndice = i;
-                    for (int j = i + 1; j < numeros.Length; j++)
+                    for (int j = i + 1; j < numeros.Length; j++) // +1
                     {
-                        if (numeros[j] < numeros[minimoIndice])
+                        if (numeros[j] < numeros[minimoIndice]) // +1
                         {
                             minimoIndice = j;
                         }
                     }
-                    if (minimoIndice != i)
+                    if (minimoIndice != i) // +1
                     {
                         int temp = numeros[i];
                         numeros[i] = numeros[minimoIndice];
                         numeros[minimoIndice] = temp;
                     }
                 }
-            }
+            } // total +4
 
 
 
@@ -195,31 +195,25 @@ namespace Practico1
 
             int[,] MultiplicarMatrices(int[,] matriz1, int[,] matriz2)
             {
-                int filas1 = matriz1.GetLength(0);
-                int columnas1 = matriz1.GetLength(1);
-                int filas2 = matriz2.GetLength(0);
-                int columnas2 = matriz2.GetLength(1);
-
-                if (columnas1 != filas2)
-                {
-                    throw new ArgumentException("Las matrices no se pueden multiplicar debido a dimensiones incompatibles.");
-                }
-
+                int filas1 = matriz1.GetLength(0); // +1
+                int columnas1 = matriz1.GetLength(1); // +1
+                int filas2 = matriz2.GetLength(0); // +1
+                int columnas2 = matriz2.GetLength(1); // +1
                 int[,] resultado = new int[filas1, columnas2];
 
-                for (int i = 0; i < filas1; i++)
+                for (int i = 0; i < filas1; i++) // +1
                 {
-                    for (int j = 0; j < columnas2; j++)
+                    for (int j = 0; j < columnas2; j++) // +1
                     {
                         resultado[i, j] = 0;
-                        for (int k = 0; k < columnas1; k++)
+                        for (int k = 0; k < columnas1; k++) // +1
                         {
                             resultado[i, j] += matriz1[i, k] * matriz2[k, j];
                         }
                     }
                 }
                 return resultado;
-            }
+            } // total +7
 
 
             /* Ejercicio 7
@@ -241,9 +235,9 @@ namespace Practico1
 
                 // Eliminamos espacios y caracteres no alfabéticos
                 string filtrada = "";
-                foreach (char c in cadena)
+                foreach (char c in cadena) // +1
                 {
-                    if (char.IsLetter(c))
+                    if (char.IsLetter(c)) // +1
                     {
                         filtrada += c;
                     }
@@ -251,15 +245,15 @@ namespace Practico1
 
                 // Comprobamos si la cadena filtrada es un palíndromo
                 int j = filtrada.Length - 1;
-                for (int i = 0; i < j; i++, j--)
+                for (int i = 0; i < j; i++, j--) // +1
                 {
-                    if (filtrada[i] != filtrada[j])
+                    if (filtrada[i] != filtrada[j]) // +1
                     {
                         return false;
                     }
                 }
                 return true;
-            }
+            } // total +4
 
             /* Ejercicio 8
                 Escribir una función que determine si una cadena es un palíndromo. 
@@ -270,9 +264,9 @@ namespace Practico1
             {
                 int izquierda = 0;
                 int derecha = cadena.Length - 1;
-                while (izquierda < derecha)
+                while (izquierda < derecha) // +1
                 {
-                    if (cadena[izquierda] != cadena[derecha])
+                    if (cadena[izquierda] != cadena[derecha]) // +1
                     {
                         return false;
                     }
@@ -280,7 +274,7 @@ namespace Practico1
                     derecha--;
                 }
                 return true;
-            }
+            } // total +2
 
             /*
             Ejercicio 9
@@ -291,17 +285,17 @@ namespace Practico1
 
             int Permutaciones(int n, int k)
             {
-                if (n < k)
+                if (n < k) // +1
                 {
-                    return 0; // No hay suficientes elementos para tomar k de ellos
+                    return 0; 
                 }
                 int resultado = 1;
-                for (int i = n; i > n - k; i--)
+                for (int i = n; i > n - k; i--) // +1
                 {
                     resultado *= i;
                 }
                 return resultado;
-            }
+            } // total +2
 
 
             /* Ejercicio 10
@@ -323,10 +317,9 @@ namespace Practico1
                 str2 = new string(str2.Where(c => !char.IsWhiteSpace(c)).ToArray()).ToLower();
 
                 // Si las longitudes son diferentes, no pueden ser anagramas
-                if (str1.Length != str2.Length)
+                if (str1.Length != str2.Length) // +1
                     return false;
 
-                // Ordenar las cadenas y comparar
                 var array1 = str1.ToCharArray();
                 var array2 = str2.ToCharArray();
 
@@ -334,7 +327,7 @@ namespace Practico1
                 Array.Sort(array2);
 
                 return array1.SequenceEqual(array2);
-            }
+            } // total +1 
 
 
             /* Ejercicio 11
@@ -355,14 +348,14 @@ namespace Practico1
                 b = Math.Abs(b);
 
                 // Implementación del algoritmo de Euclides
-                while (b != 0)
+                while (b != 0) // +3 porque se cuenta while y los dos maths
                 {
                     int temp = b;
                     b = a % b;
                     a = temp;
                 }
                 return a;
-            }
+            } // total +3
 
 
             /* Ejercicio 12
@@ -372,7 +365,7 @@ namespace Practico1
 
             int Fibonacci(int n)
             {
-                if (n <= 1)
+                if (n <= 1) // +1
                 {
                     return n;
                 }
@@ -380,14 +373,14 @@ namespace Practico1
                 int a = 0;
                 int b = 1;
 
-                for (int i = 2; i <= n; i++)
+                for (int i = 2; i <= n; i++)// +1
                 {
                     int temp = a + b;
                     a = b;
                     b = temp;
                 }
                 return b;
-            }
+            } // total +2
 
 
             /* Ejercicio 13
@@ -397,20 +390,20 @@ namespace Practico1
 
             int Fibonacci2(int n)
             {
-                if (n == 0)
+                if (n == 0) // +1
                 {
                     return n;
                 }
-                else if (n == 1)
+                else if (n == 1) // +1
                 {
                     return 1;
                 }
                 else
                 {
-                    return Fibonacci(n - 1) + Fibonacci(n - 2);
+                    return Fibonacci(n - 1) + Fibonacci(n - 2); // +2
                 }
 
-            }
+            } // total +4
 
 
             /* Ejercicio 14
@@ -422,13 +415,13 @@ namespace Practico1
             {
                 int resultado = 0;
 
-                foreach (int elemento in a)
+                foreach (int elemento in a) // +1
                 {
                     resultado += elemento;
                 }
 
                 return resultado;
-            }
+            } // +1
 
 
             /*  Ejercicio 15
@@ -443,17 +436,17 @@ namespace Practico1
 
             int MCD(int a, int b)
             {
-                if (a == 0) return b;
-                if (b == 0) return a;
+                if (a == 0) return b; // +1
+                if (b == 0) return a; // +1
 
-                while (b != 0)
+                while (b != 0) // +1
                 {
                     int t = b;
                     b = a % b;
                     a = t;
                 }
-                return Math.Abs(a);
-            }
+                return Math.Abs(a); // +1
+            } // total +4
 
             /* Ejercicio 16
                 Escribir una función que calcule la suma de los elementos en una matriz de enteros.
@@ -476,15 +469,15 @@ namespace Practico1
             {
                 int suma = 0;
                 // Iterar sobre cada elemento de la matriz
-                for (int i = 0; i < matriz.GetLength(0); i++)  // GetLength(0) devuelve el número de filas
+                for (int i = 0; i < matriz.GetLength(0); i++) // +1
                 {
-                    for (int j = 0; j < matriz.GetLength(1); j++)  // GetLength(1) devuelve el número de columnas
+                    for (int j = 0; j < matriz.GetLength(1); j++) // +1
                     {
                         suma += matriz[i, j];
                     }
                 }
                 return suma;
-            }
+            } // total +2
 
             /* Ejercicio 17
                 Escribir una función que encuentre el número más grande en un arreglo de enteros. 
@@ -500,16 +493,16 @@ namespace Practico1
             {
                 int maximo = arreglo[0];
 
-                for (int i = 1; i < arreglo.Length; i++)
+                for (int i = 1; i < arreglo.Length; i++) // +1
                 {
-                    if (arreglo[i] > maximo)
+                    if (arreglo[i] > maximo) // +1 
                     {
-                        maximo = arreglo[i]; // Actualiza el máximo si encuentra un número mayor
+                        maximo = arreglo[i]; 
                     }
                 }
 
                 return maximo;
-            }
+            } // total +2
 
 
             /* Ejercicio 18
@@ -525,10 +518,10 @@ namespace Practico1
                 double deltaX = x2 - x1;
                 double deltaY = y2 - y1;
 
-                double distancia = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+                double distancia = Math.Sqrt(deltaX * deltaX + deltaY * deltaY); // +1
 
                 return distancia;
-            }
+            } // total +1
 
 
 
