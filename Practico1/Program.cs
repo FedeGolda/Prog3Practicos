@@ -304,6 +304,233 @@ namespace Practico1
             }
 
 
+            /* Ejercicio 10
+                Escribir una función que determine si una cadena dada es un anagrama o no. 
+                La función debe tomar dos cadenas como entrada y devolver un valor booleano que indique si son anagramas o no.
+            */
+
+
+            string str1 = "amor";
+            string str2 = "roma";
+
+            bool resultado2 = EsAnagrama(str1, str2);
+            Console.WriteLine($"\n'{str1}' y '{str2}' : {resultado2}");
+
+            bool EsAnagrama(string str1, string str2)
+            {
+                // Eliminar espacios y convertir a minúsculas para hacer la comparación insensible a mayúsculas y espacios
+                str1 = new string(str1.Where(c => !char.IsWhiteSpace(c)).ToArray()).ToLower();
+                str2 = new string(str2.Where(c => !char.IsWhiteSpace(c)).ToArray()).ToLower();
+
+                // Si las longitudes son diferentes, no pueden ser anagramas
+                if (str1.Length != str2.Length)
+                    return false;
+
+                // Ordenar las cadenas y comparar
+                var array1 = str1.ToCharArray();
+                var array2 = str2.ToCharArray();
+
+                Array.Sort(array1);
+                Array.Sort(array2);
+
+                return array1.SequenceEqual(array2);
+            }
+
+
+            /* Ejercicio 11
+                Escribir una función que calcule el máximo común divisor de dos enteros utilizando el algoritmo de Euclides. 
+                La función debe tomar dos enteros como entrada y devolver un entero que indique el máximo común divisor.
+            */
+
+
+            int num1 = 48;
+            int num2 = 18;
+            int mcd = CalcularMCD(num1, num2);
+            Console.WriteLine($"\nEl MCD de {num1} y {num2} es: {mcd}");
+
+            int CalcularMCD(int a, int b)
+            {
+                // Asegurarse de que ambos números no sean negativos
+                a = Math.Abs(a);
+                b = Math.Abs(b);
+
+                // Implementación del algoritmo de Euclides
+                while (b != 0)
+                {
+                    int temp = b;
+                    b = a % b;
+                    a = temp;
+                }
+                return a;
+            }
+
+
+            /* Ejercicio 12
+                Escribir una función que calcule el enésimo número de Fibonacci. 
+                La función debe tomar un entero como entrada y devolver el enésimo número de Fibonacci.
+            */
+
+            int Fibonacci(int n)
+            {
+                if (n <= 1)
+                {
+                    return n;
+                }
+
+                int a = 0;
+                int b = 1;
+
+                for (int i = 2; i <= n; i++)
+                {
+                    int temp = a + b;
+                    a = b;
+                    b = temp;
+                }
+                return b;
+            }
+
+
+            /* Ejercicio 13
+                Escribir una función que calcule la n-ésima serie de Fibonacci. 
+                La función debe tomar un entero n como entrada y devolver un entero que indique el valor de la n-ésima serie de Fibonacci.
+            */
+
+            int Fibonacci2(int n)
+            {
+                if (n == 0)
+                {
+                    return n;
+                }
+                else if (n == 1)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return Fibonacci(n - 1) + Fibonacci(n - 2);
+                }
+
+            }
+
+
+            /* Ejercicio 14
+                 Escribir una función que calcule la suma de los elementos en un arreglo de enteros.
+                 La función debe tomar un arreglo de enteros como entrada y devolver un entero que indique la suma de todos los elementos.
+            */
+
+            int SumaArreglo(int[] a)
+            {
+                int resultado = 0;
+
+                foreach (int elemento in a)
+                {
+                    resultado += elemento;
+                }
+
+                return resultado;
+            }
+
+
+            /*  Ejercicio 15
+                Escribir una función que calcule el máximo común divisor de dos números enteros dados. 
+                La función debe tomar dos enteros como entrada y devolver su máximo común divisor.
+            */
+
+            int num3 = 36;
+            int num4 = 60;
+            Console.WriteLine($"El MCD de {num3} y {num4} es: {MCD(num3, num4)}");
+
+
+            int MCD(int a, int b)
+            {
+                if (a == 0) return b;
+                if (b == 0) return a;
+
+                while (b != 0)
+                {
+                    int t = b;
+                    b = a % b;
+                    a = t;
+                }
+                return Math.Abs(a);
+            }
+
+            /* Ejercicio 16
+                Escribir una función que calcule la suma de los elementos en una matriz de enteros.
+                La función debe tomar una matriz de enteros como entrada y devolver un entero que indique la suma total de los elementos en la matriz.
+            */
+
+
+
+            int[,] matriz = new int[,]
+            {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+
+            Console.WriteLine($"La suma de los elementos de la matriz es: {SumaMatriz(matriz)}");
+
+
+            int SumaMatriz(int[,] matriz)
+            {
+                int suma = 0;
+                // Iterar sobre cada elemento de la matriz
+                for (int i = 0; i < matriz.GetLength(0); i++)  // GetLength(0) devuelve el número de filas
+                {
+                    for (int j = 0; j < matriz.GetLength(1); j++)  // GetLength(1) devuelve el número de columnas
+                    {
+                        suma += matriz[i, j];
+                    }
+                }
+                return suma;
+            }
+
+            /* Ejercicio 17
+                Escribir una función que encuentre el número más grande en un arreglo de enteros. 
+                La función debe tomar un arreglo de enteros como entrada y devolver un entero que indique el valor del número más grande.
+            */
+
+
+            int[] arreglo = new int[] { 5, 3, 8, 6, 2, 7, 10, 1 };
+            Console.WriteLine($"El número más grande en el arreglo es: {EncontrarMaximo(arreglo)}");
+
+
+            static int EncontrarMaximo(int[] arreglo)
+            {
+                int maximo = arreglo[0];
+
+                for (int i = 1; i < arreglo.Length; i++)
+                {
+                    if (arreglo[i] > maximo)
+                    {
+                        maximo = arreglo[i]; // Actualiza el máximo si encuentra un número mayor
+                    }
+                }
+
+                return maximo;
+            }
+
+
+            /* Ejercicio 18
+                Escribir una función que calcule la distancia euclidiana entre dos puntos en un plano cartesiano. 
+                La función debe tomar las coordenadas (x,y) de los dos puntos como entrada y devolver un número que indique la distancia entre ellos.
+            */
+
+            double distancia = CalcularDistanciaEuclidiana(3, 4, 7, 1);
+            Console.WriteLine($"La distancia entre los puntos es: {distancia}");
+
+            static double CalcularDistanciaEuclidiana(double x1, double y1, double x2, double y2)
+            {
+                double deltaX = x2 - x1;
+                double deltaY = y2 - y1;
+
+                double distancia = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+
+                return distancia;
+            }
+
+
 
         }
     }
