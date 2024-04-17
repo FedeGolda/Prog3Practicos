@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Geometria.csproj",
-      "projectName": "Geometria",
-      "projectPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\Geometria.csproj",
+      "projectUniqueName": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Interfaces\\Interfaces.csproj",
+      "projectName": "Interfaces",
+      "projectPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Interfaces\\Interfaces.csproj",
       "packagesPath": "C:\\Users\\Fede\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Geometria\\obj\\",
+      "outputPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
