@@ -1,0 +1,15 @@
+1- crear una clase vehiculos(id, marca, modelo, ruedas, color y año) y 3 clases que hereden de ella, auto, camion y moto
+
+moto tiene cilindradas, camion tiene toneladas y auto tiene cantidad de pasajeros como datos unicos de cada clase.
+
+2- creen una lista de vehiculos
+
+3- realizar un metodo que retorne todo los vehiculos segun un campo tipo que recibe por parametro (moto, auto o camion)
+
+4- realizar un metodo que muestre en pantalla cuantos vehiculos hay en total, cuantos son autos, cuantos son motos y cuantos son camiones.
+
+5- crear un auto mas y 2 motos mas
+
+6- llamar nuevamente al metodo del punto 4
+
+7- Prueben si se puede hacer filtros where en la lista de vehiculos por el campo cilindradas para que ver funciona herencia y linq juntos
