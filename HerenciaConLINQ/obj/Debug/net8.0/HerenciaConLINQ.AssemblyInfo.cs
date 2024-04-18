@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HerenciaConLINQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfcc5d0bef6a63a1951025a712c6274c608d4474")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c268d51526d388882e68acb9ec1165827603984")]
 [assembly: System.Reflection.AssemblyProductAttribute("HerenciaConLINQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HerenciaConLINQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

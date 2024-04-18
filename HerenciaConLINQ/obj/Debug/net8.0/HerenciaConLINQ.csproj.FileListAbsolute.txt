@@ -1,0 +1,15 @@
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\bin\Debug\net8.0\HerenciaConLINQ.exe
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\bin\Debug\net8.0\HerenciaConLINQ.deps.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\bin\Debug\net8.0\HerenciaConLINQ.runtimeconfig.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\bin\Debug\net8.0\HerenciaConLINQ.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\bin\Debug\net8.0\HerenciaConLINQ.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\HerenciaConLINQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\HerenciaConLINQ.AssemblyInfoInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\HerenciaConLINQ.AssemblyInfo.cs
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\HerenciaConLINQ.csproj.CoreCompileInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\HerenciaConLINQ.sourcelink.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\HerenciaConLINQ.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\refint\HerenciaConLINQ.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\HerenciaConLINQ.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\HerenciaConLINQ.genruntimeconfig.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\HerenciaConLINQ\obj\Debug\net8.0\ref\HerenciaConLINQ.dll

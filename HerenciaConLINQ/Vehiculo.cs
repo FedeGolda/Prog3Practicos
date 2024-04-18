@@ -8,12 +8,12 @@ namespace HerenciaConLINQ
 {
     internal abstract class Vehiculo
     {
-        protected int Id { get; set; }
-        protected string Marca { get; set; }
-        protected string Modelo { get; set; }
-        protected int Ruedas { get; set; }
-        protected string Color { get; set; }
-        protected string Anio { get; set; }
+        public int Id { get; set; }
+        public string Marca { get; set; }
+        public string Modelo { get; set; }
+        public int Ruedas { get; set; }
+        public string Color { get; set; }
+        public string Anio { get; set; }
 
         public Vehiculo() { }
 
@@ -25,6 +25,46 @@ namespace HerenciaConLINQ
             this.Ruedas = ruedas;
             this.Color = color;
             this.Anio = anio;
+        }
+
+
+
+        // 3- realizar un metodo que retorne todo los vehiculos segun un campo tipo que recibe por parametro(moto, auto o camion)
+        public static void MostrarVehiculos(List<Vehiculo> vehiculos)
+        {
+            foreach (var vehiculo in vehiculos)
+            {
+                Console.WriteLine($"Tipo: {vehiculo.Marca}, Modelo: {vehiculo.Modelo}");
+            }
+        }
+
+        // 4- realizar un metodo que muestre en pantalla cuantos vehiculos hay en total, cuantos son autos, cuantos son motos y cuantos son camiones.
+        public static void totalVehiculos(List<Vehiculo> vehiculos)
+        {
+            int totalAutos = 0;
+            int totalMotos = 0;
+            int totalCamiones = 0;
+
+            foreach (var vehiculo in vehiculos)
+            {
+                if (vehiculo is Auto)
+                {
+                    totalAutos++;
+                }
+                else if (vehiculo is Moto)
+                {
+                    totalMotos++;
+                }
+                else if (vehiculo is Camion)
+                {
+                    totalCamiones++;
+                }
+            }
+
+            Console.WriteLine($"\nTotal de Vehículos: {vehiculos.Count}");
+            Console.WriteLine($"Total de Autos: {totalAutos}");
+            Console.WriteLine($"Total de Motos: {totalMotos}");
+            Console.WriteLine($"Total de Camiones: {totalCamiones}");
         }
 
 
