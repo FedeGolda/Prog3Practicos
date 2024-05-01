@@ -1,0 +1,15 @@
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\bin\Debug\net8.0\RepasoParcial1.exe
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\bin\Debug\net8.0\RepasoParcial1.deps.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\bin\Debug\net8.0\RepasoParcial1.runtimeconfig.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\bin\Debug\net8.0\RepasoParcial1.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\bin\Debug\net8.0\RepasoParcial1.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\RepasoParcial1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\RepasoParcial1.AssemblyInfoInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\RepasoParcial1.AssemblyInfo.cs
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\RepasoParcial1.csproj.CoreCompileInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\RepasoParcial1.sourcelink.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\RepasoParcial1.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\refint\RepasoParcial1.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\RepasoParcial1.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\RepasoParcial1.genruntimeconfig.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\RepasoParcial1\obj\Debug\net8.0\ref\RepasoParcial1.dll

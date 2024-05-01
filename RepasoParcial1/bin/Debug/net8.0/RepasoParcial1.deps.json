@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "RepasoParcial1/1.0.0": {
+        "runtime": {
+          "RepasoParcial1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RepasoParcial1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
