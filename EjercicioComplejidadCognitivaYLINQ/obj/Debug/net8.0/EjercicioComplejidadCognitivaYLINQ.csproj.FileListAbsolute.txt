@@ -1,0 +1,15 @@
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\bin\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.exe
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\bin\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.deps.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\bin\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.runtimeconfig.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\bin\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\bin\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.AssemblyInfoInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.AssemblyInfo.cs
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.csproj.CoreCompileInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.sourcelink.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\refint\EjercicioComplejidadCognitivaYLINQ.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\EjercicioComplejidadCognitivaYLINQ.genruntimeconfig.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\EjercicioComplejidadCognitivaYLINQ\obj\Debug\net8.0\ref\EjercicioComplejidadCognitivaYLINQ.dll
