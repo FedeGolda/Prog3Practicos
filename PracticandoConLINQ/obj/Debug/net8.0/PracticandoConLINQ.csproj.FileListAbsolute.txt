@@ -1,0 +1,15 @@
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\bin\Debug\net8.0\PracticandoConLINQ.exe
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\bin\Debug\net8.0\PracticandoConLINQ.deps.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\bin\Debug\net8.0\PracticandoConLINQ.runtimeconfig.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\bin\Debug\net8.0\PracticandoConLINQ.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\bin\Debug\net8.0\PracticandoConLINQ.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\PracticandoConLINQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\PracticandoConLINQ.AssemblyInfoInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\PracticandoConLINQ.AssemblyInfo.cs
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\PracticandoConLINQ.csproj.CoreCompileInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\PracticandoConLINQ.sourcelink.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\PracticandoConLINQ.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\refint\PracticandoConLINQ.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\PracticandoConLINQ.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\PracticandoConLINQ.genruntimeconfig.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ\obj\Debug\net8.0\ref\PracticandoConLINQ.dll
