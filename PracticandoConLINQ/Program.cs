@@ -10,6 +10,8 @@ namespace PracticandoConLINQ
         {
             List<int> listaEnteros = new List<int> { 12, 24, 25, 33, 45, 50, 55, 60, 70 };
 
+
+
             // Suma de todos los elementos
             var suma = listaEnteros.Sum();
             Console.WriteLine("La suma de todos los elementos es: " + suma);

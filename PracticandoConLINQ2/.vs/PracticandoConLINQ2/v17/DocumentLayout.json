@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PracticandoConLINQ2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6226DB-BA28-4F39-90C6-92C8AD700D12}|PracticandoConLINQ2.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practicandoconlinq2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6226DB-BA28-4F39-90C6-92C8AD700D12}|PracticandoConLINQ2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6226DB-BA28-4F39-90C6-92C8AD700D12}|PracticandoConLINQ2.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practicandoconlinq2\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6226DB-BA28-4F39-90C6-92C8AD700D12}|PracticandoConLINQ2.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF6226DB-BA28-4F39-90C6-92C8AD700D12}|PracticandoConLINQ2.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practicandoconlinq2\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF6226DB-BA28-4F39-90C6-92C8AD700D12}|PracticandoConLINQ2.csproj|solutionrelative:author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PracticandoConLINQ2\\Author.cs",
+              "RelativeDocumentMoniker": "Author.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PracticandoConLINQ2\\Author.cs",
+              "RelativeToolTip": "Author.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAgwBMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T19:19:36.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PracticandoConLINQ2\\Book.cs",
+              "RelativeDocumentMoniker": "Book.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PracticandoConLINQ2\\Book.cs",
+              "RelativeToolTip": "Book.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T19:18:08.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PracticandoConLINQ2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PracticandoConLINQ2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAwH8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T19:17:34.974Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

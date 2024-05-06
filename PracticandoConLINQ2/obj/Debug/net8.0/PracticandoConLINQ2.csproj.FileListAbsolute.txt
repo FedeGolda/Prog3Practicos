@@ -1,0 +1,15 @@
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\bin\Debug\net8.0\PracticandoConLINQ2.exe
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\bin\Debug\net8.0\PracticandoConLINQ2.deps.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\bin\Debug\net8.0\PracticandoConLINQ2.runtimeconfig.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\bin\Debug\net8.0\PracticandoConLINQ2.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\bin\Debug\net8.0\PracticandoConLINQ2.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\PracticandoConLINQ2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\PracticandoConLINQ2.AssemblyInfoInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\PracticandoConLINQ2.AssemblyInfo.cs
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\PracticandoConLINQ2.csproj.CoreCompileInputs.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\PracticandoConLINQ2.sourcelink.json
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\PracticandoConLINQ2.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\refint\PracticandoConLINQ2.dll
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\PracticandoConLINQ2.pdb
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\PracticandoConLINQ2.genruntimeconfig.cache
+D:\Documents\Federico\CEI\PROGRAMACION 3\Practicos\Prog3Practicos\PracticandoConLINQ2\obj\Debug\net8.0\ref\PracticandoConLINQ2.dll

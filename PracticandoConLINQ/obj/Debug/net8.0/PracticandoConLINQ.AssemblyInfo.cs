@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PracticandoConLINQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24efe2fcf69be518290ae6a5009b7108e738bb30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c43018f29628acf11151eb9afb0a903af4fa761")]
 [assembly: System.Reflection.AssemblyProductAttribute("PracticandoConLINQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PracticandoConLINQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
