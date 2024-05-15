@@ -4583,29 +4583,30 @@
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore >= 8.0.5",
       "Microsoft.EntityFrameworkCore.Abstractions >= 8.0.5",
+      "Microsoft.EntityFrameworkCore.Design >= 8.0.5",
       "Microsoft.EntityFrameworkCore.Relational >= 8.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fede\\.nuget\\packages\\": {},
+    "C:\\Users\\fedeg\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\PruebaEntity\\PruebaEntity.csproj",
+      "projectUniqueName": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PruebaEntity\\PruebaEntity.csproj",
       "projectName": "PruebaEntity",
-      "projectPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\PruebaEntity\\PruebaEntity.csproj",
-      "packagesPath": "C:\\Users\\Fede\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\PruebaEntity\\obj\\",
+      "projectPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PruebaEntity\\PruebaEntity.csproj",
+      "packagesPath": "C:\\Users\\fedeg\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\PruebaEntity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Fede\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fedeg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4646,6 +4647,12 @@
             "version": "[8.0.5, )"
           },
           "Microsoft.EntityFrameworkCore.Abstractions": {
+            "target": "Package",
+            "version": "[8.0.5, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.5, )"
           },
