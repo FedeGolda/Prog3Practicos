@@ -1,0 +1,38 @@
+﻿@model List<ASPNET.Models.AutorModel>
+
+@{
+    ViewBag.Title = "Consulta";
+}
+
+<h2>Consulta</h2>
+
+<table class="table">
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model[0].Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model[0].Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var autor in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => autor.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => autor.Nombre)
+            </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = autor.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = autor.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = autor.Id })
+        </td>
+        </tr>
+    }
+
+</table>
