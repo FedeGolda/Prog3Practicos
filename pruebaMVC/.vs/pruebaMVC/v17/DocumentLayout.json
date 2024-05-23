@@ -3,43 +3,75 @@
   "WorkspaceRootPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\controllers\\personajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:controllers\\personajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\PruebaMvcContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:Models\\PruebaMvcContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\controllers\\libroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:controllers\\libroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\views\\libroes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:views\\libroes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\controllers\\libroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:controllers\\libroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\controllers\\personajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:controllers\\personajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\models\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\views\\libroes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:views\\libroes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\models\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:models\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\PruebaMvcContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\PruebaMvcContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pruebamvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59E9CA51-68AC-4B4B-91F9-99B399B0C4E5}|pruebaMVC.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,11 +82,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T23:49:56.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABwAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T23:30:12.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T00:44:18.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Libroes\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Libroes\\Index.cshtml",
@@ -67,33 +138,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "LibroesController.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\LibroesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LibroesController.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\LibroesController.cs",
+              "RelativeToolTip": "Controllers\\LibroesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T00:44:18.741Z",
+              "WhenOpened": "2024-05-16T00:39:01.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "DocumentIndex": 0,
+              "Title": "PersonajesController.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\PersonajesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PersonajesController.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\PersonajesController.cs",
+              "RelativeToolTip": "Controllers\\PersonajesController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAD0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T00:36:39.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PruebaMvcContext.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\PruebaMvcContext.cs",
+              "RelativeDocumentMoniker": "Models\\PruebaMvcContext.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\PruebaMvcContext.cs",
+              "RelativeToolTip": "Models\\PruebaMvcContext.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABcAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T00:08:25.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-16T00:43:09.3Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T23:22:11.445Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T23:22:30.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T23:22:32.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "RolesController.cs",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
@@ -106,33 +229,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LibroesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\LibroesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LibroesController.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\LibroesController.cs",
-              "RelativeToolTip": "Controllers\\LibroesController.cs",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Libroes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Libroes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Libroes\\Create.cshtml",
+              "RelativeToolTip": "Views\\Libroes\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T00:39:01.412Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T23:25:43.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PersonajesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\PersonajesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PersonajesController.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Controllers\\PersonajesController.cs",
-              "RelativeToolTip": "Controllers\\PersonajesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T00:36:39.732Z",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Roles\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Roles\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Roles\\Index.cshtml",
+              "RelativeToolTip": "Views\\Roles\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T23:27:29.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T00:43:09.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-22T23:21:48.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Personaje.cs",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\Personaje.cs",
               "RelativeDocumentMoniker": "Models\\Personaje.cs",
@@ -145,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Libro.cs",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\Libro.cs",
               "RelativeDocumentMoniker": "Models\\Libro.cs",
@@ -158,20 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PruebaMvcContext.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\PruebaMvcContext.cs",
-              "RelativeDocumentMoniker": "Models\\PruebaMvcContext.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\PruebaMvcContext.cs",
-              "RelativeToolTip": "Models\\PruebaMvcContext.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T00:08:25.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\pruebaMVC\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",

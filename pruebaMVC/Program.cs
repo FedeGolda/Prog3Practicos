@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using pruebaMVC.Models;
+
 namespace pruebaMVC
 {
     public class Program
@@ -8,6 +11,8 @@ namespace pruebaMVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<PruebaMvcContext>(options =>
+options.UseSqlServer("Data Source=DESKTOP-FIK9LM4;Initial Catalog=pruebaMVC;Integrated Security=true; TrustServerCertificate=True"));
 
             var app = builder.Build();
 

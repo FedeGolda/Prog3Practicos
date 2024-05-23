@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\codefirstejemplomvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\codefirstejemplomvc\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|solutionrelative:models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\codefirstejemplomvc\\models\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\models\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|solutionrelative:models\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\codefirstejemplomvc\\models\\personajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|solutionrelative:models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\models\\personajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|solutionrelative:models\\personajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\codefirstejemplomvc\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|solutionrelative:models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|solutionrelative:models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C68FF856-C0AB-4F79-95A1-42408365ED08}|CodeFirstEjemploMVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,72 +44,72 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAswCAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T22:42:58.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAABDAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-05-22T22:40:35.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MyDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\Models\\MyDbContext.cs",
               "RelativeDocumentMoniker": "Models\\MyDbContext.cs",
               "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\Models\\MyDbContext.cs",
               "RelativeToolTip": "Models\\MyDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T22:38:55.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\Models\\Roles.cs",
               "RelativeDocumentMoniker": "Models\\Roles.cs",
               "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\Models\\Roles.cs",
               "RelativeToolTip": "Models\\Roles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA/AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T22:33:42.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Personajes.cs",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\Models\\Personajes.cs",
               "RelativeDocumentMoniker": "Models\\Personajes.cs",
               "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\Models\\Personajes.cs",
               "RelativeToolTip": "Models\\Personajes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T22:29:45.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Libros.cs",
               "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\Models\\Libros.cs",
               "RelativeDocumentMoniker": "Models\\Libros.cs",
               "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\CodeFirstEjemploMVC\\Models\\Libros.cs",
               "RelativeToolTip": "Models\\Libros.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA/AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T22:26:32.184Z",
               "EditorCaption": ""
