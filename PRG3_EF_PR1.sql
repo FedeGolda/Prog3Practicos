@@ -1,0 +1,40 @@
+CREATE DATABASE PRG3_EF_PR1;
+USE PRG3_EF_PR1;
+
+CREATE TABLE Peliculas (
+	Id BIGINT PRIMARY KEY IDENTITY(1,1),
+	Titulo NVARCHAR(50),
+	Anio INT,
+	Calificacion INT
+)
+
+CREATE TABLE Clientes (
+	Id BIGINT PRIMARY KEY IDENTITY(1,1),
+	Nombre NVARCHAR(50),
+	Apellido NVARCHAR(50),
+	Direccion NVARCHAR(250),
+	DocumentoIdentidad NVARCHAR(50),
+	Correo NVARCHAR(50),
+	Telefono NVARCHAR(50)
+)
+
+CREATE TABLE Alquileres (
+	Id BIGINT PRIMARY KEY IDENTITY(1,1),
+	IdCopia BIGINT,
+	IdCliente BIGINT,
+	FechaAlquiler DATETIME,
+	FechaTope DATETIME,
+	FechaEntregada DATETIME
+	CONSTRAINT fk_Cliente FOREIGN KEY (IdCliente) REFERENCES Clientes (Id),
+	CONSTRAINT fk_Copia FOREIGN KEY (IdCopia) REFERENCES Copias (Id)
+)
+
+CREATE TABLE Copias (
+	Id BIGINT PRIMARY KEY IDENTITY(1,1),
+	IdPelicula BIGINT,
+	Deteriorada BIT,
+	Formato NVARCHAR(15),
+	PrecioAlquiler FLOAT
+	CONSTRAINT fk_Pelicula FOREIGN KEY (IdPelicula) REFERENCES Peliculas (Id)
+)
+
