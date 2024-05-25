@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ASPNET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ASPNET\\models\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\aspnet\\models\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|solutionrelative:models\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\aspnet\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ASPNET\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\aspnet\\models\\autormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ASPNET\\models\\autormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66916E8A-AE11-4289-9821-E0A11E78FA8F}|ASPNET.csproj|solutionrelative:models\\autormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -58,8 +58,7 @@
               "RelativeToolTip": "Views\\Home\\About.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T00:20:16.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:20:16.351Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "Models\\AutorModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T00:09:23.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T00:09:23.314Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "Views\\Autor\\Consulta.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-21T23:56:18.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T23:56:18.192Z"
             },
             {
               "$type": "Document",
@@ -134,8 +131,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-21T23:36:04.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T23:36:04.431Z"
             },
             {
               "$type": "Document",
@@ -159,8 +155,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T23:32:56.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T23:32:56.536Z"
             }
           ]
         }

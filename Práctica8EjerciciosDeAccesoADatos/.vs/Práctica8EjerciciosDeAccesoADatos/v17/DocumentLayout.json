@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\views\\clientes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:views\\clientes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\views\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:views\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -51,6 +67,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Clientes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Clientes\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Clientes\\Index.cshtml",
+              "RelativeToolTip": "Views\\Clientes\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T00:54:39.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Clientes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Clientes\\Create.cshtml",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Clientes\\Create.cshtml",
+              "RelativeToolTip": "Views\\Clientes\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T00:54:37.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Views\\ClientesController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\ClientesController.cs",
+              "RelativeToolTip": "Views\\ClientesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T00:53:42.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T00:51:43.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -58,12 +126,11 @@
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T00:20:20.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:20:20.768Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -71,12 +138,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T00:20:18.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:20:18.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -84,12 +150,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T00:19:35.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:19:35.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -102,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Copia.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Copia.cs",
               "RelativeDocumentMoniker": "Models\\Copia.cs",
@@ -110,12 +175,11 @@
               "RelativeToolTip": "Models\\Copia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:11:37.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:11:37.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Cliente.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Cliente.cs",
@@ -123,12 +187,11 @@
               "RelativeToolTip": "Models\\Cliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:11:36.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:11:36.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Alquilere.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Alquilere.cs",
               "RelativeDocumentMoniker": "Models\\Alquilere.cs",
@@ -136,12 +199,11 @@
               "RelativeToolTip": "Models\\Alquilere.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:11:34.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:11:34.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Pelicula.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Pelicula.cs",
               "RelativeDocumentMoniker": "Models\\Pelicula.cs",
@@ -149,12 +211,11 @@
               "RelativeToolTip": "Models\\Pelicula.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:10:56.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:10:56.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Prg3EfPr1Context.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Prg3EfPr1Context.cs",
               "RelativeDocumentMoniker": "Models\\Prg3EfPr1Context.cs",
@@ -162,8 +223,7 @@
               "RelativeToolTip": "Models\\Prg3EfPr1Context.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAkwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:10:47.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:10:47.807Z"
             }
           ]
         }
