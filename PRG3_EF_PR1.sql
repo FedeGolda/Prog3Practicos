@@ -37,4 +37,3 @@ CREATE TABLE Copias (
 	PrecioAlquiler FLOAT
 	CONSTRAINT fk_Pelicula FOREIGN KEY (IdPelicula) REFERENCES Peliculas (Id)
 )
-

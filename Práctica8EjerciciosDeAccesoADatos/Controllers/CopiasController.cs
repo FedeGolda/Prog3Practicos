@@ -7,24 +7,25 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Práctica8EjerciciosDeAccesoADatos.Models;
 
-namespace Práctica8EjerciciosDeAccesoADatos.Views
+namespace Práctica8EjerciciosDeAccesoADatos.Controllers
 {
-    public class ClientesController : Controller
+    public class CopiasController : Controller
     {
         private readonly Prg3EfPr1Context _context;
 
-        public ClientesController(Prg3EfPr1Context context)
+        public CopiasController(Prg3EfPr1Context context)
         {
             _context = context;
         }
 
-        // GET: Clientes
+        // GET: Copias
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            var prg3EfPr1Context = _context.Copias.Include(c => c.IdPeliculaNavigation);
+            return View(await prg3EfPr1Context.ToListAsync());
         }
 
-        // GET: Clientes/Details/5
+        // GET: Copias/Details/5
         public async Task<IActionResult> Details(long? id)
         {
             if (id == null)
@@ -32,39 +33,42 @@ namespace Práctica8EjerciciosDeAccesoADatos.Views
                 return NotFound();
             }
 
-            var cliente = await _context.Clientes
+            var copia = await _context.Copias
+                .Include(c => c.IdPeliculaNavigation)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (cliente == null)
+            if (copia == null)
             {
                 return NotFound();
             }
 
-            return View(cliente);
+            return View(copia);
         }
 
-        // GET: Clientes/Create
+        // GET: Copias/Create
         public IActionResult Create()
         {
+            ViewData["IdPelicula"] = new SelectList(_context.Peliculas, "Id", "Id");
             return View();
         }
 
-        // POST: Clientes/Create
+        // POST: Copias/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Apellido,Direccion,DocumentoIdentidad,Correo,Telefono")] Cliente cliente)
+        public async Task<IActionResult> Create([Bind("Id,IdPelicula,Deteriorada,Formato,PrecioAlquiler")] Copia copia)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(cliente);
+                _context.Add(copia);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(cliente);
+            ViewData["IdPelicula"] = new SelectList(_context.Peliculas, "Id", "Id", copia.IdPelicula);
+            return View(copia);
         }
 
-        // GET: Clientes/Edit/5
+        // GET: Copias/Edit/5
         public async Task<IActionResult> Edit(long? id)
         {
             if (id == null)
@@ -72,22 +76,23 @@ namespace Práctica8EjerciciosDeAccesoADatos.Views
                 return NotFound();
             }
 
-            var cliente = await _context.Clientes.FindAsync(id);
-            if (cliente == null)
+            var copia = await _context.Copias.FindAsync(id);
+            if (copia == null)
             {
                 return NotFound();
             }
-            return View(cliente);
+            ViewData["IdPelicula"] = new SelectList(_context.Peliculas, "Id", "Id", copia.IdPelicula);
+            return View(copia);
         }
 
-        // POST: Clientes/Edit/5
+        // POST: Copias/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long id, [Bind("Id,Nombre,Apellido,Direccion,DocumentoIdentidad,Correo,Telefono")] Cliente cliente)
+        public async Task<IActionResult> Edit(long id, [Bind("Id,IdPelicula,Deteriorada,Formato,PrecioAlquiler")] Copia copia)
         {
-            if (id != cliente.Id)
+            if (id != copia.Id)
             {
                 return NotFound();
             }
@@ -96,12 +101,12 @@ namespace Práctica8EjerciciosDeAccesoADatos.Views
             {
                 try
                 {
-                    _context.Update(cliente);
+                    _context.Update(copia);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClienteExists(cliente.Id))
+                    if (!CopiaExists(copia.Id))
                     {
                         return NotFound();
                     }
@@ -112,10 +117,11 @@ namespace Práctica8EjerciciosDeAccesoADatos.Views
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(cliente);
+            ViewData["IdPelicula"] = new SelectList(_context.Peliculas, "Id", "Id", copia.IdPelicula);
+            return View(copia);
         }
 
-        // GET: Clientes/Delete/5
+        // GET: Copias/Delete/5
         public async Task<IActionResult> Delete(long? id)
         {
             if (id == null)
@@ -123,34 +129,35 @@ namespace Práctica8EjerciciosDeAccesoADatos.Views
                 return NotFound();
             }
 
-            var cliente = await _context.Clientes
+            var copia = await _context.Copias
+                .Include(c => c.IdPeliculaNavigation)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (cliente == null)
+            if (copia == null)
             {
                 return NotFound();
             }
 
-            return View(cliente);
+            return View(copia);
         }
 
-        // POST: Clientes/Delete/5
+        // POST: Copias/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(long id)
         {
-            var cliente = await _context.Clientes.FindAsync(id);
-            if (cliente != null)
+            var copia = await _context.Copias.FindAsync(id);
+            if (copia != null)
             {
-                _context.Clientes.Remove(cliente);
+                _context.Copias.Remove(copia);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ClienteExists(long id)
+        private bool CopiaExists(long id)
         {
-            return _context.Clientes.Any(e => e.Id == id);
+            return _context.Copias.Any(e => e.Id == id);
         }
     }
 }

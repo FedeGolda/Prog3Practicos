@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Práctica8EjerciciosDeAccesoADatos.Models;
+
 namespace Práctica8EjerciciosDeAccesoADatos
 {
     public class Program
@@ -8,6 +11,10 @@ namespace Práctica8EjerciciosDeAccesoADatos
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // Register the DbContext
+            builder.Services.AddDbContext<Prg3EfPr1Context>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 

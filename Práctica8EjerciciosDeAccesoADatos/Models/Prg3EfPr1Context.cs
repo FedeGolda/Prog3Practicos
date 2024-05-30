@@ -24,8 +24,8 @@ public partial class Prg3EfPr1Context : DbContext
     public virtual DbSet<Pelicula> Peliculas { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
- => optionsBuilder.UseSqlServer("Data Source=PC-FEDE ;Initial Catalog=PRG3_EF_PR1;Integrated Security=True; TrustServerCertificate=True");
-
+ // => optionsBuilder.UseSqlServer("Data Source=PC-FEDE ;Initial Catalog=PRG3_EF_PR1;Integrated Security=True; TrustServerCertificate=True");
+ => optionsBuilder.UseSqlServer("Data Source=DESKTOP-FIK9LM4 ;Initial Catalog=PRG3_EF_PR1;Integrated Security=True; TrustServerCertificate=True");
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Alquilere>(entity =>
