@@ -1,66 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\",
+  "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\models\\prg3efpr1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:models\\prg3efpr1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\copiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\copiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\alquilerescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\alquilerescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\models\\alquilere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:models\\alquilere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\models\\copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\models\\copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:models\\copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\models\\prg3efpr1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:models\\prg3efpr1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\copiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\copiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\controllers\\alquilerescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:controllers\\alquilerescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\pr\u00E1ctica8ejerciciosdeaccesoadatos\\models\\alquilere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9C02A04-C1B4-48D2-BECF-99A027342C32}|Pr\u00E1ctica8EjerciciosDeAccesoADatos.csproj|solutionrelative:models\\alquilere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,199 +58,153 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Clientes\\Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Clientes\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Clientes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Clientes\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Clientes\\Index.cshtml",
               "RelativeToolTip": "Views\\Clientes\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwA0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-30T00:51:12.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "PeliculasController.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\PeliculasController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\PeliculasController.cs",
               "RelativeDocumentMoniker": "Controllers\\PeliculasController.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\PeliculasController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\PeliculasController.cs",
               "RelativeToolTip": "Controllers\\PeliculasController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T00:27:45.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\ClientesController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\ClientesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\ClientesController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\ClientesController.cs",
               "RelativeToolTip": "Controllers\\ClientesController.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAswB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T00:18:11.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T00:18:11.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAABEAAAAAAAAAAAAAACIAAAB3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T00:19:35.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:19:35.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Cliente.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Cliente.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Cliente.cs",
               "RelativeToolTip": "Models\\Cliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:11:36.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:18:20.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-29T23:35:41.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:11:36.325Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Prg3EfPr1Context.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Prg3EfPr1Context.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Prg3EfPr1Context.cs",
               "RelativeDocumentMoniker": "Models\\Prg3EfPr1Context.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Prg3EfPr1Context.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Prg3EfPr1Context.cs",
               "RelativeToolTip": "Models\\Prg3EfPr1Context.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAAEcAAAAJAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T00:10:47.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AlquileresController.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\AlquileresController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\AlquileresController.cs",
               "RelativeDocumentMoniker": "Controllers\\AlquileresController.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\AlquileresController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\AlquileresController.cs",
               "RelativeToolTip": "Controllers\\AlquileresController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T00:32:09.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T00:32:09.016Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CopiasController.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\CopiasController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\CopiasController.cs",
               "RelativeDocumentMoniker": "Controllers\\CopiasController.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\CopiasController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Controllers\\CopiasController.cs",
               "RelativeToolTip": "Controllers\\CopiasController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T00:33:41.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T00:33:41.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Program.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Program.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T23:33:45.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T00:20:20.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T23:33:45.121Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Alquilere.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Alquilere.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Alquilere.cs",
               "RelativeDocumentMoniker": "Models\\Alquilere.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Alquilere.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Alquilere.cs",
               "RelativeToolTip": "Models\\Alquilere.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:11:34.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T00:11:34.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "Copia.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Copia.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Copia.cs",
               "RelativeDocumentMoniker": "Models\\Copia.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Copia.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Copia.cs",
               "RelativeToolTip": "Models\\Copia.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T00:11:37.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "Pelicula.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Pelicula.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Pelicula.cs",
               "RelativeDocumentMoniker": "Models\\Pelicula.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Pelicula.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Pr\u00E1ctica8EjerciciosDeAccesoADatos\\Models\\Pelicula.cs",
               "RelativeToolTip": "Models\\Pelicula.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T00:10:56.301Z",
               "EditorCaption": ""
