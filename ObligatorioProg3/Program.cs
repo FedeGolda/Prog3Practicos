@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ObligatorioProg3.Models;
+
 namespace ObligatorioProg3
 {
     public class Program
@@ -8,6 +11,10 @@ namespace ObligatorioProg3
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // Register the DbContext with a connection string
+            builder.Services.AddDbContext<ObligatorioP3Context>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
