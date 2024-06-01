@@ -49,25 +49,37 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
         public IActionResult Create()
         {
             ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id");
-            ViewData["IdCopia"] = new SelectList(_context.Copias, "Id", "Id");
+            ViewData["IdCopia"] = new SelectList(_context.Copias.Where(c => !c.Alquileres.Any(a => a.FechaEntregada == null)), "Id", "Id");
             return View();
         }
 
         // POST: Alquileres/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdCopia,IdCliente,FechaAlquiler,FechaTope,FechaEntregada")] Alquilere alquilere)
+        public async Task<IActionResult> Create([Bind("Id,IdCopia,IdCliente")] Alquilere alquilere)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(alquilere);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                var copiaDisponible = await _context.Copias
+                    .Include(c => c.Alquileres)
+                    .FirstOrDefaultAsync(c => c.Id == alquilere.IdCopia && !c.Alquileres.Any(a => a.FechaEntregada == null));
+
+                if (copiaDisponible == null)
+                {
+                    ModelState.AddModelError("", "La copia seleccionada no está disponible para alquilar.");
+                }
+                else
+                {
+                    alquilere.FechaAlquiler = DateTime.Now;
+                    alquilere.FechaTope = DateTime.Now.AddDays(3);
+
+                    _context.Add(alquilere);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             }
             ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", alquilere.IdCliente);
-            ViewData["IdCopia"] = new SelectList(_context.Copias, "Id", "Id", alquilere.IdCopia);
+            ViewData["IdCopia"] = new SelectList(_context.Copias.Where(c => !c.Alquileres.Any(a => a.FechaEntregada == null)), "Id", "Id", alquilere.IdCopia);
             return View(alquilere);
         }
 
@@ -90,8 +102,6 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
         }
 
         // POST: Alquileres/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(long id, [Bind("Id,IdCopia,IdCliente,FechaAlquiler,FechaTope,FechaEntregada")] Alquilere alquilere)
@@ -165,5 +175,61 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
         {
             return _context.Alquileres.Any(e => e.Id == id);
         }
+
+        // GET: Alquileres/MarcarEntregado/5
+        public async Task<IActionResult> MarcarEntregado(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var alquilere = await _context.Alquileres
+                .Include(a => a.IdClienteNavigation)
+                .Include(a => a.IdCopiaNavigation)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (alquilere == null)
+            {
+                return NotFound();
+            }
+
+            return View(alquilere);
+        }
+
+
+        // POST: Alquileres/MarcarEntregado/5
+        [HttpPost, ActionName("MarcarEntregado")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> MarcarEntregadoConfirmed(long id)
+        {
+            var alquilere = await _context.Alquileres.FindAsync(id);
+            if (alquilere == null)
+            {
+                return NotFound();
+            }
+
+            alquilere.FechaEntregada = DateTime.Now;
+
+            try
+            {
+                _context.Update(alquilere);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!AlquilereExists(alquilere.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
     }
 }
