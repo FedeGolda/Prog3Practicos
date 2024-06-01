@@ -36,7 +36,6 @@ namespace ObligatorioProg3
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -45,23 +44,16 @@ namespace ObligatorioProg3
 
             app.UseRouting();
 
-            app.UseAuthentication(); // Add this line to enable authentication
+            app.UseAuthentication();
             app.UseAuthorization();
-
-            // Las rutas adicionales para registro y login deben ir aquí antes de la ruta predeterminada
-            app.MapControllerRoute(
-                name: "register",
-                pattern: "Usuarios/Register",
-                defaults: new { controller = "Usuarios", action = "Register" });
-
-            app.MapControllerRoute(
-                name: "login",
-                pattern: "Usuarios/Login",
-                defaults: new { controller = "Usuarios", action = "Login" });
 
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Usuarios}/{action=Login}/{id?}");
+
+            app.MapControllerRoute(
+                name: "usuarios",
+                pattern: "{controller=Usuarios}/{action=Index}/{id?}");
 
             app.Run();
         }
