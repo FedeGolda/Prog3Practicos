@@ -20,14 +20,14 @@ namespace ObligatorioProg3.Controllers
         }
 
         // GET: Usuarios/Index
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var usuarios = await _context.Usuarios.ToListAsync();
+            return View(usuarios);
         }
 
-
         // GET: Usuarios/Login
-        public IActionResult Login(string returnUrl = null)
+        public IActionResult Login(string? returnUrl = null) // Cambiado a string?
         {
             ViewData["ReturnUrl"] = returnUrl;
             return View();
@@ -36,7 +36,7 @@ namespace ObligatorioProg3.Controllers
         // POST: Usuarios/Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string email, string contraseña, string returnUrl = null)
+        public async Task<IActionResult> Login(string email, string contraseña, string? returnUrl = null) // Cambiado a string?
         {
             var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email && u.Contraseña == contraseña);
 
@@ -70,9 +70,9 @@ namespace ObligatorioProg3.Controllers
             return RedirectToLocal(returnUrl);
         }
 
-        private IActionResult RedirectToLocal(string returnUrl)
+        private IActionResult RedirectToLocal(string? returnUrl) // Cambiado a string?
         {
-            if (Url.IsLocalUrl(returnUrl))
+            if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
             }
@@ -108,6 +108,13 @@ namespace ObligatorioProg3.Controllers
                 return RedirectToAction(nameof(Index), "Home");
             }
             return View(usuario);
+        }
+
+        // GET: Usuarios/Logout
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction(nameof(HomeController.Index), "Home");
         }
     }
 }
