@@ -1,68 +1,43 @@
-﻿@model IEnumerable<Práctica8EjerciciosDeAccesoADatos.Models.Alquilere>
+﻿@model Práctica8EjerciciosDeAccesoADatos.Models.Alquilere
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Crear Nuevo Alquiler";
 }
 
-<h1>Index</h1>
+<h1>Crear Nuevo Alquiler</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
-    <a asp-action="MarcarEntregado" class="btn btn-success">Marcar Entregado</a> <!-- Agrega este enlace -->
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Cliente
-            </th>
-            <th>
-                Copia
-            </th>
-            <th>
-                Fecha de Alquiler
-            </th>
-            <th>
-                Fecha Tope
-            </th>
-            <th>
-                Fecha Entregada
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @if (item.IdClienteNavigation != null)
-                    {
-                        @Html.DisplayFor(modelItem => item.IdClienteNavigation.Nombre)
-                    }
-                </td>
-                <td>
-                    @if (item.IdCopiaNavigation != null && item.IdCopiaNavigation.IdPeliculaNavigation != null)
-                    {
-                        @Html.DisplayFor(modelItem => item.IdCopiaNavigation.IdPeliculaNavigation.Titulo)
-                    }
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FechaAlquiler)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FechaTope)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FechaEntregada)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Detalles</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Eliminar</a> |
-                    <a asp-action="MarcarEntregado" asp-route-id="@item.Id" class="btn btn-success">Marcar como Entregado</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<h4>Alquilere</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="IdCliente" class="control-label">Cliente</label>
+                <select asp-for="IdCliente" class="form-control" asp-items="ViewBag.IdCliente">
+                    <option value="">Seleccione un cliente</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCopia" class="control-label">Copia</label>
+                <select asp-for="IdCopia" class="form-control" asp-items="ViewBag.IdCopia">
+                    <option value="">Seleccione una copia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaAlquiler" class="control-label"></label>
+                <input asp-for="FechaAlquiler" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaTope" class="control-label"></label>
+                <input asp-for="FechaTope" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver a la lista</a>
+</div>

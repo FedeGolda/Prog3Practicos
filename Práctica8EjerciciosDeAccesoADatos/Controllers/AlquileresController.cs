@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +20,10 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
         // GET: Alquileres
         public async Task<IActionResult> Index()
         {
-            var prg3EfPr1Context = _context.Alquileres.Include(a => a.IdClienteNavigation).Include(a => a.IdCopiaNavigation);
+            var prg3EfPr1Context = _context.Alquileres
+                .Include(a => a.IdClienteNavigation)
+                .Include(a => a.IdCopiaNavigation)
+                .ThenInclude(c => c.IdPeliculaNavigation);
             return View(await prg3EfPr1Context.ToListAsync());
         }
 
@@ -36,6 +38,7 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
             var alquilere = await _context.Alquileres
                 .Include(a => a.IdClienteNavigation)
                 .Include(a => a.IdCopiaNavigation)
+                .ThenInclude(c => c.IdPeliculaNavigation)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (alquilere == null)
             {
@@ -48,8 +51,10 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
         // GET: Alquileres/Create
         public IActionResult Create()
         {
-            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id");
-            ViewData["IdCopia"] = new SelectList(_context.Copias.Where(c => !c.Alquileres.Any(a => a.FechaEntregada == null)), "Id", "Id");
+            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Nombre");
+            ViewData["IdCopia"] = new SelectList(_context.Copias
+                .Include(c => c.IdPeliculaNavigation)
+                .Where(c => !c.Alquileres.Any(a => a.FechaEntregada == null) && c.IdPeliculaNavigation != null), "Id", "IdPeliculaNavigation.Titulo");
             return View();
         }
 
@@ -78,8 +83,10 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
                     return RedirectToAction(nameof(Index));
                 }
             }
-            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", alquilere.IdCliente);
-            ViewData["IdCopia"] = new SelectList(_context.Copias.Where(c => !c.Alquileres.Any(a => a.FechaEntregada == null)), "Id", "Id", alquilere.IdCopia);
+            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Nombre", alquilere.IdCliente);
+            ViewData["IdCopia"] = new SelectList(_context.Copias
+                .Include(c => c.IdPeliculaNavigation)
+                .Where(c => !c.Alquileres.Any(a => a.FechaEntregada == null) && c.IdPeliculaNavigation != null), "Id", "IdPeliculaNavigation.Titulo", alquilere.IdCopia);
             return View(alquilere);
         }
 
@@ -96,8 +103,8 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", alquilere.IdCliente);
-            ViewData["IdCopia"] = new SelectList(_context.Copias, "Id", "Id", alquilere.IdCopia);
+            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Nombre", alquilere.IdCliente);
+            ViewData["IdCopia"] = new SelectList(_context.Copias.Include(c => c.IdPeliculaNavigation).Where(c => c.IdPeliculaNavigation != null), "Id", "IdPeliculaNavigation.Titulo", alquilere.IdCopia);
             return View(alquilere);
         }
 
@@ -131,8 +138,8 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", alquilere.IdCliente);
-            ViewData["IdCopia"] = new SelectList(_context.Copias, "Id", "Id", alquilere.IdCopia);
+            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Nombre", alquilere.IdCliente);
+            ViewData["IdCopia"] = new SelectList(_context.Copias.Include(c => c.IdPeliculaNavigation).Where(c => c.IdPeliculaNavigation != null), "Id", "IdPeliculaNavigation.Titulo", alquilere.IdCopia);
             return View(alquilere);
         }
 
@@ -147,6 +154,7 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
             var alquilere = await _context.Alquileres
                 .Include(a => a.IdClienteNavigation)
                 .Include(a => a.IdCopiaNavigation)
+                .ThenInclude(c => c.IdPeliculaNavigation)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (alquilere == null)
             {
@@ -187,6 +195,7 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
             var alquilere = await _context.Alquileres
                 .Include(a => a.IdClienteNavigation)
                 .Include(a => a.IdCopiaNavigation)
+                .ThenInclude(c => c.IdPeliculaNavigation)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (alquilere == null)
             {
@@ -195,7 +204,6 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
 
             return View(alquilere);
         }
-
 
         // POST: Alquileres/MarcarEntregado/5
         [HttpPost, ActionName("MarcarEntregado")]
@@ -229,7 +237,5 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
-
     }
 }
