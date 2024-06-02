@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Práctica8EjerciciosDeAccesoADatos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c4eff12ccb844587b09c914c93f2a80dca9d725")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18c878324f0ceb446f73ecc1c426db5214d1b135")]
 [assembly: System.Reflection.AssemblyProductAttribute("Práctica8EjerciciosDeAccesoADatos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Práctica8EjerciciosDeAccesoADatos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
