@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ObligatorioProg3.Controllers
 {
+    [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
     public class UsuariosController : Controller
     {
         private readonly ObligatorioP3Context _context;
@@ -210,6 +211,7 @@ namespace ObligatorioProg3.Controllers
         }
 
         // GET: Usuarios/Logout
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
@@ -235,5 +237,12 @@ namespace ObligatorioProg3.Controllers
             }
             return View(usuario);
         }
+
+
     }
+
+
+
+
+
 }
