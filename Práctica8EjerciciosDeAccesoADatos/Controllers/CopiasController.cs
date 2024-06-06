@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -159,5 +161,42 @@ namespace Práctica8EjerciciosDeAccesoADatos.Controllers
         {
             return _context.Copias.Any(e => e.Id == id);
         }
+
+        // Nueva acción para exportar las copias deterioradas a un archivo CSV
+        public async Task<IActionResult> ExportarCopiasDeterioradasCSV()
+        {
+            var copiasDeterioradas = await _context.Copias
+                .Include(c => c.IdPeliculaNavigation)
+                .Where(c => c.Deteriorada == true)
+                .ToListAsync();
+
+            var sb = new StringBuilder();
+            sb.AppendLine("Id,IdPelicula,TituloPelicula,Formato,PrecioAlquiler");
+
+            foreach (var copia in copiasDeterioradas)
+            {
+                sb.AppendLine($"{copia.Id},{copia.IdPelicula},{copia.IdPeliculaNavigation?.Titulo},{copia.Formato},{copia.PrecioAlquiler}");
+            }
+
+            return File(Encoding.UTF8.GetBytes(sb.ToString()), "text/csv", "copias_deterioradas.csv");
+        }
+
+        // GET: Copias/EnStock
+        public async Task<IActionResult> EnStock()
+        {
+            var copias = _context.Copias.Include(c => c.IdPeliculaNavigation).Where(c => !c.Deteriorada == true);
+            return View(await copias.ToListAsync());
+        }
+
+        // GET: Copias/Disponibles
+        public async Task<IActionResult> Disponibles()
+        {
+            var copias = _context.Copias
+                .Include(c => c.IdPeliculaNavigation)
+                .Where(c => c.Deteriorada == false && !c.Alquileres.Any(a => a.FechaEntregada == null));
+            return View(await copias.ToListAsync());
+        }
+
+
     }
 }
