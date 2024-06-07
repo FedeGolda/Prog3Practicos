@@ -28,6 +28,8 @@ namespace ObligatorioProg3
             {
                 options.LoginPath = "/Usuarios/Login";
                 options.AccessDeniedPath = "/Usuarios/AccessDenied";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Opcional: Configura el tiempo de expiración de la cookie
+                options.SlidingExpiration = true; // Opcional: Extiende el tiempo de expiración de la cookie con cada solicitud
             });
 
             var app = builder.Build();
@@ -49,7 +51,7 @@ namespace ObligatorioProg3
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Usuarios}/{action=Login}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.MapControllerRoute(
                 name: "usuarios",

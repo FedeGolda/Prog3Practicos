@@ -60,7 +60,9 @@
                     @if (User?.Identity?.IsAuthenticated == true)
                     {
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Logout", "Usuarios")">Logout (@User.Identity.Name)</a>
+                            <form id="logoutForm" asp-controller="Usuarios" asp-action="Logout" method="post">
+                                <button type="submit" class="btn btn-link nav-link" style="padding: 0; margin: 0; border: none;">Logout (@User.Identity.Name)</button>
+                            </form>
                         </li>
                     }
                     else
@@ -70,6 +72,7 @@
                         </li>
                     }
                 </ul>
+
             </div>
         </nav>
     </header>

@@ -40,8 +40,8 @@ public partial class ObligatorioP3Context : DbContext
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Data Source=PC-FEDE ;Initial Catalog=ObligatorioP3;Integrated Security=True; TrustServerCertificate=True");
-       // => optionsBuilder.UseSqlServer("Data Source=DESKTOP-FIK9LM4 ;Initial Catalog=ObligatorioP3;Integrated Security=True; TrustServerCertificate=True");
+       // => optionsBuilder.UseSqlServer("Data Source=PC-FEDE ;Initial Catalog=ObligatorioP3;Integrated Security=True; TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-FIK9LM4 ;Initial Catalog=ObligatorioP3;Integrated Security=True; TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
