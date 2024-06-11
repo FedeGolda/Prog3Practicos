@@ -18,18 +18,20 @@ namespace ObligatorioProg3
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Configure authentication
-            builder.Services.AddAuthentication(options =>
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Usuarios/Login";
+                    options.AccessDeniedPath = "/Usuarios/AccessDenied";
+                    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+                    options.SlidingExpiration = true;
+                });
+
+            builder.Services.AddSession(options =>
             {
-                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-            })
-            .AddCookie(options =>
-            {
-                options.LoginPath = "/Usuarios/Login";
-                options.AccessDeniedPath = "/Usuarios/AccessDenied";
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Opcional: Configura el tiempo de expiración de la cookie
-                options.SlidingExpiration = true; // Opcional: Extiende el tiempo de expiración de la cookie con cada solicitud
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
             });
 
             var app = builder.Build();
@@ -46,16 +48,13 @@ namespace ObligatorioProg3
 
             app.UseRouting();
 
+            app.UseSession();
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
-
-            app.MapControllerRoute(
-                name: "usuarios",
-                pattern: "{controller=Usuarios}/{action=Index}/{id?}");
 
             app.Run();
         }

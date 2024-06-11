@@ -19,7 +19,15 @@ namespace ObligatorioProg3.Controllers
             _context = context;
         }
 
+        [Authorize]
+        public async Task<IActionResult> Index()
+        {
+            var usuarios = await _context.Usuarios.ToListAsync();
+            return View(usuarios);
+        }
+
         [HttpGet]
+        [AllowAnonymous] // Permite el acceso a esta acción sin autenticación
         public IActionResult Login()
         {
             HttpContext.Response.Headers["Cache-Control"] = "no-cache, no-store, must-revalidate";
@@ -30,6 +38,7 @@ namespace ObligatorioProg3.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous] // Permite el acceso a esta acción sin autenticación
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(string email, string contraseña, string? returnUrl = null)
         {
@@ -41,7 +50,6 @@ namespace ObligatorioProg3.Controllers
                 return View();
             }
 
-            // Autenticación exitosa
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, usuario.Email),
@@ -66,7 +74,6 @@ namespace ObligatorioProg3.Controllers
             HttpContext.Response.Headers["Pragma"] = "no-cache";
             HttpContext.Response.Headers["Expires"] = "0";
 
-            // Redirige al usuario a la página originalmente solicitada o a la página de inicio si no hay ninguna
             return RedirectToLocal(returnUrl);
         }
 
@@ -97,3 +104,4 @@ namespace ObligatorioProg3.Controllers
         }
     }
 }
+
