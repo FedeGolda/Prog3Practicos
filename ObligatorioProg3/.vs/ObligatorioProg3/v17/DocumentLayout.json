@@ -1,42 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\",
+  "WorkspaceRootPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\controllers\\restaurantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:controllers\\restaurantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\models\\obligatoriop3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\obligatorioprog3\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\models\\obligatoriop3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:models\\obligatoriop3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79503784-43ED-4ACB-AC18-517E69CDC2BD}|ObligatorioProg3.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,43 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Models\\Usuario.cs",
-              "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T19:24:37.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RestaurantesController.cs",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\RestaurantesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RestaurantesController.cs",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\RestaurantesController.cs",
-              "RelativeToolTip": "Controllers\\RestaurantesController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwBwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T19:09:44.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\Usuarios\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Views\\Usuarios\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Usuarios\\Login.cshtml",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\Usuarios\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Views\\Usuarios\\Login.cshtml",
               "RelativeToolTip": "Views\\Usuarios\\Login.cshtml",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAowCEAAABUAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAACEAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-12T18:58:16.614Z",
               "EditorCaption": ""
@@ -91,50 +53,24 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UsuariosController.cs",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AQIAALwAAAAAAAAAAAAUwMsAAAANAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAACcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T18:50:39.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T18:44:26.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T18:44:23.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "ObligatorioP3Context.cs",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Models\\ObligatorioP3Context.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Models\\ObligatorioP3Context.cs",
               "RelativeDocumentMoniker": "Models\\ObligatorioP3Context.cs",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Models\\ObligatorioP3Context.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Models\\ObligatorioP3Context.cs",
               "RelativeToolTip": "Models\\ObligatorioP3Context.cs",
-              "ViewState": "AQIAANwAAAAAAAAAAAAqwOUAAAAAAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAACsAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T22:22:17.476Z",
               "EditorCaption": ""
@@ -142,25 +78,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACkAAAAAAAAAAAAuwC4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-11T19:11:30.247Z",
-              "EditorCaption": ""
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:24:37.512Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACkAAAAAAAAAAAAuwC4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T19:11:30.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Program.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T19:11:19.479Z",
               "EditorCaption": ""
