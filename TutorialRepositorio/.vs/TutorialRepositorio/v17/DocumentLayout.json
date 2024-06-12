@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\tutorialrepositorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\models\\pruebaentitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:models\\pruebaentitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\repositorio\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\repositorio\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\repositorio\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\repositorio\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Repositorio\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\UnitOfWork.cs",
+              "RelativeToolTip": "Repositorio\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T23:38:21.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Repositorio\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\GenericRepository.cs",
+              "RelativeToolTip": "Repositorio\\GenericRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAcwCsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T23:33:15.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EstudiantesController.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Controllers\\EstudiantesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstudiantesController.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Controllers\\EstudiantesController.cs",
+              "RelativeToolTip": "Controllers\\EstudiantesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T23:30:07.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-11T23:24:54.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PruebaEntityContext.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Models\\PruebaEntityContext.cs",
+              "RelativeDocumentMoniker": "Models\\PruebaEntityContext.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Models\\PruebaEntityContext.cs",
+              "RelativeToolTip": "Models\\PruebaEntityContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T23:24:19.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T23:26:23.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABwAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T23:47:15.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CursosController.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Controllers\\CursosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CursosController.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Controllers\\CursosController.cs",
+              "RelativeToolTip": "Controllers\\CursosController.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAAAJYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T23:28:58.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Repositorio\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\IUnitOfWork.cs",
+              "RelativeToolTip": "Repositorio\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T23:35:26.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Repositorio\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\IGenericRepository.cs",
+              "RelativeToolTip": "Repositorio\\IGenericRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T23:31:31.783Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
