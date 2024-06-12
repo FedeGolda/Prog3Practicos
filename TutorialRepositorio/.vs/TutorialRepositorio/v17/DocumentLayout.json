@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\",
+  "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|c:\\users\\fede\\desktop\\cei\\programacion3\\practicos\\tutorialrepositorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\models\\pruebaentitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\models\\pruebaentitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:models\\pruebaentitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\repositorio\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\repositorio\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\repositorio\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\repositorio\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\repositorio\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\repositorio\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\repositorio\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\tutorialrepositorio\\repositorio\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B300A480-5FE4-4684-9AC4-50853420C0AC}|TutorialRepositorio.csproj|solutionrelative:repositorio\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,11 +54,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Repositorio\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Repositorio\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\UnitOfWork.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Repositorio\\UnitOfWork.cs",
               "RelativeToolTip": "Repositorio\\UnitOfWork.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -66,11 +66,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\GenericRepository.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Repositorio\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Repositorio\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\GenericRepository.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Repositorio\\GenericRepository.cs",
               "RelativeToolTip": "Repositorio\\GenericRepository.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAcwCsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -78,11 +78,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EstudiantesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Controllers\\EstudiantesController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Controllers\\EstudiantesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EstudiantesController.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Controllers\\EstudiantesController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Controllers\\EstudiantesController.cs",
               "RelativeToolTip": "Controllers\\EstudiantesController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -92,46 +92,48 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\appsettings.json",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\appsettings.json",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-11T23:24:54.63Z"
+              "WhenOpened": "2024-06-11T23:24:54.63Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PruebaEntityContext.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Models\\PruebaEntityContext.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Models\\PruebaEntityContext.cs",
               "RelativeDocumentMoniker": "Models\\PruebaEntityContext.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Models\\PruebaEntityContext.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Models\\PruebaEntityContext.cs",
               "RelativeToolTip": "Models\\PruebaEntityContext.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T23:24:19.14Z"
+              "WhenOpened": "2024-06-11T23:24:19.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Program.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Program.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T23:26:23.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAA0AAAAAAAAAAAAAABwAAAB7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -139,11 +141,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "CursosController.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Controllers\\CursosController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Controllers\\CursosController.cs",
               "RelativeDocumentMoniker": "Controllers\\CursosController.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Controllers\\CursosController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Controllers\\CursosController.cs",
               "RelativeToolTip": "Controllers\\CursosController.cs",
               "ViewState": "AQIAAIUAAAAAAAAAAAAAAJYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -151,23 +153,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Repositorio\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Repositorio\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\IUnitOfWork.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Repositorio\\IUnitOfWork.cs",
               "RelativeToolTip": "Repositorio\\IUnitOfWork.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T23:35:26.562Z"
+              "WhenOpened": "2024-06-11T23:35:26.562Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\IGenericRepository.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Repositorio\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Repositorio\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\Repositorio\\IGenericRepository.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\Repositorio\\IGenericRepository.cs",
               "RelativeToolTip": "Repositorio\\IGenericRepository.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

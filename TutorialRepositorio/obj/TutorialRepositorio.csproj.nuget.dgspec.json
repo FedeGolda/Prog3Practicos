@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\TutorialRepositorio.csproj": {}
+    "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\TutorialRepositorio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\TutorialRepositorio.csproj": {
+    "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\TutorialRepositorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\TutorialRepositorio.csproj",
+        "projectUniqueName": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\TutorialRepositorio.csproj",
         "projectName": "TutorialRepositorio",
-        "projectPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\TutorialRepositorio.csproj",
-        "packagesPath": "C:\\Users\\Fede\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\TutorialRepositorio\\obj\\",
+        "projectPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\TutorialRepositorio.csproj",
+        "packagesPath": "C:\\Users\\fedeg\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\TutorialRepositorio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Fede\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fedeg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

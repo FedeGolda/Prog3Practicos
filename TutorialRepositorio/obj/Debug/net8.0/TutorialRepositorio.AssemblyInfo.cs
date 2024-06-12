@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TutorialRepositorio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ce03ea83817c0918055bab98f92705e2a006eaf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67fb7527c1cd9a2f62220882fd84d5acc67ef9bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("TutorialRepositorio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TutorialRepositorio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
