@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using ObligatorioProg3.Models;
-using ObligatorioProg3.Servicios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,19 +26,6 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(30);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
-});
-
-// Register the OpenWeatherMapService
-builder.Services.AddHttpClient<OpenWeatherMapService>(client =>
-{
-    // Puedes configurar el cliente HTTP si es necesario
-});
-
-builder.Services.AddTransient<OpenWeatherMapService>(provider =>
-{
-    var configuration = provider.GetRequiredService<IConfiguration>();
-    var apiKey = configuration.GetValue<string>("OpenWeatherMap:ApiKey");
-    return new OpenWeatherMapService(provider.GetRequiredService<HttpClient>(), apiKey);
 });
 
 var app = builder.Build();

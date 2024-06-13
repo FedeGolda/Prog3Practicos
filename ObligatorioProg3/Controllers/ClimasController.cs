@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ObligatorioProg3.Models;
-using ObligatorioProg3.Servicios;
-using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,19 +11,16 @@ namespace ObligatorioProg3.Controllers
     public class ClimasController : Controller
     {
         private readonly ObligatorioP3Context _context;
-        private readonly OpenWeatherMapService _weatherService;
 
-        public ClimasController(ObligatorioP3Context context, OpenWeatherMapService weatherService)
+        public ClimasController(ObligatorioP3Context context)
         {
             _context = context;
-            _weatherService = weatherService;
         }
 
-        // GET: Climas/Index
+        // GET: Climas
         public async Task<IActionResult> Index()
         {
-            var climas = await _context.Climas.ToListAsync();
-            return View(climas);
+            return View(await _context.Climas.ToListAsync());
         }
 
         // GET: Climas/Details/5
@@ -36,7 +31,8 @@ namespace ObligatorioProg3.Controllers
                 return NotFound();
             }
 
-            var clima = await _context.Climas.FirstOrDefaultAsync(m => m.Id == id);
+            var clima = await _context.Climas
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (clima == null)
             {
                 return NotFound();
@@ -122,7 +118,8 @@ namespace ObligatorioProg3.Controllers
                 return NotFound();
             }
 
-            var clima = await _context.Climas.FirstOrDefaultAsync(m => m.Id == id);
+            var clima = await _context.Climas
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (clima == null)
             {
                 return NotFound();
@@ -140,55 +137,15 @@ namespace ObligatorioProg3.Controllers
             if (clima != null)
             {
                 _context.Climas.Remove(clima);
-                await _context.SaveChangesAsync();
             }
+
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ClimaExists(int id)
         {
             return _context.Climas.Any(e => e.Id == id);
-        }
-
-        // GET: Climas/GetClima
-        public IActionResult GetClima()
-        {
-            return View();
-        }
-
-        // POST: Climas/GetClima
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> GetClima(string city)
-        {
-            if (string.IsNullOrEmpty(city))
-            {
-                ModelState.AddModelError("city", "Debe ingresar una ciudad válida.");
-                var climas = await _context.Climas.ToListAsync();
-                return View("Index", climas);
-            }
-
-            var clima = await _weatherService.GetClimaAsync(city);
-
-            if (clima != null)
-            {
-                var nuevoClima = new Clima
-                {
-                    Fecha = DateTime.Now,
-                    Temperatura = clima.Temperatura,
-                    DescripcionClima = clima.DescripcionClima
-                };
-
-                _context.Add(nuevoClima);
-                await _context.SaveChangesAsync();
-
-                return RedirectToAction(nameof(Index));
-            }
-
-            // Manejar error si no se puede obtener el clima
-            ModelState.AddModelError(string.Empty, "No se pudo obtener el clima para la ciudad especificada.");
-            var climasList = await _context.Climas.ToListAsync();
-            return View("Index", climasList);
         }
     }
 }
