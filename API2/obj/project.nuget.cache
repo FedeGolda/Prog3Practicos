@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zn32Z5NXIt4jmcu8QiW98YaNVdYrbu3Ayj8ySi9VXDo6zQ2n70/ZK/huegq9jGYsCiUET24W7A/f1GiKxQ9cuQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\API2\\API2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fede\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Fede\\.nuget\\packages\\restsharp\\111.2.0\\restsharp.111.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
