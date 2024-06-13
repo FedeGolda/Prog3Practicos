@@ -1,47 +1,37 @@
-﻿@model IEnumerable<ObligatorioProg3.Models.Usuario>
+﻿@model IEnumerable<ObligatorioProg3.Models.Clima>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Climas";
 }
 
-<h1>Index</h1>
+<h1>Climas</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<form asp-controller="Climas" asp-action="GetClima" method="post">
+    <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" class="form-control" id="city" name="city" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Get Clima</button>
+</form>
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Contraseña)
-            </th>
-            <th></th>
+            <th>Fecha</th>
+            <th>Temperatura</th>
+            <th>Descripción Clima</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contraseña)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var clima in Model)
+        {
+            <tr>
+                <td>@clima.Fecha</td>
+                <td>@clima.Temperatura</td>
+                <td>@clima.DescripcionClima</td>
+            </tr>
+        }
     </tbody>
 </table>
+
+
