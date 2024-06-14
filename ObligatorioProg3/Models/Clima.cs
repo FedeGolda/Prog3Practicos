@@ -11,5 +11,7 @@ public partial class Clima
 
     public short Temperatura { get; set; }
 
-    public string DescripcionClima { get; set; } = null!;
+    public string DescripciónClima { get; set; } = null!;
+
+    public virtual ICollection<Pago> Pagos { get; set; } = new List<Pago>();
 }

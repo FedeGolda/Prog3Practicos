@@ -1,13 +1,14 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using ObligatorioProg3.Models;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using ObligatorioProg3.Models;
 
 namespace ObligatorioProg3.Controllers
 {
-    [Authorize]
     public class ClimasController : Controller
     {
         private readonly ObligatorioP3Context _context;
@@ -48,9 +49,11 @@ namespace ObligatorioProg3.Controllers
         }
 
         // POST: Climas/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Fecha,Temperatura,DescripcionClima")] Clima clima)
+        public async Task<IActionResult> Create([Bind("Id,Fecha,Temperatura,DescripciónClima")] Clima clima)
         {
             if (ModelState.IsValid)
             {
@@ -78,9 +81,11 @@ namespace ObligatorioProg3.Controllers
         }
 
         // POST: Climas/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Fecha,Temperatura,DescripcionClima")] Clima clima)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Fecha,Temperatura,DescripciónClima")] Clima clima)
         {
             if (id != clima.Id)
             {

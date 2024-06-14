@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ObligatorioProg3.Models;
 using System.Diagnostics;
@@ -14,20 +13,17 @@ namespace ObligatorioProg3.Controllers
             _logger = logger;
         }
 
-        [Authorize]  // Esta acción requiere autenticación
-        [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
         public IActionResult Index()
         {
             return View();
         }
 
-        [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
         public IActionResult Privacy()
         {
             return View();
         }
 
-        [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

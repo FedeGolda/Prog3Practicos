@@ -1,12 +1,11 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authorization;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ObligatorioProg3.Models;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace ObligatorioProg3.Controllers
 {
@@ -19,101 +18,45 @@ namespace ObligatorioProg3.Controllers
             _context = context;
         }
 
-        [Authorize]
+        // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            var usuarios = await _context.Usuarios.ToListAsync();
-            return View(usuarios);
+            var obligatorioP3Context = _context.Usuarios.Include(u => u.Rol);
+            return View(await obligatorioP3Context.ToListAsync());
         }
 
-        [HttpGet]
-        [AllowAnonymous] // Permite el acceso a esta acción sin autenticación
-        public IActionResult Login()
+        // GET: Usuarios/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
-            HttpContext.Response.Headers["Cache-Control"] = "no-cache, no-store, must-revalidate";
-            HttpContext.Response.Headers["Pragma"] = "no-cache";
-            HttpContext.Response.Headers["Expires"] = "0";
+            if (id == null)
+            {
+                return NotFound();
+            }
 
-            return View();
-        }
-
-        [HttpPost]
-        [AllowAnonymous] // Permite el acceso a esta acción sin autenticación
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string email, string contraseña, string returnUrl)
-        {
-            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email && u.Contraseña == contraseña);
-
+            var usuario = await _context.Usuarios
+                .Include(u => u.Rol)
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
-                ModelState.AddModelError(string.Empty, "Correo electrónico o contraseña incorrectos.");
-                ViewData["LoginError"] = "Correo electrónico o contraseña incorrectos."; // Agrega el mensaje de error al ViewData
-                return View();
+                return NotFound();
             }
 
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.Name, usuario.Email),
-                // Aquí puedes agregar más claims según tus necesidades
-            };
-
-            var claimsIdentity = new ClaimsIdentity(
-                claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
-            var authProperties = new AuthenticationProperties
-            {
-                // Puedes establecer propiedades adicionales aquí si es necesario
-            };
-
-            await HttpContext.SignInAsync(
-                CookieAuthenticationDefaults.AuthenticationScheme,
-                new ClaimsPrincipal(claimsIdentity),
-                authProperties);
-
-            // Invalida la caché del cliente
-            HttpContext.Response.Headers["Cache-Control"] = "no-cache, no-store, must-revalidate";
-            HttpContext.Response.Headers["Pragma"] = "no-cache";
-            HttpContext.Response.Headers["Expires"] = "0";
-
-            return RedirectToLocal(returnUrl);
+            return View(usuario);
         }
 
-        private IActionResult RedirectToLocal(string returnUrl)
-        {
-            if (Url.IsLocalUrl(returnUrl))
-            {
-                return Redirect(returnUrl);
-            }
-            else
-            {
-                return RedirectToAction(nameof(HomeController.Index), "Home");
-            }
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Logout()
-        {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-
-            // Invalida la caché del cliente
-            HttpContext.Response.Headers["Cache-Control"] = "no-cache, no-store, must-revalidate";
-            HttpContext.Response.Headers["Pragma"] = "no-cache";
-            HttpContext.Response.Headers["Expires"] = "0";
-
-            return RedirectToAction(nameof(HomeController.Index), "Home");
-        }
-
-        [Authorize]
+        // GET: Usuarios/Create
         public IActionResult Create()
         {
+            ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Id");
             return View();
         }
 
+        // POST: Usuarios/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Email,Contraseña")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Email,Contraseña,RolId")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -121,10 +64,11 @@ namespace ObligatorioProg3.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Id", usuario.RolId);
             return View(usuario);
         }
 
-        [Authorize]
+        // GET: Usuarios/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -137,13 +81,16 @@ namespace ObligatorioProg3.Controllers
             {
                 return NotFound();
             }
+            ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Id", usuario.RolId);
             return View(usuario);
         }
 
+        // POST: Usuarios/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Email,Contraseña")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Email,Contraseña,RolId")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
@@ -170,10 +117,11 @@ namespace ObligatorioProg3.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Id", usuario.RolId);
             return View(usuario);
         }
 
-        [Authorize]
+        // GET: Usuarios/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -182,6 +130,7 @@ namespace ObligatorioProg3.Controllers
             }
 
             var usuario = await _context.Usuarios
+                .Include(u => u.Rol)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
@@ -191,36 +140,19 @@ namespace ObligatorioProg3.Controllers
             return View(usuario);
         }
 
+        // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var usuario = await _context.Usuarios.FindAsync(id);
             if (usuario != null)
             {
                 _context.Usuarios.Remove(usuario);
-                await _context.SaveChangesAsync();
             }
+
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        // GET: Usuarios/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var restaurante = await _context.Usuarios
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (restaurante == null)
-            {
-                return NotFound();
-            }
-
-            return View(restaurante);
         }
 
         private bool UsuarioExists(int id)

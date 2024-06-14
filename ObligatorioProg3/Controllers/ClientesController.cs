@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +9,6 @@ using ObligatorioProg3.Models;
 
 namespace ObligatorioProg3.Controllers
 {
-    [Authorize]
     public class ClientesController : Controller
     {
         private readonly ObligatorioP3Context _context;
@@ -23,7 +21,8 @@ namespace ObligatorioProg3.Controllers
         // GET: Clientes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            var obligatorioP3Context = _context.Clientes.Include(c => c.Usuario);
+            return View(await obligatorioP3Context.ToListAsync());
         }
 
         // GET: Clientes/Details/5
@@ -35,6 +34,7 @@ namespace ObligatorioProg3.Controllers
             }
 
             var cliente = await _context.Clientes
+                .Include(c => c.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cliente == null)
             {
@@ -47,13 +47,16 @@ namespace ObligatorioProg3.Controllers
         // GET: Clientes/Create
         public IActionResult Create()
         {
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id");
             return View();
         }
 
         // POST: Clientes/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Email,TipoCliente")] Cliente cliente)
+        public async Task<IActionResult> Create([Bind("Id,UsuarioId,Nombre,Email,TipoCliente")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
@@ -61,6 +64,7 @@ namespace ObligatorioProg3.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id", cliente.UsuarioId);
             return View(cliente);
         }
 
@@ -77,13 +81,16 @@ namespace ObligatorioProg3.Controllers
             {
                 return NotFound();
             }
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id", cliente.UsuarioId);
             return View(cliente);
         }
 
         // POST: Clientes/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Email,TipoCliente")] Cliente cliente)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,UsuarioId,Nombre,Email,TipoCliente")] Cliente cliente)
         {
             if (id != cliente.Id)
             {
@@ -110,6 +117,7 @@ namespace ObligatorioProg3.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id", cliente.UsuarioId);
             return View(cliente);
         }
 
@@ -122,6 +130,7 @@ namespace ObligatorioProg3.Controllers
             }
 
             var cliente = await _context.Clientes
+                .Include(c => c.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cliente == null)
             {

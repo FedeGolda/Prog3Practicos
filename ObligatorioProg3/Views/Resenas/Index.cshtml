@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ObligatorioProg3.Models.Reseña>
+﻿@model IEnumerable<ObligatorioProg3.Models.Resena>
 
 @{
     ViewData["Title"] = "Index";
@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.Puntaje)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Comentarios)
+                @Html.DisplayNameFor(model => model.Comentario)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.FechaReseña)
@@ -37,7 +37,7 @@
                 @Html.DisplayFor(modelItem => item.Puntaje)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Comentarios)
+                @Html.DisplayFor(modelItem => item.Comentario)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FechaReseña)

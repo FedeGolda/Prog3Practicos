@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +9,6 @@ using ObligatorioProg3.Models;
 
 namespace ObligatorioProg3.Controllers
 {
-    [Authorize]
     public class MenusController : Controller
     {
         private readonly ObligatorioP3Context _context;
@@ -23,7 +21,8 @@ namespace ObligatorioProg3.Controllers
         // GET: Menus
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Menus.ToListAsync());
+            var obligatorioP3Context = _context.Menus.Include(m => m.Restaurante);
+            return View(await obligatorioP3Context.ToListAsync());
         }
 
         // GET: Menus/Details/5
@@ -35,6 +34,7 @@ namespace ObligatorioProg3.Controllers
             }
 
             var menu = await _context.Menus
+                .Include(m => m.Restaurante)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (menu == null)
             {
@@ -47,6 +47,7 @@ namespace ObligatorioProg3.Controllers
         // GET: Menus/Create
         public IActionResult Create()
         {
+            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id");
             return View();
         }
 
@@ -55,7 +56,7 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NombrePlato,Descripcion,Precio")] Menu menu)
+        public async Task<IActionResult> Create([Bind("Id,RestauranteId,NombrePlato,Descripcion,Precio")] Menu menu)
         {
             if (ModelState.IsValid)
             {
@@ -63,6 +64,7 @@ namespace ObligatorioProg3.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", menu.RestauranteId);
             return View(menu);
         }
 
@@ -79,6 +81,7 @@ namespace ObligatorioProg3.Controllers
             {
                 return NotFound();
             }
+            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", menu.RestauranteId);
             return View(menu);
         }
 
@@ -87,7 +90,7 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NombrePlato,Descripcion,Precio")] Menu menu)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,RestauranteId,NombrePlato,Descripcion,Precio")] Menu menu)
         {
             if (id != menu.Id)
             {
@@ -114,6 +117,7 @@ namespace ObligatorioProg3.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", menu.RestauranteId);
             return View(menu);
         }
 
@@ -126,6 +130,7 @@ namespace ObligatorioProg3.Controllers
             }
 
             var menu = await _context.Menus
+                .Include(m => m.Restaurante)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (menu == null)
             {

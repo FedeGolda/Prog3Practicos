@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ObligatorioProg3.Models;
 
-public partial class Reseña
+public partial class Resena
 {
     public int Id { get; set; }
 
@@ -11,9 +11,9 @@ public partial class Reseña
 
     public int RestauranteId { get; set; }
 
-    public byte Puntaje { get; set; }
+    public byte? Puntaje { get; set; }
 
-    public string Comentarios { get; set; } = null!;
+    public string Comentario { get; set; } = null!;
 
     public DateTime FechaReseña { get; set; }
 

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,24 +9,22 @@ using ObligatorioProg3.Models;
 
 namespace ObligatorioProg3.Controllers
 {
-    [Authorize]
-    public class ReseñasController : Controller
+    public class RolesController : Controller
     {
         private readonly ObligatorioP3Context _context;
 
-        public ReseñasController(ObligatorioP3Context context)
+        public RolesController(ObligatorioP3Context context)
         {
             _context = context;
         }
 
-        // GET: Reseñas
+        // GET: Roles
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3Context = _context.Reseñas.Include(r => r.Cliente).Include(r => r.Restaurante);
-            return View(await obligatorioP3Context.ToListAsync());
+            return View(await _context.Roles.ToListAsync());
         }
 
-        // GET: Reseñas/Details/5
+        // GET: Roles/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -35,45 +32,39 @@ namespace ObligatorioProg3.Controllers
                 return NotFound();
             }
 
-            var reseña = await _context.Reseñas
-                .Include(r => r.Cliente)
-                .Include(r => r.Restaurante)
+            var role = await _context.Roles
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (reseña == null)
+            if (role == null)
             {
                 return NotFound();
             }
 
-            return View(reseña);
+            return View(role);
         }
 
-        // GET: Reseñas/Create
+        // GET: Roles/Create
         public IActionResult Create()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id");
-            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id");
             return View();
         }
 
-        // POST: Reseñas/Create
+        // POST: Roles/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ClienteId,RestauranteId,Puntaje,Comentarios,FechaReseña")] Reseña reseña)
+        public async Task<IActionResult> Create([Bind("Id,Nombre")] Role role)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(reseña);
+                _context.Add(role);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", reseña.ClienteId);
-            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", reseña.RestauranteId);
-            return View(reseña);
+            return View(role);
         }
 
-        // GET: Reseñas/Edit/5
+        // GET: Roles/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,24 +72,22 @@ namespace ObligatorioProg3.Controllers
                 return NotFound();
             }
 
-            var reseña = await _context.Reseñas.FindAsync(id);
-            if (reseña == null)
+            var role = await _context.Roles.FindAsync(id);
+            if (role == null)
             {
                 return NotFound();
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", reseña.ClienteId);
-            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", reseña.RestauranteId);
-            return View(reseña);
+            return View(role);
         }
 
-        // POST: Reseñas/Edit/5
+        // POST: Roles/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ClienteId,RestauranteId,Puntaje,Comentarios,FechaReseña")] Reseña reseña)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre")] Role role)
         {
-            if (id != reseña.Id)
+            if (id != role.Id)
             {
                 return NotFound();
             }
@@ -107,12 +96,12 @@ namespace ObligatorioProg3.Controllers
             {
                 try
                 {
-                    _context.Update(reseña);
+                    _context.Update(role);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ReseñaExists(reseña.Id))
+                    if (!RoleExists(role.Id))
                     {
                         return NotFound();
                     }
@@ -123,12 +112,10 @@ namespace ObligatorioProg3.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", reseña.ClienteId);
-            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", reseña.RestauranteId);
-            return View(reseña);
+            return View(role);
         }
 
-        // GET: Reseñas/Delete/5
+        // GET: Roles/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,36 +123,34 @@ namespace ObligatorioProg3.Controllers
                 return NotFound();
             }
 
-            var reseña = await _context.Reseñas
-                .Include(r => r.Cliente)
-                .Include(r => r.Restaurante)
+            var role = await _context.Roles
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (reseña == null)
+            if (role == null)
             {
                 return NotFound();
             }
 
-            return View(reseña);
+            return View(role);
         }
 
-        // POST: Reseñas/Delete/5
+        // POST: Roles/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var reseña = await _context.Reseñas.FindAsync(id);
-            if (reseña != null)
+            var role = await _context.Roles.FindAsync(id);
+            if (role != null)
             {
-                _context.Reseñas.Remove(reseña);
+                _context.Roles.Remove(role);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ReseñaExists(int id)
+        private bool RoleExists(int id)
         {
-            return _context.Reseñas.Any(e => e.Id == id);
+            return _context.Roles.Any(e => e.Id == id);
         }
     }
 }

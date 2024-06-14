@@ -11,7 +11,13 @@ public partial class Restaurante
 
     public string Direccion { get; set; } = null!;
 
-    public int Telefono { get; set; }
+    public string Telefono { get; set; } = null!;
 
-    public virtual ICollection<Reseña> Reseñas { get; set; } = new List<Reseña>();
+    public virtual ICollection<Menu> Menus { get; set; } = new List<Menu>();
+
+    public virtual ICollection<Mesa> Mesas { get; set; } = new List<Mesa>();
+
+    public virtual ICollection<Resena> Resenas { get; set; } = new List<Resena>();
+
+    public virtual ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
 }

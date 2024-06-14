@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObligatorioProg3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a07961d167cadf99f352e132a54fc17c759ced2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7956f173a8942b8ef0df35bf64a8ce16432cf71")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObligatorioProg3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObligatorioProg3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +9,6 @@ using ObligatorioProg3.Models;
 
 namespace ObligatorioProg3.Controllers
 {
-    [Authorize]
     public class ReservasController : Controller
     {
         private readonly ObligatorioP3Context _context;
@@ -23,7 +21,7 @@ namespace ObligatorioProg3.Controllers
         // GET: Reservas
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3Context = _context.Reservas.Include(r => r.Cliente).Include(r => r.Mesa);
+            var obligatorioP3Context = _context.Reservas.Include(r => r.Cliente).Include(r => r.Mesa).Include(r => r.Restaurante);
             return View(await obligatorioP3Context.ToListAsync());
         }
 
@@ -38,6 +36,7 @@ namespace ObligatorioProg3.Controllers
             var reserva = await _context.Reservas
                 .Include(r => r.Cliente)
                 .Include(r => r.Mesa)
+                .Include(r => r.Restaurante)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (reserva == null)
             {
@@ -52,6 +51,7 @@ namespace ObligatorioProg3.Controllers
         {
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id");
             ViewData["MesaId"] = new SelectList(_context.Mesas, "Id", "Id");
+            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id");
             return View();
         }
 
@@ -60,7 +60,7 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FechaReserva,Estado,ClienteId,MesaId")] Reserva reserva)
+        public async Task<IActionResult> Create([Bind("Id,ClienteId,MesaId,RestauranteId,FechaReserva,Estado")] Reserva reserva)
         {
             if (ModelState.IsValid)
             {
@@ -70,6 +70,7 @@ namespace ObligatorioProg3.Controllers
             }
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", reserva.ClienteId);
             ViewData["MesaId"] = new SelectList(_context.Mesas, "Id", "Id", reserva.MesaId);
+            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", reserva.RestauranteId);
             return View(reserva);
         }
 
@@ -88,6 +89,7 @@ namespace ObligatorioProg3.Controllers
             }
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", reserva.ClienteId);
             ViewData["MesaId"] = new SelectList(_context.Mesas, "Id", "Id", reserva.MesaId);
+            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", reserva.RestauranteId);
             return View(reserva);
         }
 
@@ -96,7 +98,7 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FechaReserva,Estado,ClienteId,MesaId")] Reserva reserva)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ClienteId,MesaId,RestauranteId,FechaReserva,Estado")] Reserva reserva)
         {
             if (id != reserva.Id)
             {
@@ -125,6 +127,7 @@ namespace ObligatorioProg3.Controllers
             }
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", reserva.ClienteId);
             ViewData["MesaId"] = new SelectList(_context.Mesas, "Id", "Id", reserva.MesaId);
+            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", reserva.RestauranteId);
             return View(reserva);
         }
 
@@ -139,6 +142,7 @@ namespace ObligatorioProg3.Controllers
             var reserva = await _context.Reservas
                 .Include(r => r.Cliente)
                 .Include(r => r.Mesa)
+                .Include(r => r.Restaurante)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (reserva == null)
             {

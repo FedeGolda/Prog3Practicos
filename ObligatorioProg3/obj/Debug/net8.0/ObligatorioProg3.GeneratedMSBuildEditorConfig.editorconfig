@@ -174,6 +174,46 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Permisos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Permisos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Permisos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Permisos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Permisos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Resenas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZW5hc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Resenas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZW5hc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Resenas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZW5hc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Resenas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZW5hc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Resenas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZW5hc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Reservas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -194,26 +234,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Reseñas/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZcOxYXNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Reseñas/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZcOxYXNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Reseñas/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZcOxYXNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Reseñas/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZcOxYXNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Reseñas/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZcOxYXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Restaurantes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -232,6 +252,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Restaurantes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Roles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Roles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Shared/Error.cshtml]
@@ -260,10 +300,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/Usuarios/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/Federico/CEI/PROGRAMACION 3/Practicos/Prog3Practicos/ObligatorioProg3/Views/_ViewImports.cshtml]

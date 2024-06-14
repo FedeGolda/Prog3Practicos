@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +9,6 @@ using ObligatorioProg3.Models;
 
 namespace ObligatorioProg3.Controllers
 {
-    [Authorize]
     public class PagosController : Controller
     {
         private readonly ObligatorioP3Context _context;
@@ -23,7 +21,7 @@ namespace ObligatorioProg3.Controllers
         // GET: Pagos
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3Context = _context.Pagos.Include(p => p.Reserva);
+            var obligatorioP3Context = _context.Pagos.Include(p => p.Cliente).Include(p => p.Clima).Include(p => p.Reserva);
             return View(await obligatorioP3Context.ToListAsync());
         }
 
@@ -36,6 +34,8 @@ namespace ObligatorioProg3.Controllers
             }
 
             var pago = await _context.Pagos
+                .Include(p => p.Cliente)
+                .Include(p => p.Clima)
                 .Include(p => p.Reserva)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (pago == null)
@@ -49,6 +49,8 @@ namespace ObligatorioProg3.Controllers
         // GET: Pagos/Create
         public IActionResult Create()
         {
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id");
+            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id");
             ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "Id");
             return View();
         }
@@ -58,7 +60,7 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ReservaId,Monto,FechaPago,MetodoPago")] Pago pago)
+        public async Task<IActionResult> Create([Bind("Id,ReservaId,ClimaId,ClienteId,Monto,FechaPago,MetodoPago,TasaCambio,Moneda")] Pago pago)
         {
             if (ModelState.IsValid)
             {
@@ -66,6 +68,8 @@ namespace ObligatorioProg3.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", pago.ClienteId);
+            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id", pago.ClimaId);
             ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "Id", pago.ReservaId);
             return View(pago);
         }
@@ -83,6 +87,8 @@ namespace ObligatorioProg3.Controllers
             {
                 return NotFound();
             }
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", pago.ClienteId);
+            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id", pago.ClimaId);
             ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "Id", pago.ReservaId);
             return View(pago);
         }
@@ -92,7 +98,7 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ReservaId,Monto,FechaPago,MetodoPago")] Pago pago)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ReservaId,ClimaId,ClienteId,Monto,FechaPago,MetodoPago,TasaCambio,Moneda")] Pago pago)
         {
             if (id != pago.Id)
             {
@@ -119,6 +125,8 @@ namespace ObligatorioProg3.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", pago.ClienteId);
+            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id", pago.ClimaId);
             ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "Id", pago.ReservaId);
             return View(pago);
         }
@@ -132,6 +140,8 @@ namespace ObligatorioProg3.Controllers
             }
 
             var pago = await _context.Pagos
+                .Include(p => p.Cliente)
+                .Include(p => p.Clima)
                 .Include(p => p.Reserva)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (pago == null)
