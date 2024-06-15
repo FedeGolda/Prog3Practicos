@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\EP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8540F02A-6180-44B4-A131-ECBD59516C13}|Practica8EP_API\\Practica8EP_API.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\ep\\practica8ep_api\\controllers\\epcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8540F02A-6180-44B4-A131-ECBD59516C13}|Practica8EP_API\\Practica8EP_API.csproj|solutionrelative:practica8ep_api\\controllers\\epcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8540F02A-6180-44B4-A131-ECBD59516C13}|Practica8EP_API\\Practica8EP_API.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\ep\\practica8ep_api\\datos\\epstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8540F02A-6180-44B4-A131-ECBD59516C13}|Practica8EP_API\\Practica8EP_API.csproj|solutionrelative:practica8ep_api\\datos\\epstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8540F02A-6180-44B4-A131-ECBD59516C13}|Practica8EP_API\\Practica8EP_API.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\ep\\practica8ep_api\\modelos\\dto\\epdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8540F02A-6180-44B4-A131-ECBD59516C13}|Practica8EP_API\\Practica8EP_API.csproj|solutionrelative:practica8ep_api\\modelos\\dto\\epdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8540F02A-6180-44B4-A131-ECBD59516C13}|Practica8EP_API\\Practica8EP_API.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\ep\\practica8ep_api\\modelos\\ep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8540F02A-6180-44B4-A131-ECBD59516C13}|Practica8EP_API\\Practica8EP_API.csproj|solutionrelative:practica8ep_api\\modelos\\ep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EPStore.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\EP\\Practica8EP_API\\Datos\\EPStore.cs",
+              "RelativeDocumentMoniker": "Practica8EP_API\\Datos\\EPStore.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\EP\\Practica8EP_API\\Datos\\EPStore.cs",
+              "RelativeToolTip": "Practica8EP_API\\Datos\\EPStore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T22:47:58.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EPDto.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\EP\\Practica8EP_API\\Modelos\\Dto\\EPDto.cs",
+              "RelativeDocumentMoniker": "Practica8EP_API\\Modelos\\Dto\\EPDto.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\EP\\Practica8EP_API\\Modelos\\Dto\\EPDto.cs",
+              "RelativeToolTip": "Practica8EP_API\\Modelos\\Dto\\EPDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T22:33:57.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EP.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\EP\\Practica8EP_API\\Modelos\\EP.cs",
+              "RelativeDocumentMoniker": "Practica8EP_API\\Modelos\\EP.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\EP\\Practica8EP_API\\Modelos\\EP.cs",
+              "RelativeToolTip": "Practica8EP_API\\Modelos\\EP.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T22:24:47.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EPController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\EP\\Practica8EP_API\\Controllers\\EPController.cs",
+              "RelativeDocumentMoniker": "Practica8EP_API\\Controllers\\EPController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\EP\\Practica8EP_API\\Controllers\\EPController.cs",
+              "RelativeToolTip": "Practica8EP_API\\Controllers\\EPController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T22:23:59.314Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
