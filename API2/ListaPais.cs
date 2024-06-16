@@ -13,7 +13,7 @@ namespace API2
         public long? Success { get; set; }
 
         [JsonProperty("result", NullValueHandling = NullValueHandling.Ignore)]
-        public List<Pais>Paises { get; set; }
+        public List<Pais> Paises { get; set; }
     }
 
     public partial class Pais
