@@ -48,6 +48,7 @@ public class UsuariosController : Controller
         return View();
     }
 
+
     // POST: Usuarios/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -66,18 +67,12 @@ public class UsuariosController : Controller
                 ModelState.AddModelError("", $"Error al crear el usuario: {ex.Message}");
             }
         }
-        else
-        {
-            foreach (var modelError in ModelState.Values.SelectMany(v => v.Errors))
-            {
-                ModelState.AddModelError("", modelError.ErrorMessage);
-            }
-        }
 
         // Si hay un error, pasa nuevamente los roles a la vista
         ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
         return View(usuario);
     }
+
 
     // GET: Usuarios/Edit/5
     public async Task<IActionResult> Edit(int? id)
