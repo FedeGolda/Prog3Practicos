@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ObligatorioProg3.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 public class UsuariosController : Controller
 {
@@ -41,6 +43,7 @@ public class UsuariosController : Controller
     // GET: Usuarios/Create
     public IActionResult Create()
     {
+        // Pasa los roles a la vista para que el usuario pueda seleccionar uno
         ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre");
         return View();
     }
@@ -70,6 +73,8 @@ public class UsuariosController : Controller
                 ModelState.AddModelError("", modelError.ErrorMessage);
             }
         }
+
+        // Si hay un error, pasa nuevamente los roles a la vista
         ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
         return View(usuario);
     }
@@ -87,6 +92,8 @@ public class UsuariosController : Controller
         {
             return NotFound();
         }
+
+        // Pasa los roles a la vista para que el usuario pueda seleccionar uno
         ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
         return View(usuario);
     }
@@ -125,6 +132,8 @@ public class UsuariosController : Controller
                 ModelState.AddModelError("", $"Error al editar el usuario: {ex.Message}");
             }
         }
+
+        // Si hay un error, pasa nuevamente los roles a la vista
         ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
         return View(usuario);
     }
