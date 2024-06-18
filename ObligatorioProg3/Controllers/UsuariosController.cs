@@ -4,14 +4,17 @@ using Microsoft.EntityFrameworkCore;
 using ObligatorioProg3.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging; // Asegúrate de tener esta importación
 
 public class UsuariosController : Controller
 {
     private readonly ObligatorioP3Context _context;
+    private readonly ILogger<UsuariosController> _logger;
 
-    public UsuariosController(ObligatorioP3Context context)
+    public UsuariosController(ObligatorioP3Context context, ILogger<UsuariosController> logger)
     {
         _context = context;
+        _logger = logger;
     }
 
     // GET: Usuarios
@@ -43,36 +46,49 @@ public class UsuariosController : Controller
     // GET: Usuarios/Create
     public IActionResult Create()
     {
-        // Pasa los roles a la vista para que el usuario pueda seleccionar uno
         ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre");
         return View();
     }
-
 
     // POST: Usuarios/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create([Bind("Id,Nombre,Email,Contraseña,RolId")] Usuario usuario)
     {
+        _logger.LogInformation("Entrando en el método Create POST");
+
+        if (!ModelState.IsValid)
+        {
+            _logger.LogWarning("ModelState no es válido");
+            var errors = ModelState.Values.SelectMany(v => v.Errors);
+            foreach (var error in errors)
+            {
+                _logger.LogError("Error de validación: {0}", error.ErrorMessage);
+            }
+        }
+
         if (ModelState.IsValid)
         {
             try
             {
+                _logger.LogInformation("ModelState es válido, intentando agregar usuario");
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("Usuario creado exitosamente");
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
+                _logger.LogError("Error al crear el usuario: {0}", ex.Message);
                 ModelState.AddModelError("", $"Error al crear el usuario: {ex.Message}");
             }
         }
 
         // Si hay un error, pasa nuevamente los roles a la vista
         ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
+        _logger.LogInformation("Regresando a la vista Create debido a un error");
         return View(usuario);
     }
-
 
     // GET: Usuarios/Edit/5
     public async Task<IActionResult> Edit(int? id)
@@ -88,7 +104,6 @@ public class UsuariosController : Controller
             return NotFound();
         }
 
-        // Pasa los roles a la vista para que el usuario pueda seleccionar uno
         ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
         return View(usuario);
     }
@@ -128,7 +143,6 @@ public class UsuariosController : Controller
             }
         }
 
-        // Si hay un error, pasa nuevamente los roles a la vista
         ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
         return View(usuario);
     }
