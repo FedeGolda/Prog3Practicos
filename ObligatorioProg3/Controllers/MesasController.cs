@@ -12,10 +12,11 @@ namespace ObligatorioProg3.Controllers
     public class MesasController : Controller
     {
         private readonly ObligatorioP3Context _context;
-
-        public MesasController(ObligatorioP3Context context)
+        private readonly ILogger<MesasController> _logger;
+        public MesasController(ObligatorioP3Context context, ILogger<MesasController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: Mesas
@@ -58,10 +59,14 @@ namespace ObligatorioProg3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,NumeroMesa,Capacidad,Estado,RestauranteId")] Mesa mesa)
         {
-            if (ModelState.IsValid)
+            _logger.LogInformation("Entrando en el método Create POST");
+
+            if (!ModelState.IsValid)
             {
+                _logger.LogInformation("ModelState es válido, intentando agregar menu");
                 _context.Add(mesa);
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("Mesa creado exitosamente");
                 return RedirectToAction(nameof(Index));
             }
             ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", mesa.RestauranteId);

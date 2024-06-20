@@ -12,10 +12,12 @@ namespace ObligatorioProg3.Controllers
     public class ReservasController : Controller
     {
         private readonly ObligatorioP3Context _context;
+        private readonly ILogger<ReservasController> _logger;
 
-        public ReservasController(ObligatorioP3Context context)
+        public ReservasController(ObligatorioP3Context context, ILogger<ReservasController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: Reservas
@@ -62,10 +64,14 @@ namespace ObligatorioProg3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,ClienteId,MesaId,RestauranteId,FechaReserva,Estado")] Reserva reserva)
         {
-            if (ModelState.IsValid)
+            _logger.LogInformation("Entrando en el método Create POST");
+
+            if (!ModelState.IsValid)
             {
+                _logger.LogInformation("ModelState es válido, intentando agregar reserva");
                 _context.Add(reserva);
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("Reserva creado exitosamente");
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", reserva.ClienteId);

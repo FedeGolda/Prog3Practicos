@@ -12,10 +12,11 @@ namespace ObligatorioProg3.Controllers
     public class PermisosController : Controller
     {
         private readonly ObligatorioP3Context _context;
-
-        public PermisosController(ObligatorioP3Context context)
+        private readonly ILogger<PermisosController> _logger;
+        public PermisosController(ObligatorioP3Context context, ILogger<PermisosController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: Permisos
@@ -58,13 +59,35 @@ namespace ObligatorioProg3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,RolId,TipoPermisos")] Permiso permiso)
         {
-            if (ModelState.IsValid)
+            _logger.LogInformation("Entrando en el método Create POST");
+
+            if (!ModelState.IsValid)
             {
+                _logger.LogWarning("ModelState no es válido");
+                var errors = ModelState.Values.SelectMany(v => v.Errors);
+                _logger.LogInformation("ModelState es válido, intentando agregar usuario");
                 _context.Add(permiso);
                 await _context.SaveChangesAsync();
+                _logger.LogInformation("Permiso creado exitosamente");
                 return RedirectToAction(nameof(Index));
             }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError("Error al crear el permiso: {0}", ex.Message);
+                    ModelState.AddModelError("", $"Error al crear el permiso: {ex.Message}");
+                }
+            }
+
+            // Si hay un error, pasa nuevamente los roles a la vista
             ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Id", permiso.RolId);
+            _logger.LogInformation("Regresando a la vista Create debido a un error");
             return View(permiso);
         }
 

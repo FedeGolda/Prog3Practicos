@@ -61,21 +61,18 @@ public class UsuariosController : Controller
         {
             _logger.LogWarning("ModelState no es válido");
             var errors = ModelState.Values.SelectMany(v => v.Errors);
-            foreach (var error in errors)
-            {
-                _logger.LogError("Error de validación: {0}", error.ErrorMessage);
-            }
+            _logger.LogInformation("ModelState es válido, intentando agregar usuario");
+            _context.Add(usuario);
+            await _context.SaveChangesAsync();
+            _logger.LogInformation("Usuario creado exitosamente");
+            return RedirectToAction(nameof(Index));
         }
 
         if (ModelState.IsValid)
         {
             try
             {
-                _logger.LogInformation("ModelState es válido, intentando agregar usuario");
-                _context.Add(usuario);
-                await _context.SaveChangesAsync();
-                _logger.LogInformation("Usuario creado exitosamente");
-                return RedirectToAction(nameof(Index));
+             
             }
             catch (Exception ex)
             {

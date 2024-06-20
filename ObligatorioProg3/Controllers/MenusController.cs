@@ -12,10 +12,12 @@ namespace ObligatorioProg3.Controllers
     public class MenusController : Controller
     {
         private readonly ObligatorioP3Context _context;
+        private readonly ILogger<MenusController> _logger;
 
-        public MenusController(ObligatorioP3Context context)
+        public MenusController(ObligatorioP3Context context, ILogger<MenusController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: Menus
@@ -58,13 +60,32 @@ namespace ObligatorioProg3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,RestauranteId,NombrePlato,Descripcion,Precio")] Menu menu)
         {
-            if (ModelState.IsValid)
+            _logger.LogInformation("Entrando en el método Create POST");
+
+            if (!ModelState.IsValid)
             {
-                _context.Add(menu);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    _logger.LogInformation("ModelState es válido, intentando agregar menu");
+                    _context.Add(menu);
+                    await _context.SaveChangesAsync();
+                    _logger.LogInformation("Menu creado exitosamente");
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError("Error al crear el menu: {0}", ex.Message);
+                    ModelState.AddModelError("", $"Error al crear el menu: {ex.Message}");
+                }
             }
-            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", menu.RestauranteId);
+            else
+            {
+                _logger.LogWarning("ModelState no es válido");
+                var errors = ModelState.Values.SelectMany(v => v.Errors);
+            }
+
+           // _logger.LogInformation("Regresando a la vista Create debido a un error");
+          //  ViewData["RestauranteId"] = new SelectList(_context.Usuarios, "Id", "Id", .UsuarioId);
             return View(menu);
         }
 
