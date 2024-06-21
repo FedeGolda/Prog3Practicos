@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,18 +12,19 @@ namespace ObligatorioProg3.Controllers
 {
     public class PagosController : Controller
     {
-        private readonly ObligatorioP3Context _context;
+        private readonly ObligatorioP3V2Context _context;
 
-        public PagosController(ObligatorioP3Context context)
+        public PagosController(ObligatorioP3V2Context context)
         {
             _context = context;
         }
 
         // GET: Pagos
+        [Authorize]
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3Context = _context.Pagos.Include(p => p.Cliente).Include(p => p.Clima).Include(p => p.Reserva);
-            return View(await obligatorioP3Context.ToListAsync());
+            var obligatorioP3V2Context = _context.Pagos.Include(p => p.Cliente).Include(p => p.Clima).Include(p => p.Reserva);
+            return View(await obligatorioP3V2Context.ToListAsync());
         }
 
         // GET: Pagos/Details/5
@@ -60,9 +62,9 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ReservaId,ClimaId,ClienteId,Monto,FechaPago,MetodoPago,TasaCambio,Moneda")] Pago pago)
+        public async Task<IActionResult> Create([Bind("Id,ReservaId,ClienteId,ClimaId,Monto,FechaPago,MetodoPago,TasaCambio,Moneda,MontoConvertido,PrecioTotal")] Pago pago)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 _context.Add(pago);
                 await _context.SaveChangesAsync();
@@ -98,7 +100,7 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ReservaId,ClimaId,ClienteId,Monto,FechaPago,MetodoPago,TasaCambio,Moneda")] Pago pago)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ReservaId,ClienteId,ClimaId,Monto,FechaPago,MetodoPago,TasaCambio,Moneda,MontoConvertido,PrecioTotal")] Pago pago)
         {
             if (id != pago.Id)
             {

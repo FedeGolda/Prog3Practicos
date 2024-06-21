@@ -11,7 +11,7 @@ public partial class OrdenDetalle
 
     public int MenuId { get; set; }
 
-    public short Cantidad { get; set; }
+    public int Cantidad { get; set; }
 
     public virtual Menu Menu { get; set; } = null!;
 

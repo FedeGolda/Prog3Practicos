@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,18 +12,19 @@ namespace ObligatorioProg3.Controllers
 {
     public class OrdenDetallesController : Controller
     {
-        private readonly ObligatorioP3Context _context;
+        private readonly ObligatorioP3V2Context _context;
 
-        public OrdenDetallesController(ObligatorioP3Context context)
+        public OrdenDetallesController(ObligatorioP3V2Context context)
         {
             _context = context;
         }
 
         // GET: OrdenDetalles
+        [Authorize]
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3Context = _context.OrdenDetalles.Include(o => o.Menu).Include(o => o.Orden);
-            return View(await obligatorioP3Context.ToListAsync());
+            var obligatorioP3V2Context = _context.OrdenDetalles.Include(o => o.Menu).Include(o => o.Orden);
+            return View(await obligatorioP3V2Context.ToListAsync());
         }
 
         // GET: OrdenDetalles/Details/5
@@ -60,7 +62,7 @@ namespace ObligatorioProg3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,OrdenId,MenuId,Cantidad")] OrdenDetalle ordenDetalle)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 _context.Add(ordenDetalle);
                 await _context.SaveChangesAsync();

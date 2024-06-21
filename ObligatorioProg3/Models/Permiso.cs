@@ -7,9 +7,5 @@ public partial class Permiso
 {
     public int Id { get; set; }
 
-    public int RolId { get; set; }
-
-    public string TipoPermisos { get; set; } = null!;
-
-    public virtual Role Rol { get; set; } = null!;
+    public string Nombre { get; set; } = null!;
 }

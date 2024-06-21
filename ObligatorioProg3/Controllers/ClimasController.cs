@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,14 +12,15 @@ namespace ObligatorioProg3.Controllers
 {
     public class ClimasController : Controller
     {
-        private readonly ObligatorioP3Context _context;
+        private readonly ObligatorioP3V2Context _context;
 
-        public ClimasController(ObligatorioP3Context context)
+        public ClimasController(ObligatorioP3V2Context context)
         {
             _context = context;
         }
 
         // GET: Climas
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Climas.ToListAsync());

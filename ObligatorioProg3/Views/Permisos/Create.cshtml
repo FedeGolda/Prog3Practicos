@@ -13,13 +13,9 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="RolId" class="control-label"></label>
-                <select asp-for="RolId" class ="form-control" asp-items="ViewBag.RolId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="TipoPermisos" class="control-label"></label>
-                <input asp-for="TipoPermisos" class="form-control" />
-                <span asp-validation-for="TipoPermisos" class="text-danger"></span>
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

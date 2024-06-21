@@ -1,191 +1,165 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ObligatorioProg3.Models;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging; // Asegúrate de tener esta importación
 
-public class ClientesController : Controller
+namespace ObligatorioProg3.Controllers
 {
-    private readonly ObligatorioP3Context _context;
-    private readonly ILogger<ClientesController> _logger;
-
-    public ClientesController(ObligatorioP3Context context, ILogger<ClientesController> logger)
+    public class ClientesController : Controller
     {
-        _context = context;
-        _logger = logger;
-    }
+        private readonly ObligatorioP3V2Context _context;
 
-    // GET: Clientes
-    public async Task<IActionResult> Index()
-    {
-        var obligatorioP3Context = _context.Clientes.Include(c => c.Usuario);
-        return View(await obligatorioP3Context.ToListAsync());
-    }
-
-    // GET: Clientes/Details/5
-    public async Task<IActionResult> Details(int? id)
-    {
-        if (id == null)
+        public ClientesController(ObligatorioP3V2Context context)
         {
-            return NotFound();
+            _context = context;
         }
 
-        var cliente = await _context.Clientes
-            .Include(c => c.Usuario)
-            .FirstOrDefaultAsync(m => m.Id == id);
-        if (cliente == null)
+        // GET: Clientes
+        [Authorize]
+        public async Task<IActionResult> Index()
         {
-            return NotFound();
+            var obligatorioP3V2Context = _context.Clientes.Include(c => c.Usuario);
+            return View(await obligatorioP3V2Context.ToListAsync());
         }
 
-        return View(cliente);
-    }
-
-    // GET: Clientes/Create
-    public IActionResult Create()
-    {
-        ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id");
-        return View();
-    }
-
-    // POST: Clientes/Create
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,UsuarioId,Nombre,Email,TipoCliente")] Cliente cliente)
-    {
-        _logger.LogInformation("Entrando en el método Create POST");
-
-        if (!ModelState.IsValid)
+        // GET: Clientes/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
-            try
+            if (id == null)
             {
-                _logger.LogInformation("ModelState es válido, intentando agregar cliente");
+                return NotFound();
+            }
+
+            var cliente = await _context.Clientes
+                .Include(c => c.Usuario)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cliente == null)
+            {
+                return NotFound();
+            }
+
+            return View(cliente);
+        }
+
+        // GET: Clientes/Create
+        public IActionResult Create()
+        {
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id");
+            return View();
+        }
+
+        // POST: Clientes/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,UsuarioId,Nombre,Email,TipoCliente")] Cliente cliente)
+        {
+            if (!ModelState.IsValid)
+            {
                 _context.Add(cliente);
                 await _context.SaveChangesAsync();
-                _logger.LogInformation("Cliente creado exitosamente");
                 return RedirectToAction(nameof(Index));
             }
-            catch (Exception ex)
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id", cliente.UsuarioId);
+            return View(cliente);
+        }
+
+        // GET: Clientes/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
             {
-                _logger.LogError("Error al crear el cliente: {0}", ex.Message);
-                ModelState.AddModelError("", $"Error al crear el cliente: {ex.Message}");
+                return NotFound();
             }
-        }
-        else
-        {
-            _logger.LogWarning("ModelState no es válido");
-            var errors = ModelState.Values.SelectMany(v => v.Errors);
-        }
 
-        _logger.LogInformation("Regresando a la vista Create debido a un error");
-        ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id", cliente.UsuarioId);
-        return View(cliente);
-    }
-
-    // GET: Clientes/Edit/5
-    public async Task<IActionResult> Edit(int? id)
-    {
-        if (id == null)
-        {
-            return NotFound();
-        }
-
-        var cliente = await _context.Clientes.FindAsync(id);
-        if (cliente == null)
-        {
-            return NotFound();
-        }
-        ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id", cliente.UsuarioId);
-        return View(cliente);
-    }
-
-    // POST: Clientes/Edit/5
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,UsuarioId,Nombre,Email,TipoCliente")] Cliente cliente)
-    {
-        if (id != cliente.Id)
-        {
-            return NotFound();
-        }
-
-        if (ModelState.IsValid)
-        {
-            try
+            var cliente = await _context.Clientes.FindAsync(id);
+            if (cliente == null)
             {
-                _context.Update(cliente);
-                await _context.SaveChangesAsync();
-                _logger.LogInformation("Cliente editado exitosamente");
+                return NotFound();
+            }
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id", cliente.UsuarioId);
+            return View(cliente);
+        }
+
+        // POST: Clientes/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,UsuarioId,Nombre,Email,TipoCliente")] Cliente cliente)
+        {
+            if (id != cliente.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(cliente);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ClienteExists(cliente.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch (DbUpdateConcurrencyException)
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id", cliente.UsuarioId);
+            return View(cliente);
+        }
+
+        // GET: Clientes/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
             {
-                if (!ClienteExists(cliente.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return NotFound();
             }
-            catch (Exception ex)
+
+            var cliente = await _context.Clientes
+                .Include(c => c.Usuario)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cliente == null)
             {
-                _logger.LogError("Error al editar el cliente: {0}", ex.Message);
-                ModelState.AddModelError("", $"Error al editar el cliente: {ex.Message}");
+                return NotFound();
             }
+
+            return View(cliente);
         }
 
-        ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "Id", "Id", cliente.UsuarioId);
-        return View(cliente);
-    }
-
-    // GET: Clientes/Delete/5
-    public async Task<IActionResult> Delete(int? id)
-    {
-        if (id == null)
+        // POST: Clientes/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            return NotFound();
-        }
-
-        var cliente = await _context.Clientes
-            .Include(c => c.Usuario)
-            .FirstOrDefaultAsync(m => m.Id == id);
-        if (cliente == null)
-        {
-            return NotFound();
-        }
-
-        return View(cliente);
-    }
-
-    // POST: Clientes/Delete/5
-    [HttpPost, ActionName("Delete")]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteConfirmed(int id)
-    {
-        var cliente = await _context.Clientes.FindAsync(id);
-        if (cliente != null)
-        {
-            try
+            var cliente = await _context.Clientes.FindAsync(id);
+            if (cliente != null)
             {
                 _context.Clientes.Remove(cliente);
-                await _context.SaveChangesAsync();
-                _logger.LogInformation("Cliente eliminado exitosamente");
             }
-            catch (Exception ex)
-            {
-                _logger.LogError("Error al eliminar el cliente: {0}", ex.Message);
-                ModelState.AddModelError("", $"Error al eliminar el cliente: {ex.Message}");
-            }
-        }
-        return RedirectToAction(nameof(Index));
-    }
 
-    private bool ClienteExists(int id)
-    {
-        return _context.Clientes.Any(e => e.Id == id);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool ClienteExists(int id)
+        {
+            return _context.Clientes.Any(e => e.Id == id);
+        }
     }
 }

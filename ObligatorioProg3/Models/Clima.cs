@@ -9,7 +9,7 @@ public partial class Clima
 
     public DateTime Fecha { get; set; }
 
-    public short Temperatura { get; set; }
+    public double Temperatura { get; set; }
 
     public string DescripciónClima { get; set; } = null!;
 

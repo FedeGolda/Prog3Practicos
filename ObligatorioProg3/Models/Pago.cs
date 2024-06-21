@@ -9,9 +9,9 @@ public partial class Pago
 
     public int ReservaId { get; set; }
 
-    public int ClimaId { get; set; }
-
     public int ClienteId { get; set; }
+
+    public int ClimaId { get; set; }
 
     public double Monto { get; set; }
 
@@ -19,9 +19,13 @@ public partial class Pago
 
     public string? MetodoPago { get; set; }
 
-    public double TasaCambio { get; set; }
+    public double? TasaCambio { get; set; }
 
     public string? Moneda { get; set; }
+
+    public double? MontoConvertido { get; set; }
+
+    public double PrecioTotal { get; set; }
 
     public virtual Cliente Cliente { get; set; } = null!;
 

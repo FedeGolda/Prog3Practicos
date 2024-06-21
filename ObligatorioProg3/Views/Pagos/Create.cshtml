@@ -17,12 +17,12 @@
                 <select asp-for="ReservaId" class ="form-control" asp-items="ViewBag.ReservaId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="ClimaId" class="control-label"></label>
-                <select asp-for="ClimaId" class ="form-control" asp-items="ViewBag.ClimaId"></select>
-            </div>
-            <div class="form-group">
                 <label asp-for="ClienteId" class="control-label"></label>
                 <select asp-for="ClienteId" class ="form-control" asp-items="ViewBag.ClienteId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClimaId" class="control-label"></label>
+                <select asp-for="ClimaId" class ="form-control" asp-items="ViewBag.ClimaId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Monto" class="control-label"></label>
@@ -48,6 +48,16 @@
                 <label asp-for="Moneda" class="control-label"></label>
                 <input asp-for="Moneda" class="form-control" />
                 <span asp-validation-for="Moneda" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MontoConvertido" class="control-label"></label>
+                <input asp-for="MontoConvertido" class="form-control" />
+                <span asp-validation-for="MontoConvertido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrecioTotal" class="control-label"></label>
+                <input asp-for="PrecioTotal" class="form-control" />
+                <span asp-validation-for="PrecioTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

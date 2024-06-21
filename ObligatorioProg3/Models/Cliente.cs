@@ -17,9 +17,9 @@ public partial class Cliente
 
     public virtual ICollection<Pago> Pagos { get; set; } = new List<Pago>();
 
-    public virtual ICollection<Resena> Resenas { get; set; } = new List<Resena>();
-
     public virtual ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
+
+    public virtual ICollection<Reseña> Reseñas { get; set; } = new List<Reseña>();
 
     public virtual Usuario Usuario { get; set; } = null!;
 }

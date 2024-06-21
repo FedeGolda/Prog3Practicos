@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,20 +12,19 @@ namespace ObligatorioProg3.Controllers
 {
     public class ReservasController : Controller
     {
-        private readonly ObligatorioP3Context _context;
-        private readonly ILogger<ReservasController> _logger;
+        private readonly ObligatorioP3V2Context _context;
 
-        public ReservasController(ObligatorioP3Context context, ILogger<ReservasController> logger)
+        public ReservasController(ObligatorioP3V2Context context)
         {
             _context = context;
-            _logger = logger;
         }
 
         // GET: Reservas
+        [Authorize]
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3Context = _context.Reservas.Include(r => r.Cliente).Include(r => r.Mesa).Include(r => r.Restaurante);
-            return View(await obligatorioP3Context.ToListAsync());
+            var obligatorioP3V2Context = _context.Reservas.Include(r => r.Cliente).Include(r => r.Mesa).Include(r => r.Restaurante);
+            return View(await obligatorioP3V2Context.ToListAsync());
         }
 
         // GET: Reservas/Details/5
@@ -64,14 +64,10 @@ namespace ObligatorioProg3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,ClienteId,MesaId,RestauranteId,FechaReserva,Estado")] Reserva reserva)
         {
-            _logger.LogInformation("Entrando en el método Create POST");
-
             if (!ModelState.IsValid)
             {
-                _logger.LogInformation("ModelState es válido, intentando agregar reserva");
                 _context.Add(reserva);
                 await _context.SaveChangesAsync();
-                _logger.LogInformation("Reserva creado exitosamente");
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", reserva.ClienteId);

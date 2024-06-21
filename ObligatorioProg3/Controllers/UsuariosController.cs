@@ -1,191 +1,233 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ObligatorioProg3.Models;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging; // Asegúrate de tener esta importación
 
-public class UsuariosController : Controller
+namespace ObligatorioProg3.Controllers
 {
-    private readonly ObligatorioP3Context _context;
-    private readonly ILogger<UsuariosController> _logger;
-
-    public UsuariosController(ObligatorioP3Context context, ILogger<UsuariosController> logger)
+    public class UsuariosController : Controller
     {
-        _context = context;
-        _logger = logger;
-    }
+        private readonly ObligatorioP3V2Context _context;
 
-    // GET: Usuarios
-    public async Task<IActionResult> Index()
-    {
-        var obligatorioP3Context = _context.Usuarios.Include(u => u.Rol);
-        return View(await obligatorioP3Context.ToListAsync());
-    }
-
-    // GET: Usuarios/Details/5
-    public async Task<IActionResult> Details(int? id)
-    {
-        if (id == null)
+        public UsuariosController(ObligatorioP3V2Context context)
         {
-            return NotFound();
+            _context = context;
         }
 
-        var usuario = await _context.Usuarios
-            .Include(u => u.Rol)
-            .FirstOrDefaultAsync(m => m.Id == id);
-        if (usuario == null)
+        [Authorize]
+        public async Task<IActionResult> Index()
         {
-            return NotFound();
+            var usuarios = await _context.Usuarios.Include(u => u.Rol).ToListAsync();
+            return View(usuarios);
         }
 
-        return View(usuario);
-    }
-
-    // GET: Usuarios/Create
-    public IActionResult Create()
-    {
-        ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre");
-        return View();
-    }
-
-    // POST: Usuarios/Create
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,Nombre,Email,Contraseña,RolId")] Usuario usuario)
-    {
-        _logger.LogInformation("Entrando en el método Create POST");
-
-        if (!ModelState.IsValid)
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult Login()
         {
-            _logger.LogWarning("ModelState no es válido");
-            var errors = ModelState.Values.SelectMany(v => v.Errors);
-            _logger.LogInformation("ModelState es válido, intentando agregar usuario");
-            _context.Add(usuario);
-            await _context.SaveChangesAsync();
-            _logger.LogInformation("Usuario creado exitosamente");
-            return RedirectToAction(nameof(Index));
+            HttpContext.Response.Headers["Cache-Control"] = "no-cache, no-store, must-revalidate";
+            HttpContext.Response.Headers["Pragma"] = "no-cache";
+            HttpContext.Response.Headers["Expires"] = "0";
+
+            return View();
         }
 
-        if (ModelState.IsValid)
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(string email, string contraseña, string returnUrl)
         {
-            try
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email && u.Contraseña == contraseña);
+
+            if (usuario == null)
             {
-             
+                ModelState.AddModelError(string.Empty, "Correo electrónico o contraseña incorrectos.");
+                ViewData["LoginError"] = "Correo electrónico o contraseña incorrectos.";
+                return View();
             }
-            catch (Exception ex)
+
+            var claims = new[]
             {
-                _logger.LogError("Error al crear el usuario: {0}", ex.Message);
-                ModelState.AddModelError("", $"Error al crear el usuario: {ex.Message}");
+                new Claim(ClaimTypes.Name, usuario.Email),
+            };
+
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+            var authProperties = new AuthenticationProperties
+            {
+            };
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
+
+            HttpContext.Response.Headers["Cache-Control"] = "no-cache, no-store, must-revalidate";
+            HttpContext.Response.Headers["Pragma"] = "no-cache";
+            HttpContext.Response.Headers["Expires"] = "0";
+
+            return RedirectToLocal(returnUrl);
+        }
+
+        private IActionResult RedirectToLocal(string returnUrl)
+        {
+            if (Url.IsLocalUrl(returnUrl))
+            {
+                return Redirect(returnUrl);
+            }
+            else
+            {
+                return RedirectToAction(nameof(HomeController.Index), "Home");
             }
         }
 
-        // Si hay un error, pasa nuevamente los roles a la vista
-        ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
-        _logger.LogInformation("Regresando a la vista Create debido a un error");
-        return View(usuario);
-    }
-
-    // GET: Usuarios/Edit/5
-    public async Task<IActionResult> Edit(int? id)
-    {
-        if (id == null)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
         {
-            return NotFound();
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            HttpContext.Response.Headers["Cache-Control"] = "no-cache, no-store, must-revalidate";
+            HttpContext.Response.Headers["Pragma"] = "no-cache";
+            HttpContext.Response.Headers["Expires"] = "0";
+
+            return RedirectToAction(nameof(HomeController.Index), "Home");
         }
 
-        var usuario = await _context.Usuarios.FindAsync(id);
-        if (usuario == null)
+        [Authorize]
+        // GET: Usuarios/Create
+        public IActionResult Create()
         {
-            return NotFound();
+            ViewBag.RolId = new SelectList(_context.Roles, "Id", "Nombre");
+            return View();
         }
 
-        ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
-        return View(usuario);
-    }
-
-    // POST: Usuarios/Edit/5
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Email,Contraseña,RolId")] Usuario usuario)
-    {
-        if (id != usuario.Id)
+        // POST: Usuarios/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,Nombre,Email,Contraseña,RolId")] Usuario usuario)
         {
-            return NotFound();
-        }
-
-        if (ModelState.IsValid)
-        {
-            try
+            if (ModelState.IsValid)
             {
-                _context.Update(usuario);
+                _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch (DbUpdateConcurrencyException)
+            ViewBag.RolId = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
+            return View(usuario);
+        }
+
+
+        [Authorize]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
             {
-                if (!UsuarioExists(usuario.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return NotFound();
             }
-            catch (Exception ex)
+
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null)
             {
-                ModelState.AddModelError("", $"Error al editar el usuario: {ex.Message}");
+                return NotFound();
             }
+
+            ViewBag.RolId = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
+            return View(usuario);
         }
 
-        ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
-        return View(usuario);
-    }
-
-    // GET: Usuarios/Delete/5
-    public async Task<IActionResult> Delete(int? id)
-    {
-        if (id == null)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Email,Contraseña,RolId")] Usuario usuario)
         {
-            return NotFound();
+            if (id != usuario.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(usuario);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!UsuarioExists(usuario.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            ViewBag.RolId = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
+            return View(usuario);
         }
 
-        var usuario = await _context.Usuarios
-            .Include(u => u.Rol)
-            .FirstOrDefaultAsync(m => m.Id == id);
-        if (usuario == null)
+        [Authorize]
+        public async Task<IActionResult> Delete(int? id)
         {
-            return NotFound();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var usuario = await _context.Usuarios
+                .Include(u => u.Rol)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return View(usuario);
         }
 
-        return View(usuario);
-    }
-
-    // POST: Usuarios/Delete/5
-    [HttpPost, ActionName("Delete")]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteConfirmed(int id)
-    {
-        var usuario = await _context.Usuarios.FindAsync(id);
-        if (usuario != null)
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario != null)
             {
                 _context.Usuarios.Remove(usuario);
                 await _context.SaveChangesAsync();
             }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", $"Error al eliminar el usuario: {ex.Message}");
-            }
+            return RedirectToAction(nameof(Index));
         }
-        return RedirectToAction(nameof(Index));
-    }
 
-    private bool UsuarioExists(int id)
-    {
-        return _context.Usuarios.Any(e => e.Id == id);
+        [Authorize]
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var usuario = await _context.Usuarios
+                .Include(u => u.Rol)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return View(usuario);
+        }
+
+        private bool UsuarioExists(int id)
+        {
+            return _context.Usuarios.Any(e => e.Id == id);
+        }
     }
 }

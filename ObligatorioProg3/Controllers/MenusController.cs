@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,20 +12,19 @@ namespace ObligatorioProg3.Controllers
 {
     public class MenusController : Controller
     {
-        private readonly ObligatorioP3Context _context;
-        private readonly ILogger<MenusController> _logger;
+        private readonly ObligatorioP3V2Context _context;
 
-        public MenusController(ObligatorioP3Context context, ILogger<MenusController> logger)
+        public MenusController(ObligatorioP3V2Context context)
         {
             _context = context;
-            _logger = logger;
         }
 
         // GET: Menus
+        [Authorize]
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3Context = _context.Menus.Include(m => m.Restaurante);
-            return View(await obligatorioP3Context.ToListAsync());
+            var obligatorioP3V2Context = _context.Menus.Include(m => m.Restaurante);
+            return View(await obligatorioP3V2Context.ToListAsync());
         }
 
         // GET: Menus/Details/5
@@ -58,34 +58,15 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,RestauranteId,NombrePlato,Descripcion,Precio")] Menu menu)
+        public async Task<IActionResult> Create([Bind("Id,RestauranteId,NombrePlato,Descripción,Precio")] Menu menu)
         {
-            _logger.LogInformation("Entrando en el método Create POST");
-
             if (!ModelState.IsValid)
             {
-                try
-                {
-                    _logger.LogInformation("ModelState es válido, intentando agregar menu");
-                    _context.Add(menu);
-                    await _context.SaveChangesAsync();
-                    _logger.LogInformation("Menu creado exitosamente");
-                    return RedirectToAction(nameof(Index));
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError("Error al crear el menu: {0}", ex.Message);
-                    ModelState.AddModelError("", $"Error al crear el menu: {ex.Message}");
-                }
+                _context.Add(menu);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
-            else
-            {
-                _logger.LogWarning("ModelState no es válido");
-                var errors = ModelState.Values.SelectMany(v => v.Errors);
-            }
-
-           // _logger.LogInformation("Regresando a la vista Create debido a un error");
-          //  ViewData["RestauranteId"] = new SelectList(_context.Usuarios, "Id", "Id", .UsuarioId);
+            ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", menu.RestauranteId);
             return View(menu);
         }
 
@@ -111,7 +92,7 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,RestauranteId,NombrePlato,Descripcion,Precio")] Menu menu)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,RestauranteId,NombrePlato,Descripción,Precio")] Menu menu)
         {
             if (id != menu.Id)
             {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,19 +12,19 @@ namespace ObligatorioProg3.Controllers
 {
     public class MesasController : Controller
     {
-        private readonly ObligatorioP3Context _context;
-        private readonly ILogger<MesasController> _logger;
-        public MesasController(ObligatorioP3Context context, ILogger<MesasController> logger)
+        private readonly ObligatorioP3V2Context _context;
+
+        public MesasController(ObligatorioP3V2Context context)
         {
             _context = context;
-            _logger = logger;
         }
 
         // GET: Mesas
+        [Authorize]
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3Context = _context.Mesas.Include(m => m.Restaurante);
-            return View(await obligatorioP3Context.ToListAsync());
+            var obligatorioP3V2Context = _context.Mesas.Include(m => m.Restaurante);
+            return View(await obligatorioP3V2Context.ToListAsync());
         }
 
         // GET: Mesas/Details/5
@@ -59,14 +60,10 @@ namespace ObligatorioProg3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,NumeroMesa,Capacidad,Estado,RestauranteId")] Mesa mesa)
         {
-            _logger.LogInformation("Entrando en el método Create POST");
-
             if (!ModelState.IsValid)
             {
-                _logger.LogInformation("ModelState es válido, intentando agregar menu");
                 _context.Add(mesa);
                 await _context.SaveChangesAsync();
-                _logger.LogInformation("Mesa creado exitosamente");
                 return RedirectToAction(nameof(Index));
             }
             ViewData["RestauranteId"] = new SelectList(_context.Restaurantes, "Id", "Id", mesa.RestauranteId);

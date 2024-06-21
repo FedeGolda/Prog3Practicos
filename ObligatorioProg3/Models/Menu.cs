@@ -11,7 +11,7 @@ public partial class Menu
 
     public string NombrePlato { get; set; } = null!;
 
-    public string Descripcion { get; set; } = null!;
+    public string Descripción { get; set; } = null!;
 
     public double Precio { get; set; }
 

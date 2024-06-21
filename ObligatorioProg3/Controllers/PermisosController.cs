@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,19 +12,18 @@ namespace ObligatorioProg3.Controllers
 {
     public class PermisosController : Controller
     {
-        private readonly ObligatorioP3Context _context;
-        private readonly ILogger<PermisosController> _logger;
-        public PermisosController(ObligatorioP3Context context, ILogger<PermisosController> logger)
+        private readonly ObligatorioP3V2Context _context;
+
+        public PermisosController(ObligatorioP3V2Context context)
         {
             _context = context;
-            _logger = logger;
         }
 
         // GET: Permisos
+        [Authorize]
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3Context = _context.Permisos.Include(p => p.Rol);
-            return View(await obligatorioP3Context.ToListAsync());
+            return View(await _context.Permisos.ToListAsync());
         }
 
         // GET: Permisos/Details/5
@@ -35,7 +35,6 @@ namespace ObligatorioProg3.Controllers
             }
 
             var permiso = await _context.Permisos
-                .Include(p => p.Rol)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (permiso == null)
             {
@@ -48,7 +47,6 @@ namespace ObligatorioProg3.Controllers
         // GET: Permisos/Create
         public IActionResult Create()
         {
-            ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Id");
             return View();
         }
 
@@ -57,37 +55,14 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,RolId,TipoPermisos")] Permiso permiso)
+        public async Task<IActionResult> Create([Bind("Id,Nombre")] Permiso permiso)
         {
-            _logger.LogInformation("Entrando en el método Create POST");
-
-            if (!ModelState.IsValid)
-            {
-                _logger.LogWarning("ModelState no es válido");
-                var errors = ModelState.Values.SelectMany(v => v.Errors);
-                _logger.LogInformation("ModelState es válido, intentando agregar usuario");
-                _context.Add(permiso);
-                await _context.SaveChangesAsync();
-                _logger.LogInformation("Permiso creado exitosamente");
-                return RedirectToAction(nameof(Index));
-            }
-
             if (ModelState.IsValid)
             {
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError("Error al crear el permiso: {0}", ex.Message);
-                    ModelState.AddModelError("", $"Error al crear el permiso: {ex.Message}");
-                }
+                _context.Add(permiso);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
-
-            // Si hay un error, pasa nuevamente los roles a la vista
-            ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Id", permiso.RolId);
-            _logger.LogInformation("Regresando a la vista Create debido a un error");
             return View(permiso);
         }
 
@@ -104,7 +79,6 @@ namespace ObligatorioProg3.Controllers
             {
                 return NotFound();
             }
-            ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Id", permiso.RolId);
             return View(permiso);
         }
 
@@ -113,7 +87,7 @@ namespace ObligatorioProg3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,RolId,TipoPermisos")] Permiso permiso)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre")] Permiso permiso)
         {
             if (id != permiso.Id)
             {
@@ -140,7 +114,6 @@ namespace ObligatorioProg3.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["RolId"] = new SelectList(_context.Roles, "Id", "Id", permiso.RolId);
             return View(permiso);
         }
 
@@ -153,7 +126,6 @@ namespace ObligatorioProg3.Controllers
             }
 
             var permiso = await _context.Permisos
-                .Include(p => p.Rol)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (permiso == null)
             {
