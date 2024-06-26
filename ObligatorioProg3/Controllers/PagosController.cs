@@ -51,21 +51,27 @@ namespace ObligatorioProg3.Controllers
         // GET: Pagos/Create
         public IActionResult Create()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id");
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Nombre");
             ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id");
-            ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "Id");
+            ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "ClienteId");
             return View();
         }
 
         // POST: Pagos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,ReservaId,ClienteId,ClimaId,Monto,FechaPago,MetodoPago,TasaCambio,Moneda,MontoConvertido,PrecioTotal")] Pago pago)
         {
             if (!ModelState.IsValid)
             {
+                // Obtener el cliente para calcular el descuento
+                var cliente = await _context.Clientes.FindAsync(pago.ClienteId);
+                if (cliente != null)
+                {
+                    // Calcular el precio total con descuento
+                    pago.PrecioTotal = cliente.CalcularDescuento(pago.Monto);
+                }
+
                 _context.Add(pago);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,8 +102,6 @@ namespace ObligatorioProg3.Controllers
         }
 
         // POST: Pagos/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,ReservaId,ClienteId,ClimaId,Monto,FechaPago,MetodoPago,TasaCambio,Moneda,MontoConvertido,PrecioTotal")] Pago pago)
@@ -107,10 +111,18 @@ namespace ObligatorioProg3.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 try
                 {
+                    // Obtener el cliente para calcular el descuento
+                    var cliente = await _context.Clientes.FindAsync(pago.ClienteId);
+                    if (cliente != null)
+                    {
+                        // Calcular el precio total con descuento
+                        pago.PrecioTotal = cliente.CalcularDescuento(pago.Monto);
+                    }
+
                     _context.Update(pago);
                     await _context.SaveChangesAsync();
                 }

@@ -25,5 +25,29 @@ namespace ObligatorioProg3.Models
         public virtual ICollection<Reseña> Reseñas { get; set; } = new List<Reseña>();
 
         public virtual Usuario Usuario { get; set; } = null!;
+
+
+
+        public double CalcularDescuento(double montoOriginal)
+        {
+            double descuento = 0;
+
+            switch (TipoCliente)
+            {
+                case "VIP":
+                    descuento = 0.20; // 20% de descuento
+                    break;
+                case "Frecuente":
+                    descuento = 0.10; // 10% de descuento
+                    break;
+                case "Nuevo":
+                default:
+                    descuento = 0.0; // Sin descuento
+                    break;
+            }
+
+            return montoOriginal - (montoOriginal * descuento);
+        }
+
     }
 }
