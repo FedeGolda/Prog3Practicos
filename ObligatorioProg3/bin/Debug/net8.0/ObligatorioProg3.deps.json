@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore.Design": "8.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.6",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2",
+          "RestSharp": "111.3.0"
         },
         "runtime": {
           "ObligatorioProg3.dll": {}
@@ -1725,7 +1726,18 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Buffers/4.5.0": {},
+=======
+      "RestSharp/111.3.0": {
+        "runtime": {
+          "lib/net8.0/RestSharp.dll": {
+            "assemblyVersion": "111.3.0.0",
+            "fileVersion": "111.3.0.0"
+          }
+        }
+      },
+>>>>>>> remotes/origin/BoliviaCampeon
       "System.CodeDom/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
@@ -2989,12 +3001,21 @@
       "path": "nuget.versioning/6.9.1",
       "hashPath": "nuget.versioning.6.9.1.nupkg.sha512"
     },
+<<<<<<< HEAD
     "System.Buffers/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
       "path": "system.buffers/4.5.0",
       "hashPath": "system.buffers.4.5.0.nupkg.sha512"
+=======
+    "RestSharp/111.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+cHtmb3I5efys4scOCo+pWRgJNkwyEI8p39d4VMTbCXpPwsDeGP6OJH+1m4xtYUAZttMp2s4yxagy3usl2X13g==",
+      "path": "restsharp/111.3.0",
+      "hashPath": "restsharp.111.3.0.nupkg.sha512"
+>>>>>>> remotes/origin/BoliviaCampeon
     },
     "System.CodeDom/5.0.0": {
       "type": "package",

@@ -1,5 +1,11 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    var clima = ViewBag.ElClima as ObligatorioProg3.Models.ApiClimaModel;
+}
+<!DOCTYPE html>
+﻿
 <html lang="en">
+    @model ObligatorioProg3.Models.ApiClimaModel
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +14,9 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ObligatorioProg3.styles.css" asp-append-version="true" />
 </head>
+
 <body>
+    
     <header>
         @if (User?.Identity?.IsAuthenticated == true)
         {
@@ -67,6 +75,16 @@
                             <form id="logoutForm" asp-controller="Usuarios" asp-action="Logout" method="post">
                                 <button type="submit" class="btn btn-link nav-link" style="padding: 0; margin: 0; border: none;">Logout (@User.Identity.Name)</button>
                             </form>
+                        </li>
+                        <li class="nav-item">
+                            <form method="post" asp-controller="ApiClima" asp-action="GetClima">
+                                <input type="submit" value="Obtener Clima" />
+                            </form>
+                            @if (ViewBag.ElClima != null)
+                            {
+                                <Label>La temperatura actual es: @clima._Temperatura.Temp °C</Label>
+                            }
+
                         </li>
                     </ul>
                 </div>
