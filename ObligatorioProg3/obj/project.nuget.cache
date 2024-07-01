@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tY41bnnSYCsWwyqkboM+A7FUXWX2V131fV2kFeYX0AvRzLVUDCNv0J3Mko3ZG9ZR64jBMycHqOoKe3FSwBnFJA==",
+  "dgSpecHash": "XG+5/h7ISAPRZF0VBQZkhlwP5KuQ3zbKBS5oZ6YfiThJyG8nnGC+Km+cjDWXvqXAbSdw3f1f4Ev6izCf15JCgw==",
   "success": true,
   "projectFilePath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\ObligatorioProg3.csproj",
   "expectedPackageFiles": [
@@ -187,12 +187,5 @@
     "C:\\Users\\fedeg\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\fedeg\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
