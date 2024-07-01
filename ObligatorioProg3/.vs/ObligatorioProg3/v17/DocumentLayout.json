@@ -1,19 +1,33 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|solutionrelative:controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.205\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\controllers\\apiclimacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|solutionrelative:controllers\\apiclimacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\obligatorioprog3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|solutionrelative:obligatorioprog3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|solutionrelative:models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\views\\shared\\apibutton.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|solutionrelative:views\\shared\\apibutton.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|solutionrelative:controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,105 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\obligatorioprog3\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{847A9090-C34E-4FFA-A042-94184B4934F7}|ObligatorioProg3.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-  "WorkspaceRootPath": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\apiclimacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\apiclimacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\views\\shared\\apibutton.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:views\\shared\\apibutton.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\models\\apiclimamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:models\\apiclimamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\ordenescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\ordenescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\climascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\climascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\mesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\mesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\models\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:models\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\models\\obligatoriop3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:models\\obligatoriop3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\migrations\\obligatoriop3contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:migrations\\obligatoriop3contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\restaurantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\restaurantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\resenascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\resenascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|c:\\users\\winsiki\\desktop\\cei\\prog3practicos\\obligatorioprog3\\controllers\\ordendetallescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BBC2121-5233-4313-8C7A-645E1B042130}|ObligatorioProg3.csproj|solutionrelative:controllers\\ordendetallescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> remotes/origin/BoliviaCampeon
     }
   ],
   "DocumentGroupContainers": [
@@ -134,11 +49,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "ApiButton.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\Shared\\ApiButton.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\ApiButton.cshtml",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Views\\Shared\\ApiButton.cshtml",
+              "RelativeToolTip": "Views\\Shared\\ApiButton.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-01T05:47:01.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ObligatorioProg3",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\ObligatorioProg3.csproj",
+              "RelativeDocumentMoniker": "ObligatorioProg3.csproj",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\ObligatorioProg3.csproj",
+              "RelativeToolTip": "ObligatorioProg3.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-01T05:39:20.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiClimaController.cs",
+              "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ApiClimaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApiClimaController.cs",
+              "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ApiClimaController.cs",
+              "RelativeToolTip": "Controllers\\ApiClimaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T05:39:03.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AQIAABkCAAAAAAAAAAAQwNoBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-07-01T05:38:51.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Reserva.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Models\\Reserva.cs",
               "RelativeDocumentMoniker": "Models\\Reserva.cs",
@@ -146,11 +111,12 @@
               "RelativeToolTip": "Models\\Reserva.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:21:10.136Z"
+              "WhenOpened": "2024-06-26T21:21:10.136Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Clima.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Models\\Clima.cs",
               "RelativeDocumentMoniker": "Models\\Clima.cs",
@@ -158,11 +124,12 @@
               "RelativeToolTip": "Models\\Clima.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:20:42.801Z"
+              "WhenOpened": "2024-06-26T21:20:42.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Pago.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Models\\Pago.cs",
               "RelativeDocumentMoniker": "Models\\Pago.cs",
@@ -170,11 +137,12 @@
               "RelativeToolTip": "Models\\Pago.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAgwAsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:08:59.592Z"
+              "WhenOpened": "2024-06-26T21:08:59.592Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Cliente.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Cliente.cs",
@@ -182,340 +150,34 @@
               "RelativeToolTip": "Models\\Cliente.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAcwB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:06:01.19Z"
+              "WhenOpened": "2024-06-26T21:06:01.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-<<<<<<< HEAD
+              "DocumentIndex": 6,
               "Title": "PagosController.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\PagosController.cs",
               "RelativeDocumentMoniker": "Controllers\\PagosController.cs",
               "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\PagosController.cs",
               "RelativeToolTip": "Controllers\\PagosController.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAmwDYAAABOAAAA",
-=======
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\wwwroot\\css\\site.css*",
-              "RelativeToolTip": "wwwroot\\css\\site.css*",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAswBQAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-01T05:08:52.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApiButton.cshtml",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Views\\Shared\\ApiButton.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\ApiButton.cshtml",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Views\\Shared\\ApiButton.cshtml",
-              "RelativeToolTip": "Views\\Shared\\ApiButton.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-01T04:56:20.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApiClimaModel.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\ApiClimaModel.cs",
-              "RelativeDocumentMoniker": "Models\\ApiClimaModel.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\ApiClimaModel.cs",
-              "RelativeToolTip": "Models\\ApiClimaModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T04:49:42.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApiClimaController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ApiClimaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ApiClimaController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ApiClimaController.cs",
-              "RelativeToolTip": "Controllers\\ApiClimaController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T03:15:09.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Reserva.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\Reserva.cs",
-              "RelativeDocumentMoniker": "Models\\Reserva.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\Reserva.cs",
-              "RelativeToolTip": "Models\\Reserva.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAqAAAA",
->>>>>>> remotes/origin/BoliviaCampeon
+              "ViewState": "AQIAADUAAAAAAAAAAAASwEsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T17:57:45.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ClientesController.cs",
               "DocumentMoniker": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ClientesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
               "ToolTip": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ClientesController.cs",
               "RelativeToolTip": "Controllers\\ClientesController.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAUwIcAAAANAAAA",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAUwIoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T15:43:37.516Z"
-=======
-              "DocumentIndex": 7,
-              "Title": "MenusController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\MenusController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MenusController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\MenusController.cs",
-              "RelativeToolTip": "Controllers\\MenusController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:08:33.913Z",
+              "WhenOpened": "2024-06-21T15:43:37.516Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Permiso.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\Permiso.cs",
-              "RelativeDocumentMoniker": "Models\\Permiso.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\Permiso.cs",
-              "RelativeToolTip": "Models\\Permiso.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T23:10:17.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-14T21:21:21.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PermisosController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\PermisosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PermisosController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\PermisosController.cs",
-              "RelativeToolTip": "Controllers\\PermisosController.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAswBQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:20:30.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OrdenesController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\OrdenesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrdenesController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\OrdenesController.cs",
-              "RelativeToolTip": "Controllers\\OrdenesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:11:24.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "Controllers\\ClientesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:06:59.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClimasController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ClimasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClimasController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ClimasController.cs",
-              "RelativeToolTip": "Controllers\\ClimasController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:07:45.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MesasController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\MesasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MesasController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\MesasController.cs",
-              "RelativeToolTip": "Controllers\\MesasController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAkwEIAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:09:11.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:06:25.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RestaurantesController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\RestaurantesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RestaurantesController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\RestaurantesController.cs",
-              "RelativeToolTip": "Controllers\\RestaurantesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:19:44.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAIBJwBYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:34:50.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ResenasController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ResenasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ResenasController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\ResenasController.cs",
-              "RelativeToolTip": "Controllers\\ResenasController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:18:10.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ObligatorioP3Context.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\ObligatorioP3Context.cs",
-              "RelativeDocumentMoniker": "Models\\ObligatorioP3Context.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\ObligatorioP3Context.cs",
-              "RelativeToolTip": "Models\\ObligatorioP3Context.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAIBJwCwAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:05:32.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "Controllers\\RolesController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAIBJwDoAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:18:44.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ObligatorioP3ContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Migrations\\ObligatorioP3ContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\ObligatorioP3ContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Migrations\\ObligatorioP3ContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\ObligatorioP3ContextModelSnapshot.cs",
-              "ViewState": "AQIAAJgAAAAAAAAAAIBJwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T22:24:59.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Views\\Usuarios\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuarios\\Create.cshtml",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Views\\Usuarios\\Create.cshtml",
-              "RelativeToolTip": "Views\\Usuarios\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-15T00:04:29.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Models\\Usuario.cs",
-              "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T00:05:21.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PagosController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\PagosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PagosController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\PagosController.cs",
-              "RelativeToolTip": "Controllers\\PagosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:15:28.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "OrdenDetallesController.cs",
-              "DocumentMoniker": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\OrdenDetallesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrdenDetallesController.cs",
-              "ToolTip": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\Controllers\\OrdenDetallesController.cs",
-              "RelativeToolTip": "Controllers\\OrdenDetallesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T21:12:22.025Z",
-              "EditorCaption": ""
->>>>>>> remotes/origin/BoliviaCampeon
             }
           ]
         }
