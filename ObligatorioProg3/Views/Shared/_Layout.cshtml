@@ -1,11 +1,11 @@
-﻿
+﻿@using ObligatorioProg3.Models;
 @{
     var clima = ViewBag.ElClima as ObligatorioProg3.Models.ApiClimaModel;
+    var USDaMonedas = ViewBag.USDaMonedas as ObligatorioProg3.Models.ApiCotizacionModel;
 }
 <!DOCTYPE html>
 ﻿
 <html lang="en">
-    @model ObligatorioProg3.Models.ApiClimaModel
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
@@ -73,6 +74,16 @@
                             @if (ViewBag.ElClima != null)
                             {
                                 <Label>La temperatura actual es: @clima._Temperatura.Temp °C</Label>
+                            }
+
+                        </li>
+                        <li class="nav-item">
+                            <form method="post" asp-controller="ApiCotizacion" asp-action="GetCotizacion">
+                                <input type="submit" value="Obtener Cotizacion" />
+                            </form>
+                            @if (USDaMonedas != null)
+                            {
+                                <Label>El Dolar esta a: @USDaMonedas.Quotes["USDUYU"] pesos Uruguayos</Label>
                             }
 
                         </li>

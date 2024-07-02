@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qSYeDWu5NY0KcTcau9b3+PEg6mNzg+Uw0Aj7mOWOzhU=",
+  "Hash": "3GZLJa5eo1wgi0vehsX9p4nrJ8eHqHhlRJBcowjWTVA=",
   "Source": "ObligatorioProg3",
   "BasePath": "_content/ObligatorioProg3",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\wwwroot\\css\\SUN.jpg",
+      "SourceId": "ObligatorioProg3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\wwwroot\\",
+      "BasePath": "_content/ObligatorioProg3",
+      "RelativePath": "css/SUN.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\SUN.jpg"
     },
     {
       "Identity": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\wwwroot\\favicon.ico",
