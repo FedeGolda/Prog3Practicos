@@ -5,7 +5,15 @@
       "PackagePath": "staticwebassets\\ObligatorioProg3.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\wwwroot\\css\\site.css",
+=======
+      "Id": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\wwwroot\\css\\SUN.jpg",
+      "PackagePath": "staticwebassets\\css\\SUN.jpg"
+    },
+    {
+      "Id": "C:\\Users\\WinSiki\\Desktop\\CEI\\Prog3Practicos\\ObligatorioProg3\\wwwroot\\css\\site.css",
+>>>>>>> 73398dea2bfeeafa8d46648e00d41237a4f15fd2
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {

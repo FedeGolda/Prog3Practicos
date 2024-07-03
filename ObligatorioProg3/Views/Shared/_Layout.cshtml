@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 ﻿<!DOCTYPE html>
+=======
+﻿@using ObligatorioProg3.Models;
+@{
+    var clima = ViewBag.ElClima as ObligatorioProg3.Models.ApiClimaModel;
+    var USDaMonedas = ViewBag.USDaMonedas as ObligatorioProg3.Models.ApiCotizacionModel;
+}
+<!DOCTYPE html>
+﻿
+>>>>>>> 73398dea2bfeeafa8d46648e00d41237a4f15fd2
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,6 +20,7 @@
 </head>
 <body>
     <header>
+<<<<<<< HEAD
         @if (User?.Identity?.IsAuthenticated == true)
         {
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -63,10 +74,32 @@
                         </ul>
                     </div>
                     <ul class="navbar-nav">
+=======
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ObligatorioProg3</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    
+                    <ul class="navbar-nav flex-grow-1">
+>>>>>>> 73398dea2bfeeafa8d46648e00d41237a4f15fd2
                         <li class="nav-item">
                             <form id="logoutForm" asp-controller="Usuarios" asp-action="Logout" method="post">
                                 <button type="submit" class="btn btn-link nav-link" style="padding: 0; margin: 0; border: none;">Logout (@User.Identity.Name)</button>
                             </form>
+                        </li>
+                        <li class="nav-item">
+                            <form method="post" asp-controller="ApiCotizacion" asp-action="GetCotizacion">
+                                <input type="submit" value="Obtener Cotizacion" />
+                            </form>
+                            @if (USDaMonedas != null)
+                            {
+                                <Label>El Dolar esta a: @USDaMonedas.Quotes["USDUYU"] pesos Uruguayos</Label>
+                            }
+
                         </li>
                     </ul>
                 </div>
