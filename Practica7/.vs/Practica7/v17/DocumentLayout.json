@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{6FA8C517-6E4C-4B85-B8FC-417CCB383EB1}|Practica7.csproj|solutionrelative:modelo\\person.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FA8C517-6E4C-4B85-B8FC-417CCB383EB1}|Practica7.csproj|d:\\documents\\federico\\cei\\programacion 3\\practicos\\prog3practicos\\practica7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6FA8C517-6E4C-4B85-B8FC-417CCB383EB1}|Practica7.csproj|D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\Practica7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FA8C517-6E4C-4B85-B8FC-417CCB383EB1}|Practica7.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T18:01:16.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T18:01:16.675Z"
             }
           ]
         }
