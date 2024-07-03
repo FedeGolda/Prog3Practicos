@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObligatorioProg3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7661cb21894e335aaa40e93beef3f7ce32ace1f")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+141aa28f1ef408f8251f621677d6aea323d4acd8")]
->>>>>>> 73398dea2bfeeafa8d46648e00d41237a4f15fd2
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5b2fe1eedef8bbbef588bb8628102451fe05771")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObligatorioProg3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObligatorioProg3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
