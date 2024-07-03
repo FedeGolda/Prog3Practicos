@@ -56,7 +56,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="PrecioTotal" class="control-label"></label>
-                <input asp-for="PrecioTotal" class="form-control" />
+                <input asp-for="PrecioTotal" class="form-control" disabled />
+                <input type="hidden" asp-for="PrecioTotal" />
                 <span asp-validation-for="PrecioTotal" class="text-danger"></span>
             </div>
             <div class="form-group">

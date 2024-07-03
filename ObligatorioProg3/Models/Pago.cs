@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ObligatorioProg3.Models;
 
@@ -17,15 +18,19 @@ public partial class Pago
 
     public DateTime FechaPago { get; set; }
 
+    [Required(ErrorMessage = "MetodoPago es obligatorio")]
+    [RegularExpression("^(Efectivo|Tarjeta)$", ErrorMessage = "Tiene que ingresar Efectivo o Tarjeta")]
     public string? MetodoPago { get; set; }
 
     public double? TasaCambio { get; set; }
 
+    [Required(ErrorMessage = "Moneda es obligatorio")]
+    [RegularExpression("^(Pesos|USD)$", ErrorMessage = "Tiene que ingresar Pesos o USD")]
     public string? Moneda { get; set; }
 
     public double? MontoConvertido { get; set; }
 
-    public double PrecioTotal { get; set; }
+    public double? PrecioTotal { get; set; }
 
     public virtual Cliente Cliente { get; set; } = null!;
 

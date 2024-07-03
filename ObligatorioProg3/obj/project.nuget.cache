@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XG+5/h7ISAPRZF0VBQZkhlwP5KuQ3zbKBS5oZ6YfiThJyG8nnGC+Km+cjDWXvqXAbSdw3f1f4Ev6izCf15JCgw==",
+  "dgSpecHash": "J0JEy2b8pusa6+pasTEwn8n1l8ajm31W7/4Y3EvJiikHL+Jimb7YSX7vjLlWWYbv7nf/IvT8FhRoYCCQQ+WpqQ==",
   "success": true,
   "projectFilePath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\ObligatorioProg3.csproj",
   "expectedPackageFiles": [
@@ -144,7 +144,6 @@
     "C:\\Users\\fedeg\\.nuget\\packages\\nuget.projectmodel\\6.9.1\\nuget.projectmodel.6.9.1.nupkg.sha512",
     "C:\\Users\\fedeg\\.nuget\\packages\\nuget.protocol\\6.9.1\\nuget.protocol.6.9.1.nupkg.sha512",
     "C:\\Users\\fedeg\\.nuget\\packages\\nuget.versioning\\6.9.1\\nuget.versioning.6.9.1.nupkg.sha512",
-    "C:\\Users\\fedeg\\.nuget\\packages\\restsharp\\111.3.0\\restsharp.111.3.0.nupkg.sha512",
     "C:\\Users\\fedeg\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\fedeg\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\fedeg\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

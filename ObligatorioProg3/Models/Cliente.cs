@@ -46,8 +46,11 @@ namespace ObligatorioProg3.Models
                     break;
             }
 
-            return montoOriginal - (montoOriginal * descuento);
+            double montoDescontado = montoOriginal * descuento;
+            return montoOriginal - montoDescontado;
         }
+
+
 
     }
 }

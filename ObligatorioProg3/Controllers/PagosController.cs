@@ -76,11 +76,12 @@ namespace ObligatorioProg3.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", pago.ClienteId);
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Nombre", pago.ClienteId);
             ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id", pago.ClimaId);
-            ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "Id", pago.ReservaId);
+            ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "ClienteId", pago.ReservaId);
             return View(pago);
         }
+
 
         // GET: Pagos/Edit/5
         public async Task<IActionResult> Edit(int? id)
