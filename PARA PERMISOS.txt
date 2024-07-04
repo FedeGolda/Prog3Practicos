@@ -1,0 +1,18 @@
+Rol
+IDRol
+Nombre
+
+
+Permiso
+IDPermiso
+Nombre
+
+
+
+RolPermiso
+IDRol
+IDPermiso
+
+va en Rol
+opcion 1: datagrid, gridview
+opcion 2: combo
