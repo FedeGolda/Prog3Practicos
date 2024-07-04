@@ -171,7 +171,8 @@
               "RelativeToolTip": "Views\\Permisos\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T04:54:30.952Z"
+              "WhenOpened": "2024-07-02T04:54:30.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -183,7 +184,8 @@
               "RelativeToolTip": "Controllers\\PermisosController.cs",
               "ViewState": "AQIAAHMAAAAAAAAAAAAUwJ4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T04:54:18.251Z"
+              "WhenOpened": "2024-07-02T04:54:18.251Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -195,7 +197,8 @@
               "RelativeToolTip": "Models\\Permiso.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T04:53:45.738Z"
+              "WhenOpened": "2024-07-02T04:53:45.738Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -207,7 +210,8 @@
               "RelativeToolTip": "Models\\Reserva.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:21:10.136Z"
+              "WhenOpened": "2024-06-26T21:21:10.136Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -219,7 +223,8 @@
               "RelativeToolTip": "Models\\Clima.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:20:42.801Z"
+              "WhenOpened": "2024-06-26T21:20:42.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -229,9 +234,10 @@
               "RelativeDocumentMoniker": "Models\\Pago.cs",
               "ToolTip": "C:\\Users\\Fede\\Desktop\\CEI\\Programacion3\\Practicos\\ObligatorioProg3\\Models\\Pago.cs",
               "RelativeToolTip": "Models\\Pago.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAcwBoAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA0wBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:08:59.592Z"
+              "WhenOpened": "2024-06-26T21:08:59.592Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -243,7 +249,8 @@
               "RelativeToolTip": "Models\\Cliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T21:06:01.19Z"
+              "WhenOpened": "2024-06-26T21:06:01.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
