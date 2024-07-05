@@ -1,5 +1,11 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@using ObligatorioProg3.Models;
+@{
+    var clima = ViewBag.ElClima as ApiClimaModel;
+    var USDaMonedas = ViewBag.USDaMonedas as ApiCotizacionModel;
+}
+
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,78 +16,103 @@
 </head>
 <body>
     <header>
-        @if (User?.Identity?.IsAuthenticated == true)
-        {
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <div class="container-fluid">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ObligatorioProg3</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Roles" asp-action="Index">Roles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Permisos" asp-action="Index">Permisos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Restaurantes" asp-action="Index">Restaurantes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Menus" asp-action="Index">Menus</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Mesas" asp-action="Index">Mesas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Pagos" asp-action="Index">Pagos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Ordenes" asp-action="Index">Ordenes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="OrdenDetalles" asp-action="Index">Ordenes Detallles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Reseñas" asp-action="Index">Reseñas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Reservas" asp-action="Index">Reservas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Climas" asp-action="Index">Climas</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="navbar-nav">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ObligatorioProg3</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Roles" asp-action="Index">Roles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Permisos" asp-action="Index">Permisos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Restaurantes" asp-action="Index">Restaurantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Menus" asp-action="Index">Menus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Mesas" asp-action="Index">Mesas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Pagos" asp-action="Index">Pagos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Ordenes" asp-action="Index">Ordenes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="OrdenDetalles" asp-action="Index">Ordenes Detalles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reseñas" asp-action="Index">Reseñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservas" asp-action="Index">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Climas" asp-action="Index">Climas</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav">
+                    @if (User?.Identity?.IsAuthenticated == true)
+                    {
                         <li class="nav-item">
                             <form id="logoutForm" asp-controller="Usuarios" asp-action="Logout" method="post">
                                 <button type="submit" class="btn btn-link nav-link" style="padding: 0; margin: 0; border: none;">Logout (@User.Identity.Name)</button>
                             </form>
                         </li>
-                    </ul>
-                </div>
-            </nav>
-        }
+                        <li class="nav-item">
+                            <form method="post" asp-controller="ApiCotizacion" asp-action="GetCotizacion">
+                                <input type="submit" value="Obtener Cotizacion" />
+                            </form>
+                            @if (ViewBag.USDaMonedas != null)
+                            {
+                                <label>El Dólar está a: @USDaMonedas.Quotes["USDUYU"] pesos Uruguayos</label>
+                            }
+                        </li>
+                    }
+                </ul>
+            </div>
+        </nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            @if (User?.Identity?.IsAuthenticated == true)
+            {
+                <div class="weather">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <span class="icon"><img class="img-fluid" src="https://img.icons8.com/emoji/96/000000/sun-emoji.png" /></span>
+                                <div class="title"><p>Maldonado</p></div>
+                                @if (clima != null && clima._Temperatura != null && clima._Temperatura.Temp != null)
+                                {
+                                    <div class="temp">@clima._Temperatura.Temp.Value.ToString("0.##")<sup>&deg;</sup>C</div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - ObligatorioProg3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; @DateTime.Now.Year - ObligatorioProg3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

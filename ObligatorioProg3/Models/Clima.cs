@@ -7,7 +7,7 @@ public partial class Clima
 {
     public int Id { get; set; }
 
-    public DateTime Fecha { get; set; }
+    public DateTime? Fecha { get; set; }
 
     public double Temperatura { get; set; }
 

@@ -42,8 +42,7 @@ public partial class ObligatorioP3V2Context : DbContext
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-       // => optionsBuilder.UseSqlServer("Data Source=PC-FEDE ;Initial Catalog=ObligatorioP3_V2;Integrated Security=True; TrustServerCertificate=True");
-    => optionsBuilder.UseSqlServer("Data Source=DESKTOP-FIK9LM4 ;Initial Catalog=ObligatorioP3_V2;Integrated Security=True; TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=PC-FEDE ;Initial Catalog=ObligatorioP3_V2;Integrated Security=True; TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -71,6 +70,7 @@ public partial class ObligatorioP3V2Context : DbContext
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.DescripciónClima).HasMaxLength(100);
+            entity.Property(e => e.Fecha).HasColumnType("datetime");
         });
 
         modelBuilder.Entity<Menu>(entity =>
@@ -236,6 +236,25 @@ public partial class ObligatorioP3V2Context : DbContext
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.Nombre).HasMaxLength(50);
+
+            entity.HasMany(d => d.Idpermisos).WithMany(p => p.Idrols)
+                .UsingEntity<Dictionary<string, object>>(
+                    "RolPermiso",
+                    r => r.HasOne<Permiso>().WithMany()
+                        .HasForeignKey("Idpermiso")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__RolPermis__IDPer__75A278F5"),
+                    l => l.HasOne<Role>().WithMany()
+                        .HasForeignKey("Idrol")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__RolPermis__IDRol__74AE54BC"),
+                    j =>
+                    {
+                        j.HasKey("Idrol", "Idpermiso").HasName("PK__RolPermi__89907BE974850662");
+                        j.ToTable("RolPermiso");
+                        j.IndexerProperty<int>("Idrol").HasColumnName("IDRol");
+                        j.IndexerProperty<int>("Idpermiso").HasColumnName("IDPermiso");
+                    });
         });
 
         modelBuilder.Entity<Usuario>(entity =>
