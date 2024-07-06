@@ -75,12 +75,13 @@
                             </form>
                         </li>
                         <li class="nav-item">
-                            <form method="post" asp-controller="ApiCotizacion" asp-action="GetCotizacion">
-                                <input type="submit" value="Obtener Cotizacion" />
-                            </form>
-                            @if (ViewBag.USDaMonedas != null)
+                            @if (USDaMonedas != null)
                             {
                                 <label>El Dólar está a: @USDaMonedas.Quotes["USDUYU"] pesos Uruguayos</label>
+                            }
+                            else
+                            {
+                                <label>No se pudo obtener la cotización</label>
                             }
                         </li>
                     }
