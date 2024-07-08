@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4iw7kqY99jvsGQa+6X3WkAy1HxHp0sF5+wb8Iq7Rno1UaqYWLGE1z21yP81+gW39MAOf0+FV7kMRq3UqG1qICw==",
+  "dgSpecHash": "HONFEHychxeEnwGsxN2LKmsmqsZFxZ4E95L+BPDj1R0aInKwDYSk0fvr+T6ZibZKm7igjUIHMcTEm5cmxrqkPw==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\ObligatorioProg3.csproj",
+  "projectFilePath": "C:\\Users\\fedeg\\Desktop\\OBLIGATORIO 2.0\\ObligatorioProg3\\ObligatorioProg3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fedeg\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\fedeg\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

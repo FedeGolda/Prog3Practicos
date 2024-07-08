@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\ObligatorioProg3.csproj": {}
+    "C:\\Users\\fedeg\\Desktop\\OBLIGATORIO 2.0\\ObligatorioProg3\\ObligatorioProg3.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\ObligatorioProg3.csproj": {
+    "C:\\Users\\fedeg\\Desktop\\OBLIGATORIO 2.0\\ObligatorioProg3\\ObligatorioProg3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\ObligatorioProg3.csproj",
+        "projectUniqueName": "C:\\Users\\fedeg\\Desktop\\OBLIGATORIO 2.0\\ObligatorioProg3\\ObligatorioProg3.csproj",
         "projectName": "ObligatorioProg3",
-        "projectPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\ObligatorioProg3.csproj",
+        "projectPath": "C:\\Users\\fedeg\\Desktop\\OBLIGATORIO 2.0\\ObligatorioProg3\\ObligatorioProg3.csproj",
         "packagesPath": "C:\\Users\\fedeg\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Federico\\CEI\\PROGRAMACION 3\\Practicos\\Prog3Practicos\\ObligatorioProg3\\obj\\",
+        "outputPath": "C:\\Users\\fedeg\\Desktop\\OBLIGATORIO 2.0\\ObligatorioProg3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
