@@ -19,7 +19,7 @@
     <header>
         @if (User?.Identity?.IsAuthenticated == true)
         {
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
                 <div class="container-fluid">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                         <img src="~/css/hamburguesa.jpeg" alt="Hamburguesa" style="width:50px;height:auto;" />
@@ -31,60 +31,60 @@
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Roles" asp-action="Index">Roles</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Roles" asp-action="Index">Roles</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Permisos" asp-action="Index">Permisos</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Permisos" asp-action="Index">Permisos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Restaurantes" asp-action="Index">Restaurantes</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Restaurantes" asp-action="Index">Restaurantes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Menus" asp-action="Index">Menus</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Menus" asp-action="Index">Menus</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Mesas" asp-action="Index">Mesas</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Mesas" asp-action="Index">Mesas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Pagos" asp-action="Index">Pagos</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Pagos" asp-action="Index">Pagos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Ordenes" asp-action="Index">Ordenes</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Ordenes" asp-action="Index">Ordenes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="OrdenDetalles" asp-action="Index">Ordenes Detalles</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="OrdenDetalles" asp-action="Index">Ordenes Detalles</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Reseñas" asp-action="Index">Reseñas</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Reseñas" asp-action="Index">Reseñas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Reservas" asp-action="Index">Reservas</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Reservas" asp-action="Index">Reservas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Climas" asp-action="Index">Climas</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Climas" asp-action="Index">Climas</a>
                             </li>
                         </ul>
                     </div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <form id="logoutForm" asp-controller="Usuarios" asp-action="Logout" method="post">
-                                <button type="submit" class="btn btn-link nav-link" style="padding: 0; margin: 0; border: none;">Logout (@User.Identity.Name)</button>
+                                <button type="submit" class="btn btn-link nav-link text-light" style="padding: 0; margin: 0; border: none;">Logout (@User.Identity.Name)</button>
                             </form>
                         </li>
                         <li class="nav-item">
                             @if (USDaMonedas != null)
                             {
-                                <label>El Dólar está a: <!-- USDaMonedas.Quotes["USDUYU"] --> pesos Uruguayos</label>
+                                <label class="nav-link text-light">El Dólar está a: <!-- USDaMonedas.Quotes["USDUYU"] --> pesos Uruguayos</label>
                             }
                             else
                             {
-                                <label>No se pudo obtener la cotización</label>
+                                <label class="nav-link text-light">No se pudo obtener la cotización</label>
                             }
                         </li>
                     </ul>
