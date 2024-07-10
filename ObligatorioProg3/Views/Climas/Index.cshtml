@@ -36,7 +36,6 @@
                             <th>@Html.DisplayNameFor(model => model.Temperatura)</th>
                             <th>@Html.DisplayNameFor(model => model.DescripciónClima)</th>
                             <th>@Html.DisplayNameFor(model => model.Fecha)</th>
-                            <th>@Html.DisplayNameFor(model => model.Pagos)</th>
                             <th>Gestion</th>
                         </tr>
                     </thead>
@@ -48,7 +47,6 @@
                                 <td>@Html.DisplayFor(modelItem => item.Temperatura)</td>
                                 <td>@Html.DisplayFor(modelItem => item.DescripciónClima)</td>
                                 <td>@Html.DisplayFor(modelItem => item.Fecha)</td>
-                                <td>@Html.DisplayFor(modelItem => item.Pagos)</td>
                                 <td>
                                     <a href="@Url.Action("Edit", new { id = item.Id })" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                     <a href="@Url.Action("Details", new { id = item.Id })" class="details" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Details">&#xE87C;</i></a>

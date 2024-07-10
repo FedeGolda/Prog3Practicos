@@ -33,9 +33,7 @@
                     <thead>
                         <tr>
                             <th>@Html.DisplayNameFor(model => model.Id)</th>
-                            <th>@Html.DisplayNameFor(model => model.OrdenDetalles)</th>
                             <th>@Html.DisplayNameFor(model => model.Reserva)</th>
-                            <th>@Html.DisplayNameFor(model => model.ReservaId)</th>
                             <th>@Html.DisplayNameFor(model => model.Total)</th>
                             <th>Gestion</th>
                         </tr>
@@ -45,9 +43,7 @@
                         {
                             <tr>
                                 <td>@Html.DisplayFor(modelItem => item.Id)</td>
-                                <td>@Html.DisplayFor(modelItem => item.OrdenDetalles)</td>
                                 <td>@Html.DisplayFor(modelItem => item.Reserva)</td>
-                                <td>@Html.DisplayFor(modelItem => item.ReservaId)</td>
                                 <td>@Html.DisplayFor(modelItem => item.Total)</td>
                                 <td>
                                     <a href="@Url.Action("Edit", new { id = item.Id })" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
