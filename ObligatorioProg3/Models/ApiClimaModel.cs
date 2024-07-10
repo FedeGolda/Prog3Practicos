@@ -1,128 +1,125 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
-
 
 namespace ObligatorioProg3.Models
 {
     public class ApiClimaModel
     {
-        [JsonProperty("coord", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("coord")]
         public Coord Coord { get; set; }
 
-        [JsonProperty("weather", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("weather")]
         public List<Weather> Weather { get; set; }
 
-        [JsonProperty("base", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("base")]
         public string Base { get; set; }
 
-        [JsonProperty("main", NullValueHandling = NullValueHandling.Ignore)]
-        public Temperatura _Temperatura { get; set; }
+        [JsonProperty("main")]
+        public Main Main { get; set; }
 
-        [JsonProperty("visibility", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("visibility")]
         public long? Visibility { get; set; }
 
-        [JsonProperty("wind", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("wind")]
         public Wind Wind { get; set; }
 
-        [JsonProperty("clouds", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("clouds")]
         public Clouds Clouds { get; set; }
 
-        [JsonProperty("dt", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("dt")]
         public long? Dt { get; set; }
 
-        [JsonProperty("sys", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("sys")]
         public Sys Sys { get; set; }
 
-        [JsonProperty("timezone", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("timezone")]
         public long? Timezone { get; set; }
 
-        [JsonProperty("id", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("id")]
         public long? Id { get; set; }
 
-        [JsonProperty("name", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("cod", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("cod")]
         public long? Cod { get; set; }
     }
 
-    public partial class Clouds
+    public class Coord
     {
-        [JsonProperty("all", NullValueHandling = NullValueHandling.Ignore)]
-        public long? All { get; set; }
-    }
-
-    public partial class Coord
-    {
-        [JsonProperty("lon", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("lon")]
         public double? Lon { get; set; }
 
-        [JsonProperty("lat", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("lat")]
         public double? Lat { get; set; }
     }
 
-    public partial class Temperatura
+    public class Main
     {
-        [JsonProperty("temp", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("temp")]
         public double? Temp { get; set; }
 
-        [JsonProperty("feels_like", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("feels_like")]
         public double? FeelsLike { get; set; }
 
-        [JsonProperty("temp_min", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("temp_min")]
         public double? TempMin { get; set; }
 
-        [JsonProperty("temp_max", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("temp_max")]
         public double? TempMax { get; set; }
 
-        [JsonProperty("pressure", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("pressure")]
         public long? Pressure { get; set; }
 
-        [JsonProperty("humidity", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("humidity")]
         public long? Humidity { get; set; }
     }
 
-    public partial class Sys
+    public class Sys
     {
-        [JsonProperty("type", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("type")]
         public long? Type { get; set; }
 
-        [JsonProperty("id", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("id")]
         public long? Id { get; set; }
 
-        [JsonProperty("country", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("country")]
         public string Country { get; set; }
 
-        [JsonProperty("sunrise", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("sunrise")]
         public long? Sunrise { get; set; }
 
-        [JsonProperty("sunset", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("sunset")]
         public long? Sunset { get; set; }
     }
 
-    public partial class Weather
+    public class Weather
     {
-        [JsonProperty("id", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("id")]
         public long? Id { get; set; }
 
-        [JsonProperty("main", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("main")]
         public string Main { get; set; }
 
-        [JsonProperty("description", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("description")]
         public string Description { get; set; }
 
-        [JsonProperty("icon", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("icon")]
         public string Icon { get; set; }
     }
 
-    public partial class Wind
+    public class Wind
     {
-        [JsonProperty("speed", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("speed")]
         public double? Speed { get; set; }
 
-        [JsonProperty("deg", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("deg")]
         public long? Deg { get; set; }
+    }
+
+    public class Clouds
+    {
+        [JsonProperty("all")]
+        public long? All { get; set; }
     }
 }

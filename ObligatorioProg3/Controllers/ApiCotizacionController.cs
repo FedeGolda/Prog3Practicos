@@ -13,7 +13,7 @@ namespace ObligatorioProg3.Controllers
             try
             {
                 var client = new RestClient("http://apilayer.net/api/live");
-                var request = new RestRequest("?access_key=3d45b85f1d114f7c1a75afbad0ca81cb&source=USD&format=1");
+                var request = new RestRequest("?access_key=9cccd6e24e3754cff44dd4c96aed2041&source=USD&format=1");
                 RestResponse response = client.ExecuteGet(request);
 
                 if (response.IsSuccessful)

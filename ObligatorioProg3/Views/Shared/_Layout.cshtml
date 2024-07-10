@@ -80,7 +80,7 @@
                         <li class="nav-item">
                             @if (USDaMonedas != null)
                             {
-                                <label class="nav-link text-light">El Dólar está a: <!-- USDaMonedas.Quotes["USDUYU"] --> pesos Uruguayos</label>
+                                <label class="nav-link text-light">El Dólar está a:  <!--   USDaMonedas.Quotes["USDUYU"] --> pesos Uruguayos</label>
                             }
                             else
                             {
@@ -102,9 +102,13 @@
                             <div class="card">
                                 <span class="icon"><img class="img-fluid" src="https://img.icons8.com/emoji/96/000000/sun-emoji.png" /></span>
                                 <div class="title"><p>Maldonado</p></div>
-                                @if (clima != null && clima._Temperatura != null && clima._Temperatura.Temp != null)
+                                @if (clima != null && clima.Main != null && clima.Main.Temp.HasValue)
                                 {
-                                    <div class="temp">@clima._Temperatura.Temp.Value.ToString("0.##")<sup>&deg;</sup>C</div>
+                                    <div class="temp">@clima.Main.Temp.Value.ToString("0.##")<sup>&deg;</sup>C</div>
+                                }
+                                else
+                                {
+                                    <div class="temp">No se pudo obtener la temperatura</div>
                                 }
                             </div>
                         </div>
@@ -114,11 +118,6 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; @DateTime.Now.Year - ObligatorioProg3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

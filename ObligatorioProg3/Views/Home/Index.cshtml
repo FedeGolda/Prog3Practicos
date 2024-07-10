@@ -2,7 +2,33 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="jumbotron text-center">
+    <h1 class="display-4">Bienvenido al Sistema de Gestión de Restaurantes</h1>
+    <p class="lead">Optimiza la gestión de tu restaurante con nuestro sistema integral y fácil de usar.</p>
+    <hr class="my-4">
+    <p>Con nuestro sistema puedes gestionar reservas, pagos, clientes y mucho más de manera eficiente y sencilla.</p>
 </div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Gestión de Clientes</h3>
+            <p>Administra la información de tus clientes y realiza un seguimiento de sus preferencias.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Reservas Eficientes</h3>
+            <p>Maneja las reservas de tu restaurante de manera efectiva y evita el overbooking.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Pagos Seguros</h3>
+            <p>Realiza y controla los pagos de forma segura y rápida.</p>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
