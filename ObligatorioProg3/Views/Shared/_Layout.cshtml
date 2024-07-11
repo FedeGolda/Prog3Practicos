@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ObligatorioProg3.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/favicon.ico" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
     <header>
@@ -78,14 +81,7 @@
                             </form>
                         </li>
                         <li class="nav-item">
-                            @if (USDaMonedas != null)
-                            {
-                                <label class="nav-link text-light">El Dólar está a:  <!--   USDaMonedas.Quotes["USDUYU"] --> pesos Uruguayos</label>
-                            }
-                            else
-                            {
-                                <label class="nav-link text-light">No se pudo obtener la cotización</label>
-                            }
+
                         </li>
                     </ul>
                 </div>
@@ -96,20 +92,24 @@
         <main role="main" class="pb-3">
             @if (User?.Identity?.IsAuthenticated == true)
             {
+                <form asp-controller="ApiClima" asp-action="GetClima" method="post">
+                    <button type="submit" class="btn btn-primary btn-lg btn3d"><span class="glyphicon glyphicon-cloud"></span>Obtener Clima</button>
+                </form>
                 <div class="weather">
                     <div class="row">
                         <div class="col-md-6">
+
                             <div class="card">
+
                                 <span class="icon"><img class="img-fluid" src="https://img.icons8.com/emoji/96/000000/sun-emoji.png" /></span>
                                 <div class="title"><p>Maldonado</p></div>
-                                @if (clima != null && clima.Main != null && clima.Main.Temp.HasValue)
+                                @if (clima != null)
                                 {
-                                    <div class="temp">@clima.Main.Temp.Value.ToString("0.##")<sup>&deg;</sup>C</div>
+                                    <div class="temp">@clima.Main.Temp<sup>&deg;</sup>C</div>
+                                    <div class="">@clima.Weather[0].Description</div>
                                 }
-                                else
-                                {
-                                    <div class="temp">No se pudo obtener la temperatura</div>
-                                }
+
+
                             </div>
                         </div>
                     </div>

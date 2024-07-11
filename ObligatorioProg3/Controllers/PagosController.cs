@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -23,8 +22,13 @@ namespace ObligatorioProg3.Controllers
         [Authorize]
         public async Task<IActionResult> Index()
         {
-            var obligatorioP3V2Context = _context.Pagos.Include(p => p.Cliente).Include(p => p.Clima).Include(p => p.Reserva);
-            return View(await obligatorioP3V2Context.ToListAsync());
+            var pagos = await _context.Pagos
+                .Include(p => p.Cliente)
+                .Include(p => p.Clima)
+                .Include(p => p.Reserva)
+                .ToListAsync();
+
+            return View(pagos);
         }
 
         // GET: Pagos/Details/5
@@ -40,6 +44,7 @@ namespace ObligatorioProg3.Controllers
                 .Include(p => p.Clima)
                 .Include(p => p.Reserva)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (pago == null)
             {
                 return NotFound();
@@ -52,7 +57,7 @@ namespace ObligatorioProg3.Controllers
         public IActionResult Create()
         {
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Nombre");
-            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id");
+            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "DescripciónClima");
             ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "ClienteId");
             return View();
         }
@@ -64,24 +69,38 @@ namespace ObligatorioProg3.Controllers
         {
             if (!ModelState.IsValid)
             {
-                // Obtener el cliente para calcular el descuento
+                // Obtener el cliente y el clima asociado
                 var cliente = await _context.Clientes.FindAsync(pago.ClienteId);
+                var climaCliente = await _context.Climas.FindAsync(pago.ClimaId);
+
                 if (cliente != null)
                 {
-                    // Calcular el precio total con descuento
+                    // Calcular el precio total con descuento del cliente
                     pago.PrecioTotal = cliente.CalcularDescuento(pago.Monto);
-                }
 
-                _context.Add(pago);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                    // Aplicar descuento adicional del clima si existe
+                    if (climaCliente != null)
+                    {
+                        double precioTotalConDescuentoCliente = pago.PrecioTotal ?? 0;
+                        pago.PrecioTotal = climaCliente.CalcularDescuentoAdicional(precioTotalConDescuentoCliente);
+                    }
+
+                    // Asignar el monto descontado al pago
+                    pago.MontoConvertido = pago.PrecioTotal;
+
+                    _context.Add(pago);
+                    await _context.SaveChangesAsync();
+
+                    return RedirectToAction(nameof(Index));
+                }
             }
+
+            // Si hay algún error, retornar la vista con los datos necesarios
             ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Nombre", pago.ClienteId);
-            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id", pago.ClimaId);
+            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "DescripciónClima", pago.ClimaId);
             ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "ClienteId", pago.ReservaId);
             return View(pago);
         }
-
 
         // GET: Pagos/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -96,9 +115,9 @@ namespace ObligatorioProg3.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", pago.ClienteId);
-            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id", pago.ClimaId);
-            ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "Id", pago.ReservaId);
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Nombre", pago.ClienteId);
+            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "DescripciónClima", pago.ClimaId);
+            ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "ClienteId", pago.ReservaId);
             return View(pago);
         }
 
@@ -122,6 +141,14 @@ namespace ObligatorioProg3.Controllers
                     {
                         // Calcular el precio total con descuento
                         pago.PrecioTotal = cliente.CalcularDescuento(pago.Monto);
+
+                        // Si hay clima asociado, aplicar descuento adicional
+                        var climaCliente = await _context.Climas.FindAsync(pago.ClimaId);
+                        if (climaCliente != null)
+                        {
+                            double precioTotalConDescuentoCliente = pago.PrecioTotal ?? 0.0;
+                            pago.PrecioTotal = climaCliente.CalcularDescuentoAdicional(precioTotalConDescuentoCliente);
+                        }
                     }
 
                     _context.Update(pago);
@@ -140,9 +167,9 @@ namespace ObligatorioProg3.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Id", pago.ClienteId);
-            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "Id", pago.ClimaId);
-            ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "Id", pago.ReservaId);
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Nombre", pago.ClienteId);
+            ViewData["ClimaId"] = new SelectList(_context.Climas, "Id", "DescripciónClima", pago.ClimaId);
+            ViewData["ReservaId"] = new SelectList(_context.Reservas, "Id", "ClienteId", pago.ReservaId);
             return View(pago);
         }
 
@@ -176,9 +203,8 @@ namespace ObligatorioProg3.Controllers
             if (pago != null)
             {
                 _context.Pagos.Remove(pago);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

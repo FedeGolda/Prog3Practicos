@@ -42,7 +42,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="TasaCambio" class="control-label"></label>
-                <input asp-for="TasaCambio" class="form-control" value="@((USDaMonedas != null && USDaMonedas.Quotes != null && USDaMonedas.Quotes.ContainsKey("USDUYU")) ? USDaMonedas.Quotes["USDUYU"].ToString() : string.Empty)" readonly />
+                <input asp-for="TasaCambio" class="form-control" value="@((USDaMonedas != null && USDaMonedas.Quotes != null && USDaMonedas.Quotes.ContainsKey("USDUYU")) ? USDaMonedas.Quotes["USDUYU"].ToString() : string.Empty)" />
                 <span asp-validation-for="TasaCambio" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -52,12 +52,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="MontoConvertido" class="control-label"></label>
-                <input asp-for="MontoConvertido" class="form-control" />
+                <input asp-for="MontoConvertido" class="form-control" readonly />
                 <span asp-validation-for="MontoConvertido" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PrecioTotal" class="control-label"></label>
-                <input asp-for="PrecioTotal" class="form-control" />
+                <input asp-for="PrecioTotal" class="form-control" readonly />
                 <span asp-validation-for="PrecioTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
