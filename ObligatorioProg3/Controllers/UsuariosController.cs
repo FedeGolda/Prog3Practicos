@@ -112,6 +112,14 @@ namespace ObligatorioProg3.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Verificar si el correo ya existe en la base de datos
+                if (_context.Usuarios.Any(u => u.Email == usuario.Email))
+                {
+                    ModelState.AddModelError("Email", "Ya existe ese correo");
+                    ViewBag.RolId = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
+                    return View(usuario);
+                }
+
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -119,7 +127,6 @@ namespace ObligatorioProg3.Controllers
             ViewBag.RolId = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
             return View(usuario);
         }
-
 
         [Authorize]
         public async Task<IActionResult> Edit(int? id)
@@ -151,6 +158,14 @@ namespace ObligatorioProg3.Controllers
 
             if (ModelState.IsValid)
             {
+                // Verificar si el correo ya existe en la base de datos y no pertenece al usuario actual
+                if (_context.Usuarios.Any(u => u.Email == usuario.Email && u.Id != usuario.Id))
+                {
+                    ModelState.AddModelError("Email", "Ya existe ese correo");
+                    ViewBag.RolId = new SelectList(_context.Roles, "Id", "Nombre", usuario.RolId);
+                    return View(usuario);
+                }
+
                 try
                 {
                     _context.Update(usuario);

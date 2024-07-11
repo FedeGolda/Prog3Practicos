@@ -12,6 +12,8 @@ namespace ObligatorioProg3.Models
 
         public string Nombre { get; set; } = null!;
 
+        [Required]
+        [EmailAddress(ErrorMessage = "Formato de correo electrónico no válido")]
         public string Email { get; set; } = null!;
 
         [Required(ErrorMessage = "TipoCliente es obligatorio")]
